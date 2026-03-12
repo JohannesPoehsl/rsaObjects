@@ -1,0 +1,3348 @@
+Date: Thu, 12 Mar 2026 13:01:28 +0000 (UTC)
+Message-ID: <704439211.113.1773320488153@4b1b3b2ba50c>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_112_114373351.1773320488153"
+
+------=_Part_112_114373351.1773320488153
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>RSA - Objects</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>RSA - Objects</h1>
+    <div class=3D"Section1">
+        <div class=3D"confluence-information-macro confluence-information-m=
+acro-information">
+<style>[data-colorid=3Dlswqj8yp1x]{color:#bf2600} html[data-color-mode=3Dda=
+rk] [data-colorid=3Dlswqj8yp1x]{color:#ff6640}[data-colorid=3Dtycxtml27m]{c=
+olor:#bf2600} html[data-color-mode=3Ddark] [data-colorid=3Dtycxtml27m]{colo=
+r:#ff6640}[data-colorid=3Dfsldxgd8oo]{color:#bf2600} html[data-color-mode=
+=3Ddark] [data-colorid=3Dfsldxgd8oo]{color:#ff6640}[data-colorid=3Dy00wjfjo=
+4y]{color:#bf2600} html[data-color-mode=3Ddark] [data-colorid=3Dy00wjfjo4y]=
+{color:#ff6640}[data-colorid=3Dva4xoi7114]{color:#bf2600} html[data-color-m=
+ode=3Ddark] [data-colorid=3Dva4xoi7114]{color:#ff6640}[data-colorid=3Dlvn9r=
+clecl]{color:#bf2600} html[data-color-mode=3Ddark] [data-colorid=3Dlvn9rcle=
+cl]{color:#ff6640}[data-colorid=3Dpav1arrq6b]{color:#bf2600} html[data-colo=
+r-mode=3Ddark] [data-colorid=3Dpav1arrq6b]{color:#ff6640}[data-colorid=3Dxk=
+86wv4rzv]{color:#bf2600} html[data-color-mode=3Ddark] [data-colorid=3Dxk86w=
+v4rzv]{color:#ff6640}[data-colorid=3Dc9hg653v8d]{color:#bf2600} html[data-c=
+olor-mode=3Ddark] [data-colorid=3Dc9hg653v8d]{color:#ff6640}[data-colorid=
+=3Daytwiwjdfs]{color:#bf2600} html[data-color-mode=3Ddark] [data-colorid=3D=
+aytwiwjdfs]{color:#ff6640}[data-colorid=3Ddu901zj4om]{color:#bf2600} html[d=
+ata-color-mode=3Ddark] [data-colorid=3Ddu901zj4om]{color:#ff6640}[data-colo=
+rid=3Dtttckssqdy]{color:#bf2600} html[data-color-mode=3Ddark] [data-colorid=
+=3Dtttckssqdy]{color:#ff6640}[data-colorid=3Dqdgyx8a7jj]{color:#bf2600} htm=
+l[data-color-mode=3Ddark] [data-colorid=3Dqdgyx8a7jj]{color:#ff6640}[data-c=
+olorid=3Dszn970exe3]{color:#bf2600} html[data-color-mode=3Ddark] [data-colo=
+rid=3Dszn970exe3]{color:#ff6640}[data-colorid=3Duua2p1y8hd]{color:#bf2600} =
+html[data-color-mode=3Ddark] [data-colorid=3Duua2p1y8hd]{color:#ff6640}[dat=
+a-colorid=3Dbjtug9vgxw]{color:#bf2600} html[data-color-mode=3Ddark] [data-c=
+olorid=3Dbjtug9vgxw]{color:#ff6640}[data-colorid=3Di886lqu3kk]{color:#bf260=
+0} html[data-color-mode=3Ddark] [data-colorid=3Di886lqu3kk]{color:#ff6640}[=
+data-colorid=3Dyv0wekryk5]{color:#bf2600} html[data-color-mode=3Ddark] [dat=
+a-colorid=3Dyv0wekryk5]{color:#ff6640}[data-colorid=3Dz2u9fp9bwv]{color:#bf=
+2600} html[data-color-mode=3Ddark] [data-colorid=3Dz2u9fp9bwv]{color:#ff664=
+0}[data-colorid=3Dz9k4170s6d]{color:#bf2600} html[data-color-mode=3Ddark] [=
+data-colorid=3Dz9k4170s6d]{color:#ff6640}[data-colorid=3Dp8b0owtua2]{color:=
+#bf2600} html[data-color-mode=3Ddark] [data-colorid=3Dp8b0owtua2]{color:#ff=
+6640}[data-colorid=3Ddmt33oxoy0]{color:#bf2600} html[data-color-mode=3Ddark=
+] [data-colorid=3Ddmt33oxoy0]{color:#ff6640}[data-colorid=3Dk582gsp6ue]{col=
+or:#bf2600} html[data-color-mode=3Ddark] [data-colorid=3Dk582gsp6ue]{color:=
+#ff6640}[data-colorid=3Dls7uix3iif]{color:#bf2600} html[data-color-mode=3Dd=
+ark] [data-colorid=3Dls7uix3iif]{color:#ff6640}[data-colorid=3Dkpbmh1ftuo]{=
+color:#bf2600} html[data-color-mode=3Ddark] [data-colorid=3Dkpbmh1ftuo]{col=
+or:#ff6640}[data-colorid=3Ddrbr6abi1b]{color:#bf2600} html[data-color-mode=
+=3Ddark] [data-colorid=3Ddrbr6abi1b]{color:#ff6640}[data-colorid=3Df0mw9emu=
+v1]{color:#bf2600} html[data-color-mode=3Ddark] [data-colorid=3Df0mw9emuv1]=
+{color:#ff6640}[data-colorid=3Dqqs4bxoc0i]{color:#bf2600} html[data-color-m=
+ode=3Ddark] [data-colorid=3Dqqs4bxoc0i]{color:#ff6640}</style><span class=
+=3D"aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-=
+icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"48283e718b7f">This page lists common and recurring objects a=
+nd defines each for generic use</p>
+</div>
+</div>
+<p local-id=3D"799ad3804db1"></p>
+<div id=3D"expander-1237863446" class=3D"expand-container">
+<div id=3D"expander-control-1237863446" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">CASE</span>
+</div>
+<div id=3D"expander-content-1237863446" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"3a=
+c814e6-2f3d-4295-b58f-dfcb24cbff3d" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"b6fb093aba8c">
+<th data-local-id=3D"b3404cbb7112" class=3D"confluenceTh">
+<p local-id=3D"4e09fe0da51a"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"3855033030f7" class=3D"confluenceTh">
+<p local-id=3D"2b2c547459f7"><strong>Format</strong></p></th>
+<th data-local-id=3D"03f1433c6f8f" class=3D"confluenceTh">
+<p local-id=3D"ec0f773fd0b4"><strong>Description</strong></p></th>
+<th data-local-id=3D"79306b11901f" class=3D"confluenceTh">
+<p local-id=3D"39655c1ace2b"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"a5ae21e7a7cf">
+<td data-local-id=3D"9613967da947" class=3D"confluenceTd">
+<p local-id=3D"bb808334416a">client</p></td>
+<td data-local-id=3D"d7088ae6c467" class=3D"confluenceTd">
+<p local-id=3D"025168e36ee0">{string}</p></td>
+<td data-local-id=3D"c81a7232719a" class=3D"confluenceTd">
+<ul local-id=3D"e4ba11d8869b">
+<li local-id=3D"78d368e4-7b14-4fb7-89a3-b92565d3f0c8">
+<p local-id=3D"d0029a880f26">Examples</p>
+<ul local-id=3D"a2bade87-8dff-4aa3-817d-b4ae4d5b1988">
+<li local-id=3D"90fe247f-3c48-4d74-8ac0-00adef3fd8f4">
+<p local-id=3D"de132d539d0a">BMW</p></li>
+<li local-id=3D"6832cf67-6fe9-453b-b12a-5b14fd29f05d">
+<p local-id=3D"821dbab128a3">AUDI</p></li>
+<li local-id=3D"64382dc9-0e3f-4a92-8e1e-ce3c7a77f27f">
+<p local-id=3D"464e465eb189">HONDA DE</p></li>
+<li local-id=3D"ea1d774565cc">
+<p local-id=3D"339978cd8da1">German Autobahn</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"a79444217f8c" class=3D"confluenceTd">
+<p local-id=3D"88e2aadf8497"></p></td>
+</tr>
+<tr data-local-id=3D"01210629de4e">
+<td data-local-id=3D"308dcdc1c6e1" class=3D"confluenceTd">
+<p local-id=3D"5653fca1569b">clientComment</p></td>
+<td data-local-id=3D"b7b5c1c9e183" class=3D"confluenceTd">
+<p local-id=3D"647fa1f4bbe8">{string}</p></td>
+<td data-local-id=3D"be3b15da448f" class=3D"confluenceTd">
+<ul local-id=3D"4b27a3ed35d8">
+<li local-id=3D"566c6942ed6d">
+<p local-id=3D"c5707dead3d0">Special hints of client - to be considered dur=
+ing performance of service</p></li>
+</ul></td>
+<td data-local-id=3D"350a14d9718d" class=3D"confluenceTd">
+<p local-id=3D"77f645d187d2"></p></td>
+</tr>
+<tr data-local-id=3D"0e76e02d4386">
+<td data-local-id=3D"d18216287543" class=3D"confluenceTd">
+<p local-id=3D"35f5897a6afa">origin</p></td>
+<td data-local-id=3D"54686c23a4fc" class=3D"confluenceTd">
+<p local-id=3D"47250fe9284c">{string}</p></td>
+<td data-local-id=3D"b62e32688391" class=3D"confluenceTd">
+<ul local-id=3D"ab443c277f14">
+<li local-id=3D"45ef85e4536f">
+<p local-id=3D"f5cb9084032c">Examples</p>
+<ul local-id=3D"64f866316da3">
+<li local-id=3D"f234b10c1aa8">
+<p local-id=3D"f9386f69b90c">Mosaic</p></li>
+<li local-id=3D"41d8a4f47c76">
+<p local-id=3D"cc85aa875325">Navigator</p></li>
+<li local-id=3D"03d6d10f1ab5">
+<p local-id=3D"318a5e15d40a">OnStreet Network</p></li>
+<li local-id=3D"48ca7eb5f93f">
+<p local-id=3D"454a9f5cad83">OnStreet Roadside</p></li>
+<li local-id=3D"a922d5ce29ce">
+<p local-id=3D"95a64689031b">=E2=80=A6</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"c6880aaace04" class=3D"confluenceTd">
+<p local-id=3D"16cd2a5d5afc"></p></td>
+</tr>
+<tr data-local-id=3D"2a9c05e7d53a">
+<td data-local-id=3D"7d521fd87a42" class=3D"confluenceTd">
+<p local-id=3D"f553dedd1529">number</p></td>
+<td data-local-id=3D"043f7d0524f4" class=3D"confluenceTd">
+<p local-id=3D"1f7fc646b32a">{string}</p></td>
+<td data-local-id=3D"c1c9a151c108" class=3D"confluenceTd">
+<p local-id=3D"e6b377993b5b"></p></td>
+<td data-local-id=3D"e9f0ef3d9a1d" class=3D"confluenceTd">
+<p local-id=3D"9189e15715d3"></p></td>
+</tr>
+<tr data-local-id=3D"d1340bceeccc">
+<td data-local-id=3D"34f380d50380" class=3D"confluenceTd">
+<p local-id=3D"53720ed5b1c7">creationDate</p></td>
+<td data-local-id=3D"4d104c26433a" class=3D"confluenceTd">
+<p local-id=3D"c3fbfd31a0ee">{dateTime}</p></td>
+<td data-local-id=3D"748cc4ec838b" class=3D"confluenceTd">
+<p local-id=3D"56d888c73f7e"></p></td>
+<td data-local-id=3D"2a1da0f9f5c3" class=3D"confluenceTd">
+<p local-id=3D"6c3c5d317796"></p></td>
+</tr>
+<tr data-local-id=3D"a209b0fcaf98">
+<td data-local-id=3D"06e175836001" class=3D"confluenceTd">
+<p local-id=3D"e6005100da3d">priority</p></td>
+<td data-local-id=3D"206e63be345d" class=3D"confluenceTd">
+<p local-id=3D"49c0bb6c6105">{string}</p>
+<ul local-id=3D"ea0e6f475e10">
+<li local-id=3D"58f60f1e8aa7">
+<p local-id=3D"8109fe95ac62">[ HIGH, MEDIUM, LOW ]</p></li>
+</ul></td>
+<td data-local-id=3D"539cf96d060a" class=3D"confluenceTd">
+<p local-id=3D"a9e8bc94c63d"></p></td>
+<td data-local-id=3D"1d4d97358211" class=3D"confluenceTd">
+<ul local-id=3D"2328ed84779a">
+<li local-id=3D"257d73ffa174">
+<p local-id=3D"f2f6fcbbdbe8"><span data-colorid=3D"szn970exe3">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"a2c71beebdcc">
+<td data-local-id=3D"3a6b29d53c50" class=3D"confluenceTd">
+<p local-id=3D"2ea15eef7039">caseStatus</p>
+<p local-id=3D"85eb54500df2"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"d7897c42864e" class=3D"confluenceTd">
+<ul local-id=3D"4681193b4331">
+<li local-id=3D"d3a6bf7bcee3">
+<p local-id=3D"cac7c9474106">name</p>
+<ul local-id=3D"b2bbb0cfc883">
+<li local-id=3D"1a880fe97ceb">
+<p local-id=3D"c3065815cd66">{string}</p></li>
+</ul></li>
+<li local-id=3D"64792d76eb55">
+<p local-id=3D"101da5d7294a">timestamp</p>
+<ul local-id=3D"5ad6f365cfc2">
+<li local-id=3D"626fcf715134">
+<p local-id=3D"9db3c785b589">{dateTime}</p></li>
+</ul></li>
+<li local-id=3D"037a8efb3185">
+<p local-id=3D"4c6e3641e2ca">source</p>
+<ul local-id=3D"f922b1dca269">
+<li local-id=3D"b66a534bb989">
+<p local-id=3D"94cb19531d86">{string}</p></li>
+</ul></li>
+<li local-id=3D"da2e87bcdbc8">
+<p local-id=3D"85b6e752e11a">comment</p>
+<ul local-id=3D"29163ce95689">
+<li local-id=3D"ad1f8e65249d">
+<p local-id=3D"19e2bcd9a250">{string}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"ad69956afd2c" class=3D"confluenceTd">
+<p local-id=3D"7ae155d8e57a"></p></td>
+<td data-local-id=3D"06d5f8906c05" class=3D"confluenceTd">
+<p local-id=3D"345cd5e3eb49"></p></td>
+</tr>
+<tr data-local-id=3D"0f630f6f82fd">
+<td data-local-id=3D"0f36e86194e1" class=3D"confluenceTd">
+<p local-id=3D"27ec022ea3c9">comment</p></td>
+<td data-local-id=3D"fb6b2cfaffd1" class=3D"confluenceTd">
+<p local-id=3D"95f33819d36a">{string}</p></td>
+<td data-local-id=3D"0d2e933658bf" class=3D"confluenceTd">
+<p local-id=3D"3711bf79e423"></p></td>
+<td data-local-id=3D"99737fb47941" class=3D"confluenceTd">
+<p local-id=3D"7701998700d6"></p></td>
+</tr>
+<tr data-local-id=3D"eece78447b3b">
+<td data-local-id=3D"127c58ecf6b1" class=3D"confluenceTd">
+<p local-id=3D"32c30b84e26f">relatedServiceOrders</p></td>
+<td data-local-id=3D"55cb6c164d16" class=3D"confluenceTd">
+<p local-id=3D"e492db60c1b7">{array of ids}</p></td>
+<td data-local-id=3D"9538236a6e9e" class=3D"confluenceTd">
+<p local-id=3D"277f4668a5cd"></p></td>
+<td data-local-id=3D"d970b0aa362b" class=3D"confluenceTd">
+<p local-id=3D"34a04cfcf554"></p></td>
+</tr>
+<tr data-local-id=3D"968aba7908a2">
+<td data-local-id=3D"3e04a5ec5930" class=3D"confluenceTd">
+<p local-id=3D"ecf159302bd3">clientReference</p></td>
+<td data-local-id=3D"c3b5314a5bd3" class=3D"confluenceTd">
+<p local-id=3D"4964cb3cf706">{string}</p></td>
+<td data-local-id=3D"0517645b2094" class=3D"confluenceTd">
+<p local-id=3D"d692f1f1b81b"></p></td>
+<td data-local-id=3D"4127e1e00274" class=3D"confluenceTd">
+<p local-id=3D"1d1e67d83eef"></p></td>
+</tr>
+<tr data-local-id=3D"7af71ce3b75a">
+<td data-local-id=3D"a5456267198f" class=3D"confluenceTd">
+<p local-id=3D"4a02dace2015">rsaReference</p></td>
+<td data-local-id=3D"0a4395752125" class=3D"confluenceTd">
+<p local-id=3D"9d95486ef492">{string}</p></td>
+<td data-local-id=3D"a1f6d9fd2094" class=3D"confluenceTd">
+<p local-id=3D"a61ffa5d7651"></p></td>
+<td data-local-id=3D"94496fc4b70f" class=3D"confluenceTd">
+<p local-id=3D"164d60d96cda"></p></td>
+</tr>
+<tr data-local-id=3D"39b659af71d4">
+<td data-local-id=3D"d3d7fb9007f3" class=3D"confluenceTd">
+<p local-id=3D"ea953f431ebf">networkProviderReference</p></td>
+<td data-local-id=3D"b2d01ea3f44e" class=3D"confluenceTd">
+<p local-id=3D"9955859d0315">{string}</p></td>
+<td data-local-id=3D"a13623f06ae4" class=3D"confluenceTd">
+<p local-id=3D"b6ffc7d14884"></p></td>
+<td data-local-id=3D"9b343394ab74" class=3D"confluenceTd">
+<p local-id=3D"fe7d6a8670b5"></p></td>
+</tr>
+<tr data-local-id=3D"1bf60db622d0">
+<td data-local-id=3D"f97a9d862d66" class=3D"confluenceTd">
+<p local-id=3D"d9f733438bd0">serviceProviderReference</p></td>
+<td data-local-id=3D"9dc5556543bf" class=3D"confluenceTd">
+<p local-id=3D"0fefde23deae">{string}</p></td>
+<td data-local-id=3D"b98a673db936" class=3D"confluenceTd">
+<p local-id=3D"6500af3eff54"></p></td>
+<td data-local-id=3D"d536ee3abc69" class=3D"confluenceTd">
+<p local-id=3D"e517457b0f8a"></p></td>
+</tr>
+<tr data-local-id=3D"8334365740d5">
+<td data-local-id=3D"284ad8794e8f" class=3D"confluenceTd">
+<p local-id=3D"7ff71678537b">attachments</p>
+<p local-id=3D"b087e82cf6bd"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"982479acf7b5" class=3D"confluenceTd">
+<p local-id=3D"706f4fa75121"></p></td>
+<td data-local-id=3D"331e82aa5d69" class=3D"confluenceTd">
+<p local-id=3D"29bf4be2a9ed"></p></td>
+<td data-local-id=3D"8e08e1b9086b" class=3D"confluenceTd">
+<p local-id=3D"e67fb62bf1db"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id=3D"expander-1858233019" class=3D"expand-container">
+<div id=3D"expander-control-1858233019" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">ORDER</span>
+</div>
+<div id=3D"expander-content-1858233019" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"63=
+ac32e9bf3a" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"00267e2a-36f5-4979-a54e-c4ba6ff79bec">
+<th data-local-id=3D"4acc69e0-467a-4114-8504-04ef17290f18" class=3D"conflue=
+nceTh">
+<p local-id=3D"21b1ada34b07"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"cdfebc0a-fd20-473a-a071-474e2b1a7ab0" class=3D"conflue=
+nceTh">
+<p local-id=3D"23675a249861"><strong>Format</strong></p></th>
+<th data-local-id=3D"5b66b852-d521-49cc-918f-27d5d80570c0" class=3D"conflue=
+nceTh">
+<p local-id=3D"9671d0d91daa"><strong>Description</strong></p></th>
+<th data-local-id=3D"f810c4b1-71c2-4aad-9787-c0d534b19294" class=3D"conflue=
+nceTh">
+<p local-id=3D"c30a8e07a6bc"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"f46116f4d3bd">
+<td data-local-id=3D"11f2e20bebfb" class=3D"confluenceTd">
+<p local-id=3D"10f4f498677e">type</p></td>
+<td data-local-id=3D"83b0fc4a85a9" class=3D"confluenceTd">
+<p local-id=3D"a178170023e4">{string}</p>
+<ul local-id=3D"fc6d7d846e40">
+<li local-id=3D"7785e76bf018">
+<p local-id=3D"cfa1bfd150a8">[ HELP_ON_SPOT, RECOVERY, TOWING, TRANSPORT, R=
+ENTAL_CAR, OVERNIGHT_STAY, MEDICAL_CARE, =E2=80=A6 ]</p></li>
+</ul></td>
+<td data-local-id=3D"6b9124eaa14d" class=3D"confluenceTd">
+<p local-id=3D"c1a9755f2961"></p></td>
+<td data-local-id=3D"5db64b7b72ba" class=3D"confluenceTd">
+<ul local-id=3D"f7a5815cc4ee">
+<li local-id=3D"dffdca5f1d94">
+<p local-id=3D"711eced340f5"><span data-colorid=3D"qdgyx8a7jj">Closed list =
+of enums possible?</span></p>
+<ul local-id=3D"67338263be6f">
+<li local-id=3D"a4169a613b73">
+<p local-id=3D"6435a7267efa"><span data-colorid=3D"yv0wekryk5">Should this =
+list match to possible types of coverage (see object =E2=80=9CCoverage=E2=
+=80=9D)?</span></p></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"4c827642-91cf-40bb-8662-16540654b187">
+<td data-local-id=3D"405a75ca-9e88-42ef-9bce-5f524ba9640e" class=3D"conflue=
+nceTd">
+<p local-id=3D"c8d56009cf88">number</p></td>
+<td data-local-id=3D"3fc23ce3-13aa-407d-9fa1-7b64444fa0d8" class=3D"conflue=
+nceTd">
+<p local-id=3D"f75ba6469c32">{string}</p></td>
+<td data-local-id=3D"457967cc-e1df-4d9c-b067-67f98379e88b" class=3D"conflue=
+nceTd">
+<p local-id=3D"8a3e2d83bd4b"></p></td>
+<td data-local-id=3D"23e0b289-6df5-41cc-99e6-cd0bc77b2c6e" class=3D"conflue=
+nceTd">
+<p local-id=3D"faa00ad0ece9"></p></td>
+</tr>
+<tr data-local-id=3D"1b69803f8fff">
+<td data-local-id=3D"418bada86af7" class=3D"confluenceTd">
+<p local-id=3D"f3c43c35a288">client</p></td>
+<td data-local-id=3D"3804bd16-62fc-4384-82b7-b106c7355a13" class=3D"conflue=
+nceTd">
+<p local-id=3D"65044ec50aac">{string}</p></td>
+<td data-local-id=3D"e43f7eeb-b69d-4c54-91b3-1057a991cda4" class=3D"conflue=
+nceTd">
+<ul local-id=3D"8ba4b3b9-6ce7-4f13-a73d-abb018acbab3">
+<li local-id=3D"f1446598-0e7b-4d93-8a1b-0b1af0d69c21">
+<p local-id=3D"0bf8cb1281ce">Examples</p>
+<ul local-id=3D"b7f4f264-d75b-44d8-8aa1-2f13d325655d">
+<li local-id=3D"116cee7a-f641-47b8-ac0e-a6cdcef2583f">
+<p local-id=3D"2e60d349a225">BMW</p></li>
+<li local-id=3D"a1c9163b-c77c-4f56-b7ec-298b2cae22af">
+<p local-id=3D"85acbee9ad6d">AUDI</p></li>
+<li local-id=3D"0f47ebbe-66fc-49e2-86b9-62a0d6bc7a58">
+<p local-id=3D"dc7a50f48d91">HONDA DE</p></li>
+<li local-id=3D"98112965-2556-4e5f-bfc5-2791db3598a8">
+<p local-id=3D"c31c42db9764">German Autobahn</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"8e2ab4d9a1b1" class=3D"confluenceTd">
+<p local-id=3D"204891bcfb15"></p></td>
+</tr>
+<tr data-local-id=3D"53a289d8-206f-4ec0-b7d1-fced53d711ef">
+<td data-local-id=3D"2191c5bc-34fe-42a1-b3ff-98c1c1804bb7" class=3D"conflue=
+nceTd">
+<p local-id=3D"b06f240a0769">clientReference</p></td>
+<td data-local-id=3D"9e5a9db5-70a4-4017-b1f0-88b6aaeab4fa" class=3D"conflue=
+nceTd">
+<p local-id=3D"9ed3216cf81e">{string}</p></td>
+<td data-local-id=3D"faf650c8-08f8-45eb-b3e0-f297a809d03a" class=3D"conflue=
+nceTd">
+<p local-id=3D"e19828e0b78d"></p></td>
+<td data-local-id=3D"2b82d947-2585-4507-b440-39250433e82a" class=3D"conflue=
+nceTd">
+<p local-id=3D"e06592da9ba6"></p></td>
+</tr>
+<tr data-local-id=3D"333a04702655">
+<td data-local-id=3D"1e52b736f165" class=3D"confluenceTd">
+<p local-id=3D"8bdcded3a7b9">clientComment</p></td>
+<td data-local-id=3D"66cd948e-41ba-4e9a-b789-a4ab7cf4de54" class=3D"conflue=
+nceTd">
+<p local-id=3D"31e56cd1d996">{string}</p></td>
+<td data-local-id=3D"a108d4f4-d179-420e-b18e-1b95885bb291" class=3D"conflue=
+nceTd">
+<ul local-id=3D"ed24861c-dc03-400d-9f5a-81e8cf6f79e0">
+<li local-id=3D"18571db540d0">
+<p local-id=3D"4b1132717287">Special hints of client - to be considered dur=
+ing performance of service</p></li>
+</ul></td>
+<td data-local-id=3D"3e597330364b" class=3D"confluenceTd">
+<p local-id=3D"2f5ad25599ff"></p></td>
+</tr>
+<tr data-local-id=3D"eacbd665e4d8">
+<td data-local-id=3D"2a8310b7-a272-4f66-9b4c-024f2844d100" class=3D"conflue=
+nceTd">
+<p local-id=3D"7d6c80cad229">origin</p></td>
+<td data-local-id=3D"eac05f71-88ff-4f0a-83c2-2d9f788e2f69" class=3D"conflue=
+nceTd">
+<p local-id=3D"b1ed343e9a75">{string}</p></td>
+<td data-local-id=3D"0e3432e7-4e2c-4307-9277-cd27ba7b3993" class=3D"conflue=
+nceTd">
+<ul local-id=3D"a11b0516-894f-483d-9479-34600213141b">
+<li local-id=3D"248698d0-1674-4f0f-9fe5-9a0cb590b736">
+<p local-id=3D"0baf76ff3a49">Examples</p>
+<ul local-id=3D"94242972-404c-40b1-ba65-7f38c48733fa">
+<li local-id=3D"c0edb8a4-d81f-45c1-8886-5db93f25c9e3">
+<p local-id=3D"b7d8807ed381">Mosaic</p></li>
+<li local-id=3D"7e7b8a1a-d7a7-4d51-b370-624c9dba7b63">
+<p local-id=3D"0206d9f4edd2">Navigator</p></li>
+<li local-id=3D"80f7465e-2ac1-486a-926b-aecf7dc265c0">
+<p local-id=3D"a1fa7b9d5f18">OnStreet Network</p></li>
+<li local-id=3D"42b2fe56-8dd4-4df1-95ce-9242054e2f9d">
+<p local-id=3D"6c7552b9e63c">OnStreet Roadside</p></li>
+<li local-id=3D"f49bf725-7d79-4187-a84d-e25cd7f67708">
+<p local-id=3D"d0d022f6502f">=E2=80=A6</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"c860272d4c88" class=3D"confluenceTd">
+<p local-id=3D"f0c99300d81f"></p></td>
+</tr>
+<tr data-local-id=3D"7cbe4bc9300b">
+<td data-local-id=3D"706b9925e071" class=3D"confluenceTd">
+<p local-id=3D"1368514c2bdc">creationDate</p></td>
+<td data-local-id=3D"2115c197ff15" class=3D"confluenceTd">
+<p local-id=3D"4a8f6a41ec29">{dateTime}</p></td>
+<td data-local-id=3D"f2f29f895a52" class=3D"confluenceTd">
+<p local-id=3D"f1c7909da1c8"></p></td>
+<td data-local-id=3D"6f2e090df404" class=3D"confluenceTd">
+<p local-id=3D"12ca715e3899"></p></td>
+</tr>
+<tr data-local-id=3D"d36227bc4fe2">
+<td data-local-id=3D"c7517a07c18b" class=3D"confluenceTd">
+<p local-id=3D"db8b85ca399f">priority</p></td>
+<td data-local-id=3D"b2bb88b8bf26" class=3D"confluenceTd">
+<p local-id=3D"8a1c7c393272">{enum}</p>
+<ul local-id=3D"1ea4badff634">
+<li local-id=3D"a74f3acba94d">
+<p local-id=3D"53b346d2e4f4">[ HIGH, MEDIUM, LOW ]</p></li>
+</ul></td>
+<td data-local-id=3D"936b5064410c" class=3D"confluenceTd">
+<p local-id=3D"f392ea113e33"></p></td>
+<td data-local-id=3D"a39d335beda5" class=3D"confluenceTd">
+<ul local-id=3D"713f5b5992f6">
+<li local-id=3D"818858d70673">
+<p local-id=3D"27e8a4282cdf"><span data-colorid=3D"xk86wv4rzv">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"88e96d929735">
+<td data-local-id=3D"5045eef1a827" class=3D"confluenceTd">
+<p local-id=3D"a416ae89f422">serviceDuration</p>
+<p local-id=3D"7cb7e822d2d5"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"bc4b6d40b6be" class=3D"confluenceTd">
+<ul local-id=3D"ce74afa8c317">
+<li local-id=3D"e2a87948159c">
+<p local-id=3D"fcb944bfa231">start</p>
+<ul local-id=3D"6b2c1f898d9e">
+<li local-id=3D"debecc56d827">
+<p local-id=3D"c535db6648b9">{dateTime}</p></li>
+</ul></li>
+<li local-id=3D"6d985a8c4b12">
+<p local-id=3D"b42e209d1d16">end</p>
+<ul local-id=3D"513491f4d3ce">
+<li local-id=3D"eff2739dc5ed">
+<p local-id=3D"f98ae3e35923">{dateTime}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"3452b2dc6eb6" class=3D"confluenceTd">
+<p local-id=3D"8efbe8c17ded"></p></td>
+<td data-local-id=3D"59bb52c1402c" class=3D"confluenceTd">
+<p local-id=3D"a30698fd2eef"></p></td>
+</tr>
+<tr data-local-id=3D"aae5066c-3b42-46d9-9a5e-4242dd2959a8">
+<td data-local-id=3D"fce61903-667c-4cda-9c7d-9945bf671669" class=3D"conflue=
+nceTd">
+<p local-id=3D"ae1e7af46c9d">orderStatus</p>
+<p local-id=3D"d92b890a026a"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"8f5d951e-02d2-419d-976a-b4b1539adc44" class=3D"conflue=
+nceTd">
+<ul local-id=3D"edf5418d7024">
+<li local-id=3D"6b9ad1d0cf99">
+<p local-id=3D"341c3c96cf8c">name</p>
+<ul local-id=3D"a5f7ee4622a9">
+<li local-id=3D"55cf26f4de16">
+<p local-id=3D"ae89060e9609">{string}</p></li>
+</ul></li>
+<li local-id=3D"973ea682b819">
+<p local-id=3D"8f59f4b141ed">timestamp</p>
+<ul local-id=3D"a7172f127f81">
+<li local-id=3D"fbfe4498d065">
+<p local-id=3D"0f64aacf5efd">{dateTime}</p></li>
+</ul></li>
+<li local-id=3D"5b6ed5e1-3bff-48c1-84be-3d3b2504eb29">
+<p local-id=3D"8bbd3854438c">source</p>
+<ul local-id=3D"af38c240-a77e-4a21-b7d3-3e0518e2ee43">
+<li local-id=3D"76748e12-26a4-4401-8f81-12665289ad77">
+<p local-id=3D"1f611cd06b22">{string}</p></li>
+</ul></li>
+<li local-id=3D"f5b80d848515">
+<p local-id=3D"747478d1b3ec">comment</p>
+<ul local-id=3D"d503791eacc6">
+<li local-id=3D"760157670056">
+<p local-id=3D"5eb797553bf3">{string}</p></li>
+</ul></li>
+<li local-id=3D"d4b8266236de">
+<p local-id=3D"17ddd571144a">eta</p>
+<ul local-id=3D"71a38abb1d0f">
+<li local-id=3D"953fbd86ed7b">
+<p local-id=3D"0672930c56a7">{dateTime}</p></li>
+</ul></li>
+<li local-id=3D"4353ab45-eafa-4b4d-99a9-69621d3f43c4">
+<p local-id=3D"10b22a482b07">etc</p>
+<ul local-id=3D"52fa3d8e1e53">
+<li local-id=3D"bb823df6-d3fc-4a0c-93b5-2e5b3a403836">
+<p local-id=3D"0bab3bdf6b6e">{dateTime}</p></li>
+</ul></li>
+<li local-id=3D"9be65b4dd119">
+<p local-id=3D"df5a61f2e412">etr</p>
+<ul local-id=3D"616fe71b08e4">
+<li local-id=3D"526bb0344677">
+<p local-id=3D"6c2d8da01846">{dateTime}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"00a6e633-5438-4370-8a5c-c24faab68169" class=3D"conflue=
+nceTd">
+<p local-id=3D"0f999351f0b8"></p></td>
+<td data-local-id=3D"3e132ef3-5dbc-46c9-a205-890260f21012" class=3D"conflue=
+nceTd">
+<ul local-id=3D"8a8df4ee6791">
+<li local-id=3D"dc8471536294">
+<p local-id=3D"18aa9b100625"><span data-colorid=3D"y00wjfjo4y">Should we in=
+terpret ATA, ATC, ATR from status?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"e8abbf6e-793d-4d5b-937b-3b247648b0a5">
+<td data-local-id=3D"2374e4ca-d3ca-4fc9-b200-3144a82fccb0" class=3D"conflue=
+nceTd">
+<p local-id=3D"66fa65351d79">comment</p></td>
+<td data-local-id=3D"168f2794-7d75-4001-af0d-0e85051033dd" class=3D"conflue=
+nceTd">
+<p local-id=3D"aa8fb2cf7ac4">{string}</p></td>
+<td data-local-id=3D"0ec04c6f-5e4c-43c4-8248-b548389b1d37" class=3D"conflue=
+nceTd">
+<p local-id=3D"8cdf3cdce08d"></p></td>
+<td data-local-id=3D"08655314-e5f2-4f0c-9357-b3bd2b1dc13a" class=3D"conflue=
+nceTd">
+<p local-id=3D"db4eae09f47a"></p></td>
+</tr>
+<tr data-local-id=3D"ebee04db14c9">
+<td data-local-id=3D"c51ef682b54d" class=3D"confluenceTd">
+<p local-id=3D"4fb5160839aa">caseReference</p></td>
+<td data-local-id=3D"a1fde472d627" class=3D"confluenceTd">
+<p local-id=3D"77a7ade06e32">{string}</p></td>
+<td data-local-id=3D"b31a01461cad" class=3D"confluenceTd">
+<p local-id=3D"2cd3d1a3f9b1"></p></td>
+<td data-local-id=3D"931acbeb1696" class=3D"confluenceTd">
+<p local-id=3D"86e7afb09d03"></p></td>
+</tr>
+<tr data-local-id=3D"5b76fb08-5ae0-479f-a241-c2566b108520">
+<td data-local-id=3D"749cd42c-e6d8-4a68-bfbb-71f138b41091" class=3D"conflue=
+nceTd">
+<p local-id=3D"54b4c17df2cd">rsaProviderReference</p></td>
+<td data-local-id=3D"a03b5de5-67c9-406e-9622-c2090212977a" class=3D"conflue=
+nceTd">
+<p local-id=3D"e6f4f321719d">{string}</p></td>
+<td data-local-id=3D"e16ff42a-e2ac-4135-afad-6e3d614a96e9" class=3D"conflue=
+nceTd">
+<p local-id=3D"3292f9a83593"></p></td>
+<td data-local-id=3D"765fdca7-faa2-4759-bed9-e2a92ebb93de" class=3D"conflue=
+nceTd">
+<p local-id=3D"52417094dd29"></p></td>
+</tr>
+<tr data-local-id=3D"34acd28f-3c58-41c9-aae4-f8b774f5ff50">
+<td data-local-id=3D"938125c4-c061-4260-987b-5527e550926b" class=3D"conflue=
+nceTd">
+<p local-id=3D"24eecb467435">networkProviderReference</p></td>
+<td data-local-id=3D"ce0e133b-ac80-47c5-8387-81f9d19171ac" class=3D"conflue=
+nceTd">
+<p local-id=3D"d5d289fe745d">{string}</p></td>
+<td data-local-id=3D"5ec30085-8225-4010-af3a-9608f6a9f766" class=3D"conflue=
+nceTd">
+<p local-id=3D"a5571c481145"></p></td>
+<td data-local-id=3D"76f942c6-1b22-4479-9865-fbac45456d97" class=3D"conflue=
+nceTd">
+<p local-id=3D"b5d059823fbf"></p></td>
+</tr>
+<tr data-local-id=3D"54f0c0ec-c6c0-483a-bb20-f13528838807">
+<td data-local-id=3D"d173db6e-0d36-4a97-b003-7e6e726807e1" class=3D"conflue=
+nceTd">
+<p local-id=3D"178583e7e44b">serviceProviderReference</p></td>
+<td data-local-id=3D"ceee9aec-3401-4822-b609-1e9c59c8d815" class=3D"conflue=
+nceTd">
+<p local-id=3D"c07fbeb87b6b">{string}</p></td>
+<td data-local-id=3D"da16d8c7-9f0d-4709-bd1e-cb17a27cbd55" class=3D"conflue=
+nceTd">
+<p local-id=3D"0aa28ff09d9c"></p></td>
+<td data-local-id=3D"51d0df7b-6e63-4728-9f20-0fe27934d573" class=3D"conflue=
+nceTd">
+<p local-id=3D"494c16c0ef7a"></p></td>
+</tr>
+<tr data-local-id=3D"64177fe9dc9b">
+<td data-local-id=3D"a8f0aedbc6ae" class=3D"confluenceTd">
+<p local-id=3D"52083042ef31">attachments</p>
+<p local-id=3D"e087a358a2eb"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"c43be5bedf26" class=3D"confluenceTd">
+<p local-id=3D"65da5bb8471e"></p></td>
+<td data-local-id=3D"f24b66cbadc3" class=3D"confluenceTd">
+<p local-id=3D"4e680e028900"></p></td>
+<td data-local-id=3D"f65432dd504f" class=3D"confluenceTd">
+<p local-id=3D"a9417936d31c"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id=3D"expander-1968010045" class=3D"expand-container">
+<div id=3D"expander-control-1968010045" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">VEHICLE</span>
+</div>
+<div id=3D"expander-content-1968010045" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"63=
+ab87b4fb40" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"9d1c47e5-ee98-4000-a8ec-f4bf90c29b01">
+<th data-local-id=3D"eaecc7cf-f826-4d24-84f1-866f56dfb971" class=3D"conflue=
+nceTh">
+<p local-id=3D"1e1e27891c26"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"f3b8aa22-091c-4a3a-a9d2-492058d1e346" class=3D"conflue=
+nceTh">
+<p local-id=3D"1dfcc5708c82"><strong>Format</strong></p></th>
+<th data-local-id=3D"ee33f516-67a5-484f-aa37-c2044f75c856" class=3D"conflue=
+nceTh">
+<p local-id=3D"d67da7ce83f9"><strong>Description</strong></p></th>
+<th data-local-id=3D"85fa55fa-9d59-46ee-b920-e41998dfde60" class=3D"conflue=
+nceTh">
+<p local-id=3D"3881b4d37034"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"40032968-861a-48ab-910c-50030be3867d">
+<td data-local-id=3D"c543350d-2a47-4bb1-8a5c-8b1b72038c39" class=3D"conflue=
+nceTd">
+<p local-id=3D"a1f2bacc764d">make</p></td>
+<td data-local-id=3D"b9e9df46-2f1a-4fc7-b4ba-e4c095430492" class=3D"conflue=
+nceTd">
+<p local-id=3D"79e70fe97532">{string}</p></td>
+<td data-local-id=3D"4064f0b2-bc46-4784-aca9-68a77ef23dc3" class=3D"conflue=
+nceTd">
+<p local-id=3D"dd7bd3acaa39"></p></td>
+<td data-local-id=3D"a9d31a82-0a84-4209-a3b4-cd64ab59da7f" class=3D"conflue=
+nceTd">
+<p local-id=3D"e94529927b81"></p></td>
+</tr>
+<tr data-local-id=3D"3c3787f5-4004-484b-b9d4-872c00fd0515">
+<td data-local-id=3D"7fd16f76-7542-4809-aa58-8d04e55bf882" class=3D"conflue=
+nceTd">
+<p local-id=3D"f40ba0480a1e">modell</p></td>
+<td data-local-id=3D"dd2d60fa-b0f4-4a56-8a40-f7f150336ee7" class=3D"conflue=
+nceTd">
+<p local-id=3D"6990279ea34f">{string}</p></td>
+<td data-local-id=3D"67b5a131-f475-43cb-8c1d-8d3c22028eee" class=3D"conflue=
+nceTd">
+<p local-id=3D"6e7f312f3b1f"></p></td>
+<td data-local-id=3D"b3d5fd7c-4154-47d1-bb89-d9b1646a29b1" class=3D"conflue=
+nceTd">
+<p local-id=3D"eafcbe87f489"></p></td>
+</tr>
+<tr data-local-id=3D"babbddd80112">
+<td data-local-id=3D"9829aa49eecd" class=3D"confluenceTd">
+<p local-id=3D"50220cbe1568">vehicleType</p></td>
+<td data-local-id=3D"f7a4d2514a1c" class=3D"confluenceTd">
+<ul local-id=3D"343ce6dff9dd">
+<li local-id=3D"8608b24ec4bd">
+<p local-id=3D"c50ea59bb99e">bodyType</p>
+<ul local-id=3D"2c1351184b41">
+<li local-id=3D"1d88e9c3a2c7">
+<p local-id=3D"283fc7693884">{string}</p>
+<ul local-id=3D"95448325d730">
+<li local-id=3D"0f0942626bb1">
+<p local-id=3D"d7b755a206fb">[ LIMOUSINE, VAN, PASSENGER_CAR, HORSE_TRAILER=
+, BIKE_TAILER, =E2=80=A6 ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"fe7e4b6a03e3">
+<p local-id=3D"06b42fefa097">registrationType</p>
+<ul local-id=3D"bd2bd8541d4d">
+<li local-id=3D"6e5d4add3dd4">
+<p local-id=3D"1afd3f429da3">{string}</p>
+<ul local-id=3D"9d1d07da-024b-4a5e-b77d-9e59d720c888">
+<li local-id=3D"79b716dc-57c4-4676-9ce5-e1797a9189df">
+<p local-id=3D"265dc2b40e14">[ TRANSPORT, =E2=80=A6 ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"652b6cfdb9fb">
+<p local-id=3D"0db937fb90e8">licenseType</p>
+<ul local-id=3D"1453b73f1438">
+<li local-id=3D"c45698bd06f4">
+<p local-id=3D"fc87ab3f743a">{string}</p>
+<ul local-id=3D"08cb5b30-566e-40c8-abdb-577c6a24886a">
+<li local-id=3D"429c6ee7-8dd0-41ac-bfb8-65c1064e8ab0">
+<p local-id=3D"151e00373f06">[ PUBLIC, OLDTIMER, EV, SEASONAL, =E2=80=A6 ]<=
+/p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"f6012927219d" class=3D"confluenceTd">
+<p local-id=3D"b971c417d341"></p></td>
+<td data-local-id=3D"3a1ef8ae5acb" class=3D"confluenceTd">
+<ul local-id=3D"03945944a7bb">
+<li local-id=3D"8abff3879549">
+<p local-id=3D"4a5ccb930eab"><span data-colorid=3D"tycxtml27m">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"4270fc6f-3032-4c46-be7b-be2ed9b15731">
+<td data-local-id=3D"747d9730-44a6-4269-ab8f-304a529fb39b" class=3D"conflue=
+nceTd">
+<p local-id=3D"8296e97a7b5c">licensePlate</p></td>
+<td data-local-id=3D"2a89959b-293e-4eb4-ac52-9c92588f7e2d" class=3D"conflue=
+nceTd">
+<p local-id=3D"384b5975fb69">{string}</p></td>
+<td data-local-id=3D"1c4de761-e6ca-4253-b8fe-2df2b392bdeb" class=3D"conflue=
+nceTd">
+<p local-id=3D"83e65c7858a9"></p></td>
+<td data-local-id=3D"665fbf98-e793-4626-a639-37b45fe3e757" class=3D"conflue=
+nceTd">
+<p local-id=3D"6ffd2f3b82f3"></p></td>
+</tr>
+<tr data-local-id=3D"5effbeb1c711">
+<td data-local-id=3D"8e8ffc3e2fc0" class=3D"confluenceTd">
+<p local-id=3D"8f8c5a5b1a3f">licensePlateRegion</p></td>
+<td data-local-id=3D"b19e9c4ba89a" class=3D"confluenceTd">
+<p local-id=3D"912eaf6dc48e">{string}</p></td>
+<td data-local-id=3D"8bec2477855b" class=3D"confluenceTd">
+<p local-id=3D"b4b5e9bd58e3"></p></td>
+<td data-local-id=3D"c75a572f4e3f" class=3D"confluenceTd">
+<p local-id=3D"87c65db017e1"></p></td>
+</tr>
+<tr data-local-id=3D"c62b40363b22">
+<td data-local-id=3D"03f8eb832bde" class=3D"confluenceTd">
+<p local-id=3D"1264d05c7da4">usage</p></td>
+<td data-local-id=3D"a12bb2b53369" class=3D"confluenceTd">
+<p local-id=3D"4bb84b92d65c">{string}</p></td>
+<td data-local-id=3D"73b7b51adc92" class=3D"confluenceTd">
+<p local-id=3D"625333138b90"></p></td>
+<td data-local-id=3D"273b58d427be" class=3D"confluenceTd">
+<p local-id=3D"a0ad580f3a37"></p></td>
+</tr>
+<tr data-local-id=3D"18f32005-1063-48ff-b289-eb0e3f0e8ba4">
+<td data-local-id=3D"03f2dec7-66c3-46d8-ae7e-4430fa25d541" class=3D"conflue=
+nceTd">
+<p local-id=3D"96c50c1768fd">vin</p></td>
+<td data-local-id=3D"d7d75818-b9ff-4a01-bff7-a7110e2f2611" class=3D"conflue=
+nceTd">
+<p local-id=3D"e1c599f6f95e">{string}</p></td>
+<td data-local-id=3D"a07ac98e-5a3f-4c20-95e7-26197c58cefb" class=3D"conflue=
+nceTd">
+<p local-id=3D"7ced3c5368ee"></p></td>
+<td data-local-id=3D"cf7bc816-c153-49c7-9d27-75870ef3c713" class=3D"conflue=
+nceTd">
+<p local-id=3D"74efb123abb4"></p></td>
+</tr>
+<tr data-local-id=3D"f87835d0-7aa6-4a59-82d3-5bb853e81aff">
+<td data-local-id=3D"ae2544d3-c481-4cb3-87ac-80013742beac" class=3D"conflue=
+nceTd">
+<p local-id=3D"c24c3256b233">registrationDate</p></td>
+<td data-local-id=3D"83a1e166-a143-4176-a264-fed626310d30" class=3D"conflue=
+nceTd">
+<p local-id=3D"bf1fa55eb0c1">{dateTime}</p></td>
+<td data-local-id=3D"8278a0b4-54e2-48bd-bf88-07ee8ab13dc0" class=3D"conflue=
+nceTd">
+<p local-id=3D"97cde938f933"></p></td>
+<td data-local-id=3D"b76a2dae-e095-4f3c-a79f-f3ccea4e936b" class=3D"conflue=
+nceTd">
+<p local-id=3D"f36cf33ace81"></p></td>
+</tr>
+<tr data-local-id=3D"7c07e705-eee0-456c-ad9a-5c7b7fbe01a3">
+<td data-local-id=3D"bb7b13d1-0d69-4013-98c7-fad4f4749d0c" class=3D"conflue=
+nceTd">
+<p local-id=3D"04973704a7de">mileageCurrent</p></td>
+<td data-local-id=3D"d12408d8-e0b9-40c4-ac3f-9fe97bf7cf85" class=3D"conflue=
+nceTd">
+<ul local-id=3D"62d2a4ffcb24">
+<li local-id=3D"ef105ce936ec">
+<p local-id=3D"bb934e9b8100">count</p>
+<ul local-id=3D"9b056a568cb1">
+<li local-id=3D"8e060612da28">
+<p local-id=3D"ec8776884815">{integer}</p></li>
+</ul></li>
+<li local-id=3D"1a946dc97d5d">
+<p local-id=3D"4b2573266612">unit</p>
+<ul local-id=3D"a1c36212709b">
+<li local-id=3D"3d3a54101dff">
+<p local-id=3D"631519e7fcbd">{string}</p>
+<ul local-id=3D"6689b63f-4b51-45f8-8a17-e612b7d18ab9">
+<li local-id=3D"d02a35f3-87b1-4b81-bc07-122ba79f8cf4">
+<p local-id=3D"fb3f7d8c8490">[ KM, MILES ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"3d813ee4-227b-4eab-9aed-95bc5036bce1" class=3D"conflue=
+nceTd">
+<p local-id=3D"39a6f90eb68f"></p></td>
+<td data-local-id=3D"2d171590-cc8c-4d62-a1c8-30db0d5cf428" class=3D"conflue=
+nceTd">
+<p local-id=3D"572cdb35a74d"></p></td>
+</tr>
+<tr data-local-id=3D"f263c142-062a-4d3e-beef-87b32d385d02">
+<td data-local-id=3D"5a5c068e-1b95-4941-9c84-2c3ff79959f2" class=3D"conflue=
+nceTd">
+<p local-id=3D"72e7ca11e021">mileageLastService</p></td>
+<td data-local-id=3D"e69b1f54-3839-488d-8e5f-e2c4536e1abd" class=3D"conflue=
+nceTd">
+<ul local-id=3D"e96ef92a-148c-439d-9c7c-3d6e06e0b7fc">
+<li local-id=3D"6a80069e-3e1c-4dd0-8533-dadcb2248842">
+<p local-id=3D"227c326b3233">count</p>
+<ul local-id=3D"d2949e98-70d7-416a-aca8-9a525e93e9f9">
+<li local-id=3D"6fabee28-7814-4af5-9f85-c1398f6e8a3b">
+<p local-id=3D"2d4bcf9a7858">{integer}</p></li>
+</ul></li>
+<li local-id=3D"ff8b8ee4-faea-4812-abf4-abe0bc762136">
+<p local-id=3D"68c32f288f29">unit</p>
+<ul local-id=3D"95f07de3-6086-42d6-8091-e825c413f914">
+<li local-id=3D"f6e594db-12f7-4065-b110-bdc3f6b0e875">
+<p local-id=3D"d7be64bbf76a">{string}</p>
+<ul local-id=3D"9aaf7d90-b78a-4333-9403-ce2c2f7c2692">
+<li local-id=3D"013bacd6-b4d3-4214-854b-6eb946f4d512">
+<p local-id=3D"6b09e24ccb3b">[ KM, MILES ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"7d88cad8-b3cb-43ee-b4ec-d0dbbdaefc77" class=3D"conflue=
+nceTd">
+<p local-id=3D"5b72597499bb"></p></td>
+<td data-local-id=3D"c2a76dde-ae74-43e0-b4f9-e9681c7bda7a" class=3D"conflue=
+nceTd">
+<p local-id=3D"972ea7bddc66"></p></td>
+</tr>
+<tr data-local-id=3D"4b29144e67f7">
+<td data-local-id=3D"50665a92dacd" class=3D"confluenceTd">
+<p local-id=3D"3ac0c706c44e">drivetrainType</p></td>
+<td data-local-id=3D"a4b70c1dbff4" class=3D"confluenceTd">
+<p local-id=3D"659bd11f4426">{string}</p>
+<ul local-id=3D"b7e89ce005f8">
+<li local-id=3D"bb3aa0309caa">
+<p local-id=3D"b523ccfbc128">[ RWD, FWD, 4WD, AWD ]</p></li>
+</ul></td>
+<td data-local-id=3D"dd4cb2238f41" class=3D"confluenceTd">
+<p local-id=3D"9704adce1fc8"></p></td>
+<td data-local-id=3D"8b5ddb56251c" class=3D"confluenceTd">
+<ul local-id=3D"83d65b43628c">
+<li local-id=3D"e7b5074b8db1">
+<p local-id=3D"98c78b2399ec"><span data-colorid=3D"drbr6abi1b">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"4fd9e8bf24d0">
+<td data-local-id=3D"60decc95e7ab" class=3D"confluenceTd">
+<p local-id=3D"99baf969d5a8">transmissionType</p></td>
+<td data-local-id=3D"84fa203f49a9" class=3D"confluenceTd">
+<p local-id=3D"f0f79f79e0ab">{string}</p>
+<ul local-id=3D"ff521c99a4ad">
+<li local-id=3D"0226cf7e9f14">
+<p local-id=3D"75182074e8ae">[ MANUAL, AUTOMATIC, HALF_AUTOMATIC ]</p></li>
+</ul></td>
+<td data-local-id=3D"b8d3f9933d1d" class=3D"confluenceTd">
+<p local-id=3D"9a1f5ac6ab29"></p></td>
+<td data-local-id=3D"0b14d9fe8f76" class=3D"confluenceTd">
+<ul local-id=3D"02c9fb7d204f">
+<li local-id=3D"b0d151e5eb29">
+<p local-id=3D"7ce1ba4542ef"><span data-colorid=3D"lvn9rclecl">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"52a6a57711c1">
+<td data-local-id=3D"cbe6693659fc" class=3D"confluenceTd">
+<p local-id=3D"ed12ba1f4c4a">fuelType</p></td>
+<td data-local-id=3D"2892fe1fa5de" class=3D"confluenceTd">
+<p local-id=3D"a43e9767cb99">{string}</p>
+<ul local-id=3D"bdd4c54be7ff">
+<li local-id=3D"75f4df5fd99c">
+<p local-id=3D"2de49b8b522d">[ GASOLINE, DIESEL, HYBRID, BATTERY, CNG ]</p>=
+</li>
+</ul></td>
+<td data-local-id=3D"b64fc4b7927f" class=3D"confluenceTd">
+<p local-id=3D"b29d78d3e7f5"></p></td>
+<td data-local-id=3D"8e2a2da000df" class=3D"confluenceTd">
+<ul local-id=3D"f7cd687a3412">
+<li local-id=3D"d959bafab7d0">
+<p local-id=3D"039967b0f782"><span data-colorid=3D"ls7uix3iif">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"af44216d88b6">
+<td data-local-id=3D"ed917209df36" class=3D"confluenceTd">
+<p local-id=3D"b312041e144e">maximumGrossWeight</p></td>
+<td data-local-id=3D"25f3e83cad5c" class=3D"confluenceTd">
+<ul local-id=3D"79092657-4c08-4a14-95dc-8222372d9b03">
+<li local-id=3D"fef5f63b-9afb-447f-aca0-09ea6bdc9a28">
+<p local-id=3D"1a656c80887e">count</p>
+<ul local-id=3D"ec4b18cb-46c4-476f-affb-fe4d3d373d41">
+<li local-id=3D"35076b9a-befe-4b1c-99d1-46d74606c88d">
+<p local-id=3D"a7d3749173e1">{integer}</p></li>
+</ul></li>
+<li local-id=3D"f56b3b5f-2e37-42eb-a466-6615b82721b1">
+<p local-id=3D"d45d2b4e7e0e">unit</p>
+<ul local-id=3D"dc7e7807-e44d-4424-81ab-1e05c8350221">
+<li local-id=3D"8974c96f-3932-4169-9d25-321b81eb8057">
+<p local-id=3D"73d768451048">{enum}</p>
+<ul local-id=3D"916738c6-dd10-4e20-bcd9-1af43ff80f97">
+<li local-id=3D"e64a9a63-8c21-4cb6-94a2-a5d15256f207">
+<p local-id=3D"e88ed1f25684">[ G, KG, T, LB ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"9998698fcc74" class=3D"confluenceTd">
+<p local-id=3D"dbeac2ef40d7"></p></td>
+<td data-local-id=3D"4f2d0b4f5c9f" class=3D"confluenceTd">
+<p local-id=3D"3a596fe9f81e"></p></td>
+</tr>
+<tr data-local-id=3D"868fa4996ee2">
+<td data-local-id=3D"f29a122019f1" class=3D"confluenceTd">
+<p local-id=3D"f8e6d071c94f">emptyWeight</p></td>
+<td data-local-id=3D"92384ab60332" class=3D"confluenceTd">
+<ul local-id=3D"10821e1d-be28-47cc-a463-8508afe19954">
+<li local-id=3D"6e56f5f2-9ad9-4719-939f-f710ac7a4083">
+<p local-id=3D"f9e2457337b9">count</p>
+<ul local-id=3D"7ce84faf-bcd6-46a8-8398-7771646deb48">
+<li local-id=3D"60c2cca3-cb58-420c-b2d9-5c8d16d15c10">
+<p local-id=3D"40804e22334c">{integer}</p></li>
+</ul></li>
+<li local-id=3D"594cf87a-5233-4ef1-a630-c8b6101ca71e">
+<p local-id=3D"2821e711bbac">unit</p>
+<ul local-id=3D"a761b56e-a8eb-45da-824b-3043d9b900ec">
+<li local-id=3D"2e140fb7-6706-481d-9494-37290e2478f7">
+<p local-id=3D"40254782c929">{enum}</p>
+<ul local-id=3D"98a5794f-eea6-4152-83de-8af206f598ab">
+<li local-id=3D"4a4cc852-7b3c-4f89-b7aa-97ae5798abc9">
+<p local-id=3D"fb231d5287b5">[ G, KG, T, LB ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"bf682a9ca16f" class=3D"confluenceTd">
+<p local-id=3D"2e25599f53c4"></p></td>
+<td data-local-id=3D"5e68cecf2ad4" class=3D"confluenceTd">
+<p local-id=3D"17280ac343ab"></p></td>
+</tr>
+<tr data-local-id=3D"2329a960-6d2c-486f-be10-3e70b1071ed4">
+<td data-local-id=3D"636588a7-007e-4450-a63a-faa3a8493c48" class=3D"conflue=
+nceTd">
+<p local-id=3D"c9369000cf3a">color</p></td>
+<td data-local-id=3D"623aa872-37cf-4122-9c62-aca7550b9bcd" class=3D"conflue=
+nceTd">
+<p local-id=3D"8627e37fbcbc">{string}</p></td>
+<td data-local-id=3D"e1cf894c-d594-4ee2-b7cf-032d7c9baf4a" class=3D"conflue=
+nceTd">
+<p local-id=3D"a222afb7f771"></p></td>
+<td data-local-id=3D"943556e8-be0a-4279-9401-ca875adc93d9" class=3D"conflue=
+nceTd">
+<p local-id=3D"8430b4d8141c"></p></td>
+</tr>
+<tr data-local-id=3D"250c969da1df">
+<td data-local-id=3D"0b8c4c1e79a9" class=3D"confluenceTd">
+<p local-id=3D"349ebda2f6b1">length</p></td>
+<td data-local-id=3D"49ff469cbec3" class=3D"confluenceTd">
+<ul local-id=3D"71fd1f2b-4112-4504-b138-066a1ec61895">
+<li local-id=3D"2c71b600-2a86-4dda-9163-fa63c256b716">
+<p local-id=3D"c1f1e407e4e2">count</p>
+<ul local-id=3D"23367767-f480-4468-be7c-096f5c2f906b">
+<li local-id=3D"490f9cac-b8b9-4e73-b1bb-6fa5f04c0dfb">
+<p local-id=3D"05a890fdc7a3">{integer}</p></li>
+</ul></li>
+<li local-id=3D"1987ebb6-d66d-4a44-9ff5-f7f111e686ca">
+<p local-id=3D"45c61a37aee1">unit</p>
+<ul local-id=3D"8a59f4b1-a188-4fea-8e7d-471471bc191c">
+<li local-id=3D"cbc70661-2dd3-4c48-aa2f-3d5ebb8272e0">
+<p local-id=3D"88c671afa8cd">{enum}</p>
+<ul local-id=3D"a17571be-f74c-40e3-bddd-21a4550cb8a4">
+<li local-id=3D"e5e2c908-b1e1-41b5-9326-88af165e03f4">
+<p local-id=3D"338d6af9c758">[ MM, CM, M, F ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"fd7af47402b6" class=3D"confluenceTd">
+<p local-id=3D"76d2abfb3ab3"></p></td>
+<td data-local-id=3D"c93475b8cb3f" class=3D"confluenceTd">
+<p local-id=3D"5fe9879cda05"></p></td>
+</tr>
+<tr data-local-id=3D"bc45e4a72b0b">
+<td data-local-id=3D"1cd622b0ea19" class=3D"confluenceTd">
+<p local-id=3D"5db8eb56d665">width</p></td>
+<td data-local-id=3D"98d5be5d17ad" class=3D"confluenceTd">
+<ul local-id=3D"1d98cfee-36ba-4dcf-addc-7769533e78e7">
+<li local-id=3D"096061b9-4062-4577-8839-87e9e16aec43">
+<p local-id=3D"58eb05b18ec2">count</p>
+<ul local-id=3D"8bfb6110-6004-4053-a46f-bb8aaab86591">
+<li local-id=3D"9c8ba09a-32bb-4922-affd-68652e7edf10">
+<p local-id=3D"1599d05b04c8">{integer}</p></li>
+</ul></li>
+<li local-id=3D"abeb3599-8573-4f1e-bf97-3fb1e1adc747">
+<p local-id=3D"dd5af11c1308">unit</p>
+<ul local-id=3D"51770635-6ca3-4ef6-9836-54f669cc97f7">
+<li local-id=3D"50e6d619-0267-4e1b-b407-0c14e47624b5">
+<p local-id=3D"562defc5e321">{enum}</p>
+<ul local-id=3D"5ad30455-71ca-4d62-a627-982b5b96ff2a">
+<li local-id=3D"05a1767f-d27f-432d-9a0c-eaaff0daa3e9">
+<p local-id=3D"ecf928c52dc2">[ MM, CM, M, F ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"c710095d64a0" class=3D"confluenceTd">
+<p local-id=3D"4b44c07745ce"></p></td>
+<td data-local-id=3D"5d367e7055a0" class=3D"confluenceTd">
+<p local-id=3D"bc7ded35d7d5"></p></td>
+</tr>
+<tr data-local-id=3D"12fe727026a0">
+<td data-local-id=3D"292ab4ff91df" class=3D"confluenceTd">
+<p local-id=3D"16c9a168ede0">height</p></td>
+<td data-local-id=3D"6d8d23b20ae5" class=3D"confluenceTd">
+<ul local-id=3D"900afa54-5ae4-4cbe-91e4-9f209ef37d66">
+<li local-id=3D"4f3f573d-6268-491e-beed-030187f7c1f8">
+<p local-id=3D"cbc04cd498d4">count</p>
+<ul local-id=3D"73693c37-f2fb-4f32-9a8d-8fce33a202ed">
+<li local-id=3D"6c27684d-1ca7-4fe5-9dfe-4706f32c42e6">
+<p local-id=3D"3871ccdc27a5">{integer}</p></li>
+</ul></li>
+<li local-id=3D"a30d9f6b-b186-42e7-ac10-67fd0638cc53">
+<p local-id=3D"b040f0dbd241">unit</p>
+<ul local-id=3D"5b95a85b-b902-482d-83e0-772cf61b6f34">
+<li local-id=3D"02f82b5f-494c-45cd-a222-277546a59e75">
+<p local-id=3D"6f4767288302">{enum}</p>
+<ul local-id=3D"8ccc8646-2db5-4634-b98a-51750f33a5ba">
+<li local-id=3D"fd975b89-4e4f-400a-932e-b7cba97d5738">
+<p local-id=3D"38b1efaa07d0">[ MM, CM, M, F ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"4c22b57928a2" class=3D"confluenceTd">
+<p local-id=3D"6ae433d8b15f"></p></td>
+<td data-local-id=3D"d4207f8aa917" class=3D"confluenceTd">
+<p local-id=3D"207e3646b9d0"></p></td>
+</tr>
+<tr data-local-id=3D"b30415e901af">
+<td data-local-id=3D"76aa6fe980b8" class=3D"confluenceTd">
+<p local-id=3D"47624cb2f574">addOns</p>
+<p local-id=3D"c9519a8812f7"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"81320f46e918" class=3D"confluenceTd">
+<ul local-id=3D"0c3f37d79b91">
+<li local-id=3D"a2eb33abe046">
+<p local-id=3D"c0230f6ad898">ItemType</p>
+<ul local-id=3D"b4e342ed3671">
+<li local-id=3D"1792a734ebd5">
+<p local-id=3D"d320469dc142">[ ROOF_BOX, ROOF_RACK, BIKE_RACK, HITCH_BOX, =
+=E2=80=A6 ]</p></li>
+</ul></li>
+<li local-id=3D"2d87fb3efdc5">
+<p local-id=3D"a95cd956a619"><span data-colorid=3D"qqs4bxoc0i">ItemKeysOnSi=
+te</span></p>
+<ul local-id=3D"e78346a49e1b">
+<li local-id=3D"7572eb43037e">
+<p local-id=3D"91fb73c01edb"><span data-colorid=3D"i886lqu3kk">{nullable bo=
+lean}</span></p>
+<ul local-id=3D"4e7892252071">
+<li local-id=3D"2c425edb-7d6e-4630-a6fe-c81a6957a966">
+<p local-id=3D"5e5f32f10ffe"><span data-colorid=3D"p8b0owtua2">null =E2=86=
+=92 unknown</span></p></li>
+<li local-id=3D"9ad79467-6cb1-42ab-bead-b49c0093405c">
+<p local-id=3D"ffc7135eca62"><span data-colorid=3D"z2u9fp9bwv">true =E2=86=
+=92 yes</span></p></li>
+<li local-id=3D"5269c7f1-8aef-4492-a6f3-41d5de12a417">
+<p local-id=3D"12c393d89a51"><span data-colorid=3D"fsldxgd8oo">false - no</=
+span></p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"cdd2435a8190">
+<p local-id=3D"68d916752121">ItemComment</p>
+<ul local-id=3D"855e2d8129eb">
+<li local-id=3D"9ba901c3549e">
+<p local-id=3D"215b7cb65014">{string}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"64c4989a1039" class=3D"confluenceTd">
+<p local-id=3D"f1d3929db88c"></p></td>
+<td data-local-id=3D"c4ebe75b9fcb" class=3D"confluenceTd">
+<ul local-id=3D"d3820860fdde">
+<li local-id=3D"92d5d2106420">
+<p local-id=3D"808ff9cd7056"><span data-colorid=3D"tttckssqdy">Closed list =
+of enums for =E2=80=9CType=E2=80=9D possible?</span></p>
+<ul local-id=3D"270d2ac0e09d">
+<li local-id=3D"151af12bc6ad">
+<p local-id=3D"1af8bd0eec62"><span data-colorid=3D"k582gsp6ue">Roof box, ro=
+of rack, bike rack, hitch box, =E2=80=A6</span></p></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"df05ee26342a">
+<td data-local-id=3D"f954af6ef3b9" class=3D"confluenceTd">
+<p local-id=3D"5feb208cf5d2">Comment</p></td>
+<td data-local-id=3D"53a6141b72f9" class=3D"confluenceTd">
+<p local-id=3D"a63f8d3bfdff">{string}</p></td>
+<td data-local-id=3D"e785ad76bc8b" class=3D"confluenceTd">
+<p local-id=3D"ace6db66335e"></p></td>
+<td data-local-id=3D"a30b9146f40b" class=3D"confluenceTd">
+<p local-id=3D"d21845f88dcc"></p></td>
+</tr>
+<tr data-local-id=3D"9d3265d6ad78">
+<td data-local-id=3D"39750f44e0c9" class=3D"confluenceTd">
+<p local-id=3D"b15c40d2a622">HasTrailer</p></td>
+<td data-local-id=3D"7866e82719d1" class=3D"confluenceTd">
+<p local-id=3D"994f46fcd226">{nullable bolean}</p>
+<ul local-id=3D"e66130cb-7bd8-4cd5-9fff-897efcec18ce">
+<li local-id=3D"2841c2e2-0d84-483f-858f-ee38a0b9575e">
+<p local-id=3D"16517352ef7f">null =E2=86=92 unknown</p></li>
+<li local-id=3D"dc38fe45-be4a-4a74-b4ca-5e3f1e1d34b7">
+<p local-id=3D"2594e21b3421">true =E2=86=92 yes</p></li>
+<li local-id=3D"24d1e7df-1018-487b-a7b1-ce78ebe40b98">
+<p local-id=3D"1a794514359a">false - no</p></li>
+</ul></td>
+<td data-local-id=3D"aa5691ceda11" class=3D"confluenceTd">
+<p local-id=3D"bfcae2c23185"></p></td>
+<td data-local-id=3D"4defe1255d80" class=3D"confluenceTd">
+<p local-id=3D"cad2b5b7859d"></p></td>
+</tr>
+<tr data-local-id=3D"af82e80b4068">
+<td data-local-id=3D"dd746f9f41bb" class=3D"confluenceTd">
+<p local-id=3D"8205069eeb61">DamageDescription</p>
+<p local-id=3D"d21e51abe7aa"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"ed0b16d48680" class=3D"confluenceTd">
+<ul local-id=3D"b825ee758bd8">
+<li local-id=3D"eb22e526117e">
+<p local-id=3D"66c442bf6791">Event</p>
+<ul local-id=3D"59ae573c4bee">
+<li local-id=3D"20d529cecac9">
+<p local-id=3D"cc1df8f34418">{decisionTree}</p>
+<ul local-id=3D"3e0283bf8cd2">
+<li local-id=3D"71794686d298">
+<p local-id=3D"77c7eaa33b98">[ BREAKDOWN, COLLOSION, BURGLARY, =E2=80=A6 ]<=
+/p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"bdfa87019c7c">
+<p local-id=3D"2bea48796cbf">EventDescription</p>
+<ul local-id=3D"8a6f55180329">
+<li local-id=3D"70c32bd5628b">
+<p local-id=3D"68e9753a5d8a">{decisionTree}</p>
+<ul local-id=3D"f034a9fff8aa">
+<li local-id=3D"33b9eed75031">
+<p local-id=3D"f768ca5f3530">[ OFF_ROAD, ON_ROOF, FLAT_TIRE, BURNED_OUT, DO=
+ES_NOT_START, =E2=80=A6 ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"4f81e13b7973">
+<p local-id=3D"a017ea874bd5">EventDetail</p>
+<ul local-id=3D"78901ec1efdb">
+<li local-id=3D"1a1aa0dcd62e">
+<p local-id=3D"fa7120b6e892">{decisionTree}</p>
+<ul local-id=3D"9c48fbe2a016">
+<li local-id=3D"cbb2708f2f9e">
+<p local-id=3D"1f582279cf1a">[ LEFT_REAR_TIRE, LEFT_FRONT_TIRE, =E2=80=A6 ]=
+</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"cee812149e86">
+<p local-id=3D"97281920a562">EventComment</p>
+<ul local-id=3D"70434cf19cff">
+<li local-id=3D"728b2b2419a9">
+<p local-id=3D"5df64b182efe">{string}</p></li>
+</ul></li>
+<li local-id=3D"c009eb0d-ca32-4b66-9b80-4efde832785b">
+<p local-id=3D"98786570d6c8">DisplayedErrorCode</p>
+<ul local-id=3D"f27f43f8-a741-4524-bbbe-61454fc9bd2d">
+<li local-id=3D"e452e07f-ef5e-4c0d-9532-9b2bdbccdb25">
+<p local-id=3D"bb11261b68dc">{string}</p></li>
+</ul></li>
+<li local-id=3D"71bf07c5-5c98-4e73-abae-4f542792d94b">
+<p local-id=3D"9b3f1faba99c">DisplayedErrorMessage</p>
+<ul local-id=3D"807ee86f-3047-4e17-bc05-6345603ab707">
+<li local-id=3D"98428cd0-b46f-40d4-bce7-adaaa515014d">
+<p local-id=3D"e96663285c4a">{string}</p></li>
+</ul></li>
+<li local-id=3D"31baac59-fc6e-48dd-b2b0-dbba248acd45">
+<p local-id=3D"41fea344360c">ServiceRecommendation</p>
+<ul local-id=3D"f332c6ac-b3c3-4e86-8ee2-f7f909cd8105">
+<li local-id=3D"8ac049e8-6e90-49e0-8ae0-a2bd61da684e">
+<p local-id=3D"15a177d7547c">{string}</p></li>
+</ul></li>
+<li local-id=3D"f8df8378493f">
+<p local-id=3D"a8b61c0e5a3d">FuelLevelPercentage</p>
+<ul local-id=3D"4b27011dd9b9">
+<li local-id=3D"703d3e9e0ba5">
+<p local-id=3D"21782fde69a0">{enum}</p>
+<ul local-id=3D"be3c7b7294d5">
+<li local-id=3D"b646092a501a">
+<p local-id=3D"9a113d29c44b">[ 0, 5, 10, 15, 20, 25, =E2=80=A6, 85, 90, 95,=
+ 100 ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"e63fe4298552">
+<p local-id=3D"6479c1cf1883">ItemLeakage</p>
+<ul local-id=3D"93bb58708ac6">
+<li local-id=3D"0fdd67fe-fffb-4a0b-bbc5-59ccce653ad4">
+<p local-id=3D"2180276991e6">{nullable bolean}</p>
+<ul local-id=3D"e4808374-981a-4456-8c1d-69575444bf12">
+<li local-id=3D"f90be4cc-bd62-40c1-a3e0-fe870f977e05">
+<p local-id=3D"02a0ad3973c3">null =E2=86=92 unknown</p></li>
+<li local-id=3D"bd407500-85d7-48dd-bff6-1da76c0af759">
+<p local-id=3D"44487b748a0f">true =E2=86=92 yes</p></li>
+<li local-id=3D"ba95fabf-7268-4d07-ab78-757725dc1167">
+<p local-id=3D"d58710bad338">false - no</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"c7e7244312bf">
+<p local-id=3D"a33f4f315614">ItemLeakageType</p>
+<ul local-id=3D"fbef2396b98d">
+<li local-id=3D"2cf60b5cd6c1">
+<p local-id=3D"81a80c63c436">[ OIL, WATER, SEVERAL, =E2=80=A6 ]</p></li>
+</ul></li>
+<li local-id=3D"7f3ece20e762">
+<p local-id=3D"b987b67dc87f">Driveable</p>
+<ul local-id=3D"1ccd8e38a6d9">
+<li local-id=3D"576e2cde569b">
+<p local-id=3D"9ab9e58f2f2a">{nullable bolean}</p></li>
+</ul></li>
+<li local-id=3D"ddb8599c3dc9">
+<p local-id=3D"5eba7c2e4df0">Steerable</p>
+<ul local-id=3D"a7eb6ad55e1d">
+<li local-id=3D"4cf49a954adf">
+<p local-id=3D"c65c5ad7b42e">{nullable bolean}</p></li>
+</ul></li>
+<li local-id=3D"48e891b0b971">
+<p local-id=3D"338123545aec">Rollable</p>
+<ul local-id=3D"58bb207da3ee">
+<li local-id=3D"c6c204d96baf">
+<p local-id=3D"955b2ed3aeb3">{nullable bolean}</p></li>
+</ul></li>
+<li local-id=3D"7bd2ac8c782e">
+<p local-id=3D"7d9ad7ef2f81">LicensePlateOnSite</p>
+<ul local-id=3D"0b68134df878">
+<li local-id=3D"892a9e8f2219">
+<p local-id=3D"7f6e94e4e8c4">{nullable bolean}</p></li>
+</ul></li>
+<li local-id=3D"3389a1764443">
+<p local-id=3D"6df015d47732">KeyOnSite</p>
+<ul local-id=3D"a14a8b5e48fd">
+<li local-id=3D"6b99b666854a">
+<p local-id=3D"e51c02f11939">{nullable bolean}</p></li>
+</ul></li>
+<li local-id=3D"083fb05c1ea1">
+<p local-id=3D"73bc26f095ee">DocumentsOnSite</p>
+<ul local-id=3D"f53a2febb2fb">
+<li local-id=3D"5950bf85b79d">
+<p local-id=3D"acedb503303d">{nullable bolean}</p></li>
+</ul></li>
+<li local-id=3D"4873a93eeaef">
+<p local-id=3D"665e83ebb7d8">OwnerDocumentsOnSite</p>
+<ul local-id=3D"cd6457f6a19f">
+<li local-id=3D"eef90c78212c">
+<p local-id=3D"baa1b3182656">{nullable bolean}</p></li>
+</ul></li>
+<li local-id=3D"04dec959b995">
+<p local-id=3D"9691e9003e31">PoliceDocumentsOnSite</p>
+<ul local-id=3D"19703ef125e8">
+<li local-id=3D"8b0e5bed6628">
+<p local-id=3D"8852e7d1e86f">{nullable bolean}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"76db0ecf65bc" class=3D"confluenceTd">
+<p local-id=3D"e53efa7bee40"></p></td>
+<td data-local-id=3D"5b47d3f59584" class=3D"confluenceTd">
+<p local-id=3D"6f6efa38b8ef"></p></td>
+</tr>
+<tr data-local-id=3D"0b6372d148b3">
+<td data-local-id=3D"661253c61fe4" class=3D"confluenceTd">
+<p local-id=3D"646623acfaf5">Diagnosis</p>
+<p local-id=3D"a8357a1f6285"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"022361d6ea9f" class=3D"confluenceTd">
+<ul local-id=3D"7ed581dff991">
+<li local-id=3D"bbaa4c833c17">
+<p local-id=3D"4bcb7f430caa">ServiceOutcomeType</p></li>
+<li local-id=3D"e2a13d6c6ec1">
+<p local-id=3D"e573f5ebdf94">AssemblyType</p></li>
+<li local-id=3D"cb35012a7c7e">
+<p local-id=3D"37ffa961146e">PartType</p></li>
+<li local-id=3D"7d9f794a7a93">
+<p local-id=3D"6e1a971ffa6d">DefectType</p></li>
+<li local-id=3D"4282f4e207f5">
+<p local-id=3D"083238536c73">RepairType</p></li>
+<li local-id=3D"e29b6b7446d5">
+<p local-id=3D"5416cc121ffc">Comment</p></li>
+</ul></td>
+<td data-local-id=3D"bd830a8c460c" class=3D"confluenceTd">
+<p local-id=3D"08975aa588ea"></p></td>
+<td data-local-id=3D"5536620011c2" class=3D"confluenceTd">
+<p local-id=3D"921f87789644"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id=3D"expander-1595230685" class=3D"expand-container">
+<div id=3D"expander-control-1595230685" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">LOCATION</span>
+</div>
+<div id=3D"expander-content-1595230685" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"c6=
+d92202a60d" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"275ed932-0aae-48c3-8b24-3f4ca4348305">
+<th data-local-id=3D"d56e1fe5-f9c7-442d-b8d0-5bfec3a7676c" class=3D"conflue=
+nceTh">
+<p local-id=3D"a181b5e8b9c1"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"126e5613-5cf2-456b-978f-137d3918c82a" class=3D"conflue=
+nceTh">
+<p local-id=3D"391e4677c884"><strong>Format</strong></p></th>
+<th data-local-id=3D"2e8ca90c-2493-466c-bc51-cde2316432a7" class=3D"conflue=
+nceTh">
+<p local-id=3D"9142f6aed164"><strong>Description</strong></p></th>
+<th data-local-id=3D"db290594-5abb-4fce-b41d-29d82a18f436" class=3D"conflue=
+nceTh">
+<p local-id=3D"0096cf6d6a92"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"50739939-4ec5-4c20-9baa-f5926ff8ce5b">
+<td data-local-id=3D"f6a223d6-4672-4478-ab59-dccbe7965b1c" class=3D"conflue=
+nceTd">
+<p local-id=3D"fd3ee9f9e63d">role</p></td>
+<td data-local-id=3D"a4fd9d43-aa45-4861-9ef0-cb282cebf93e" class=3D"conflue=
+nceTd">
+<p local-id=3D"f26fb4ad6fd2">{array of strings}</p></td>
+<td data-local-id=3D"8b750655-ce6d-4999-9e5a-485a09061337" class=3D"conflue=
+nceTd">
+<p local-id=3D"3b644c5c822f"></p></td>
+<td data-local-id=3D"9c54ab0a-a591-47c9-a750-4ea5ec332384" class=3D"conflue=
+nceTd">
+<ul local-id=3D"63a4583b2e1a">
+<li local-id=3D"cd51fc06e619">
+<p local-id=3D"9ab4f759169c"><span data-colorid=3D"z9k4170s6d">Closed list =
+of enums possible?</span></p>
+<ul local-id=3D"4324edaba3da">
+<li local-id=3D"e540d23fb6b3">
+<p local-id=3D"5cecef82d18d"><span data-colorid=3D"uua2p1y8hd">Incident loc=
+ation, Depot, Vehicle destination, Rental pickup location, Rental dropoff l=
+ocation, Overnight stay, =E2=80=A6, Current location, Home address, Travel =
+destination</span></p></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"da43edca-1aee-4313-91f6-a02d8490807e">
+<td data-local-id=3D"4f934a4e-5a35-4f49-89cb-122755c6076e" class=3D"conflue=
+nceTd">
+<p local-id=3D"1772788935c6">locationName</p></td>
+<td data-local-id=3D"18c4082d-d792-48a4-9845-0c4300c83ec1" class=3D"conflue=
+nceTd">
+<p local-id=3D"658c5aa2f254"></p></td>
+<td data-local-id=3D"52465f13-8029-498f-9b84-e988619eb357" class=3D"conflue=
+nceTd">
+<p local-id=3D"bf9507801ee9"></p></td>
+<td data-local-id=3D"5182c213-8319-4867-b61e-14090bd73822" class=3D"conflue=
+nceTd">
+<p local-id=3D"6c6d8ec98a1a"></p></td>
+</tr>
+<tr data-local-id=3D"90a03426-da78-4609-9d32-b0de36ce00e2">
+<td data-local-id=3D"4e48d2fb-11a8-43e0-af44-196896bbe19e" class=3D"conflue=
+nceTd">
+<p local-id=3D"a8bc1e5eb603">salutation</p></td>
+<td data-local-id=3D"ff85dd84-4fb2-45fd-97e4-081409d6ccc3" class=3D"conflue=
+nceTd">
+<p local-id=3D"a6640ff383c0"></p></td>
+<td data-local-id=3D"a5c551af-7d93-45c6-a895-c19ee0d524de" class=3D"conflue=
+nceTd">
+<p local-id=3D"0c20614c580f"></p></td>
+<td data-local-id=3D"ad809bf9-ef29-42a4-abe8-ca7494fc0f7b" class=3D"conflue=
+nceTd">
+<p local-id=3D"768474d9730e"></p></td>
+</tr>
+<tr data-local-id=3D"ae0cd124-9147-46bc-aeb5-b9b4d7c63428">
+<td data-local-id=3D"9fc93612-7877-4654-abb2-895056243106" class=3D"conflue=
+nceTd">
+<p local-id=3D"c64e7f4ae947">firstName</p></td>
+<td data-local-id=3D"19a87c7e-f070-45d2-89e2-f35463c531c9" class=3D"conflue=
+nceTd">
+<p local-id=3D"cbd8c54115b2"></p></td>
+<td data-local-id=3D"f3c6d6cf-3e1f-429c-aaed-52ccc6725744" class=3D"conflue=
+nceTd">
+<p local-id=3D"2d380cf6bc2e"></p></td>
+<td data-local-id=3D"c8a1a1fd-95a4-4f9e-bbb9-0b7037ac090a" class=3D"conflue=
+nceTd">
+<p local-id=3D"e40f2adcb77f"></p></td>
+</tr>
+<tr data-local-id=3D"c8229e5d-20d8-441c-9fe4-a985ef7c366d">
+<td data-local-id=3D"12d1d4f9-5357-49d1-a03a-378451119e80" class=3D"conflue=
+nceTd">
+<p local-id=3D"5ab990f8c7d9">lastName</p></td>
+<td data-local-id=3D"2135155f-b754-436a-a237-2c814bad625e" class=3D"conflue=
+nceTd">
+<p local-id=3D"7b95ce111b37"></p></td>
+<td data-local-id=3D"3e4621a4-9fcc-4c34-89fa-a7ec3d5a8fd3" class=3D"conflue=
+nceTd">
+<p local-id=3D"4f67e8c79948"></p></td>
+<td data-local-id=3D"fb0b7069-cf11-4663-afd7-7ec05794bc35" class=3D"conflue=
+nceTd">
+<p local-id=3D"f20eed9642e4"></p></td>
+</tr>
+<tr data-local-id=3D"c817c305-a23e-46df-a0b6-5ee7ec0041b8">
+<td data-local-id=3D"500f7509-5107-4e98-b0b4-a5a1859d9acf" class=3D"conflue=
+nceTd">
+<p local-id=3D"ccdbd97c2a2c">adresslineOne</p></td>
+<td data-local-id=3D"2bc7dfe3-50a5-4e06-a825-26dd638c2682" class=3D"conflue=
+nceTd">
+<p local-id=3D"a95ca01df2d6"></p></td>
+<td data-local-id=3D"c105af51-5618-486e-86a3-346ca1613d6d" class=3D"conflue=
+nceTd">
+<p local-id=3D"3eff4f30c06e"></p></td>
+<td data-local-id=3D"39b2415f-9aa9-4e7e-be36-e1cb687c11c8" class=3D"conflue=
+nceTd">
+<p local-id=3D"7c379b37b7e6"></p></td>
+</tr>
+<tr data-local-id=3D"83980e7bb41d">
+<td data-local-id=3D"13ecaea4ea89" class=3D"confluenceTd">
+<p local-id=3D"04b247d6c181">adresslineTwo</p></td>
+<td data-local-id=3D"c11f29a6e13c" class=3D"confluenceTd">
+<p local-id=3D"42fa66c0cef0"></p></td>
+<td data-local-id=3D"2717d160ce1a" class=3D"confluenceTd">
+<p local-id=3D"be2956ecd252"></p></td>
+<td data-local-id=3D"d620ec740f95" class=3D"confluenceTd">
+<p local-id=3D"3d2ee963ce82"></p></td>
+</tr>
+<tr data-local-id=3D"384406f1-168b-45fa-8de2-4221fc5b8d26">
+<td data-local-id=3D"c4fdf894-5e11-4e65-9075-48775d3045e7" class=3D"conflue=
+nceTd">
+<p local-id=3D"e8f817ab8545">zipcode</p></td>
+<td data-local-id=3D"75701399-26aa-4118-96e5-ad4ee7332323" class=3D"conflue=
+nceTd">
+<p local-id=3D"7eabae498710"></p></td>
+<td data-local-id=3D"09e45484-a21f-4a2f-a5da-7978571820e2" class=3D"conflue=
+nceTd">
+<p local-id=3D"1f94c7114c06"></p></td>
+<td data-local-id=3D"83b30cb6-72da-4cba-928a-342ad5b09cc0" class=3D"conflue=
+nceTd">
+<p local-id=3D"2308829c4d84"></p></td>
+</tr>
+<tr data-local-id=3D"a448eb34-ea38-4a6b-bf53-830df6f2597f">
+<td data-local-id=3D"600fc9b0-27ac-48d3-8dc5-b6f26b120f40" class=3D"conflue=
+nceTd">
+<p local-id=3D"e42db8ad3243">city</p></td>
+<td data-local-id=3D"2a5a4151-4080-4797-8367-b7100f604dae" class=3D"conflue=
+nceTd">
+<p local-id=3D"f3c907acbb0e"></p></td>
+<td data-local-id=3D"3cacc607-df05-4549-b00e-c0290fa27c28" class=3D"conflue=
+nceTd">
+<p local-id=3D"caae75474df3"></p></td>
+<td data-local-id=3D"546e5844-5801-45cf-aa27-b57c5e0bf0bb" class=3D"conflue=
+nceTd">
+<p local-id=3D"f7251491d1c5"></p></td>
+</tr>
+<tr data-local-id=3D"5c84e991-69bb-46a7-a264-be922cfdafc0">
+<td data-local-id=3D"a4d83def-3f3e-469b-b0b3-c49b18e5ff30" class=3D"conflue=
+nceTd">
+<p local-id=3D"5d7466152333">region</p></td>
+<td data-local-id=3D"12c19eb6-4513-4982-8b44-309162534e99" class=3D"conflue=
+nceTd">
+<p local-id=3D"4806eff87b62"></p></td>
+<td data-local-id=3D"b02129fe-5929-48e3-a3da-d895e626fca3" class=3D"conflue=
+nceTd">
+<p local-id=3D"ea14e5cb1bd7"></p></td>
+<td data-local-id=3D"7550e7a9-9baa-4145-8b83-3cc8ecbc552c" class=3D"conflue=
+nceTd">
+<p local-id=3D"39c86c9410ae"></p></td>
+</tr>
+<tr data-local-id=3D"d1df7491-0754-4fc4-a80d-23d9347ffa92">
+<td data-local-id=3D"86c7d390-39c5-4d7e-8a9c-23e3c64a069a" class=3D"conflue=
+nceTd">
+<p local-id=3D"66e473a2e60e">country</p></td>
+<td data-local-id=3D"dc1fd9c4-6486-484f-8eca-10e15a84ba7d" class=3D"conflue=
+nceTd">
+<p local-id=3D"b344fbb45080"></p></td>
+<td data-local-id=3D"193eeddb-8491-4ba3-a4ba-97d63e6ba114" class=3D"conflue=
+nceTd">
+<p local-id=3D"ec3754c10e8c"></p></td>
+<td data-local-id=3D"c25e9126-9d79-453b-bdd4-9837550cdbbf" class=3D"conflue=
+nceTd">
+<p local-id=3D"33454c0e0828"></p></td>
+</tr>
+<tr data-local-id=3D"71df8e81ffeb">
+<td data-local-id=3D"265d1ca652e0" class=3D"confluenceTd">
+<p local-id=3D"f9e8fbd33918">accessibility</p>
+<p local-id=3D"f03867d05bf5"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"eac96159de2d" class=3D"confluenceTd">
+<ul local-id=3D"2b9984c3370e">
+<li local-id=3D"22ef762ed893">
+<p local-id=3D"83ac5d5293c3">accessibilityByTruck</p>
+<ul local-id=3D"723378b63ed6">
+<li local-id=3D"6c685bb1-5929-4862-98c2-b82292a59695">
+<p local-id=3D"c72165d98b8c">{nullable bolean}</p>
+<ul local-id=3D"354aca5e-61fc-41a5-9d3d-32e657d9abdb">
+<li local-id=3D"5f2856bb-a2f9-4bf3-914e-415d49497e1d">
+<p local-id=3D"fa7de806c58f">null =E2=86=92 unknown</p></li>
+<li local-id=3D"b47b3f4c-03ac-4fd9-b2d7-0382fd8143c9">
+<p local-id=3D"600a6313346c">true =E2=86=92 yes</p></li>
+<li local-id=3D"2512f6a7-09bb-409b-9aca-c0bfb38afc5e">
+<p local-id=3D"1e23e168f99d">false - no</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"66c851a6-f75e-468c-a837-197f116c6bf6">
+<p local-id=3D"8b7067ee4116">accessibilityComment</p>
+<ul local-id=3D"d71a7479-af40-4f3f-a2c7-d42aaae3eb03">
+<li local-id=3D"00dc077f-5140-4e9b-8d36-f9c830b0168e">
+<p local-id=3D"9894f426a3ad">{string}</p></li>
+</ul></li>
+<li local-id=3D"deb24a80-195d-4223-8af9-8b2ccf38ffa6">
+<p local-id=3D"7cd100c7053b">restrictionType</p>
+<ul local-id=3D"fe20e133-9abd-40a1-8e41-479767136800">
+<li local-id=3D"a1081f99-d3be-4336-8568-7a2d00f82d92">
+<p local-id=3D"669bc95a6495">{string}</p>
+<ul local-id=3D"1031b073-2f67-4aa7-a990-e4a0c2533249">
+<li local-id=3D"aa2c4b4a-2419-4104-a919-5e2f6cf4bd4d">
+<p local-id=3D"72c7efbd9e95">[ HEIGHT, WIDTH, SPACE, TERRAIN, WEIGHT ]</p><=
+/li>
+</ul></li>
+</ul></li>
+<li local-id=3D"5c060fe6-1cee-4a8b-a670-e3aafca14986">
+<p local-id=3D"da6792b6a7ee">restrictionDetail</p>
+<ul local-id=3D"bf62dd0b-b6e9-458b-aee0-71497395b37d">
+<li local-id=3D"6c48edba-7a87-4915-833c-bd076c12649c">
+<p local-id=3D"2fccfdff6054">{string}</p></li>
+</ul></li>
+<li local-id=3D"157a0262-97bb-4cbb-999e-2315d42dccfc">
+<p local-id=3D"4626f98a39d2">restrictionMaxValue</p>
+<ul local-id=3D"84855069-3a07-4049-a7bd-7302efdcde26">
+<li local-id=3D"0031724a-0d4c-4cd4-a835-17058c74d060">
+<p local-id=3D"7cf60cccdd73">{integer}</p></li>
+</ul></li>
+<li local-id=3D"a9cb91c6-d2d2-4a46-88bc-556db08efc02">
+<p local-id=3D"5c7de9be4dcd">restrictionUnit</p>
+<ul local-id=3D"cd3b6c59-70cf-4122-a27d-2334f2e28f26">
+<li local-id=3D"d6bb7f03-ca97-41f5-a1e0-816f8d7e737d">
+<p local-id=3D"a1c4e52b816e">{string}</p>
+<ul local-id=3D"16617a66-e867-47fd-9c26-f09356820946">
+<li local-id=3D"ff1f3a01-4068-4fad-9e35-d00d6864e96d">
+<p local-id=3D"0338d371d9e9">[ m, cm, mm, g, kg, t ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"bf888c90-fb9d-4a3a-82a6-ec996f359620">
+<p local-id=3D"d3c679fd1461">restrictionComment</p>
+<ul local-id=3D"a5add004-4db9-4552-82c6-a65215bb84f0">
+<li local-id=3D"e798ebe1-521d-491d-93e2-66292939b8c1">
+<p local-id=3D"521005d2809b">{string}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"4809740483e4" class=3D"confluenceTd">
+<p local-id=3D"4a94e41d4d22"></p></td>
+<td data-local-id=3D"c267e6a0626f" class=3D"confluenceTd">
+<p local-id=3D"61e7d72fc964"></p></td>
+</tr>
+<tr data-local-id=3D"7bc17778-fec0-47dd-b7f3-c0683e62ba8e">
+<td data-local-id=3D"3db206e7-aad7-4dc2-a554-ce4c7f01ae89" class=3D"conflue=
+nceTd">
+<p local-id=3D"1d66d8e93ad2">position</p>
+<p local-id=3D"b1c03898e17d"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"b565858a-02c4-4695-9697-850027428d42" class=3D"conflue=
+nceTd">
+<ul local-id=3D"76e3b3fb9b67">
+<li local-id=3D"214c6f955636">
+<p local-id=3D"e63c406dd6e9">latitude</p>
+<ul local-id=3D"e108159104b8">
+<li local-id=3D"812f33c117d6">
+<p local-id=3D"d67ffa7bb0a0">{float}</p></li>
+</ul></li>
+<li local-id=3D"1b1c024e4a56">
+<p local-id=3D"69cf07d832dc">longitude</p>
+<ul local-id=3D"0edcf6f4d2e7">
+<li local-id=3D"71e9c514291e">
+<p local-id=3D"f6de50648fe3">{float}</p></li>
+</ul></li>
+<li local-id=3D"02ab77d1-430d-4492-a7f1-a7b3b8773c1d">
+<p local-id=3D"a7ec89150887">status</p>
+<ul local-id=3D"d2307859-69f9-447f-995a-80cb4fdff1b9">
+<li local-id=3D"df82bcd4-a0d8-4a0c-9690-777d9e244826">
+<p local-id=3D"737ccef983e2">{string}</p>
+<ul local-id=3D"837762ef-e87f-4fcd-8235-31cae010860f">
+<li local-id=3D"a5a517c1-cf87-45b4-893d-e586ce07d5b9">
+<p local-id=3D"f7595fb6c4fa">[ VALIDATED, NOT_VALIDATED ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"5fae0aac-586b-48e6-b2ee-438348ea0fc5" class=3D"conflue=
+nceTd">
+<p local-id=3D"c6dfe1362e85"></p></td>
+<td data-local-id=3D"384f0a5f-7ac3-4e48-a192-dd22d533be9f" class=3D"conflue=
+nceTd">
+<p local-id=3D"cfa5f0cf5a39"></p></td>
+</tr>
+<tr data-local-id=3D"73f3daa3-0848-4b40-a28c-579b27f6ce83">
+<td data-local-id=3D"c52fe7c8-16bc-4198-8801-7eb946b4efa9" class=3D"conflue=
+nceTd">
+<p local-id=3D"d4d1d147d492">contactVia</p>
+<p local-id=3D"d830612b6caf"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"f32c0c8a-7ef1-4638-9fe6-22bfc3cc3538" class=3D"conflue=
+nceTd">
+<ul local-id=3D"861452f15f15">
+<li local-id=3D"9cc99c79b5f5">
+<p local-id=3D"4a11973b203d">type</p>
+<ul local-id=3D"a0683488546e">
+<li local-id=3D"f324183adcaf">
+<p local-id=3D"bbf16e43638c">{string}</p>
+<ul local-id=3D"6b78cfd77737">
+<li local-id=3D"8abb33f40bfe">
+<p local-id=3D"e48ce16fda48">[ PHONE_PRIVAT, EMAIL_PRIVAT, FAX_PRIVAT, PHON=
+E_BUSINESS, EMAIL_BUSINESS, FAX_BUSINESS ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"88b8366c1c7c">
+<p local-id=3D"011c5185f907">usage</p>
+<ul local-id=3D"650cdc2c0ba9">
+<li local-id=3D"413bc6873ca1">
+<p local-id=3D"9aa7d5296829">{nullable bolean}</p>
+<ul local-id=3D"99ba8055-0338-46c8-a5ba-19a8302f6324">
+<li local-id=3D"29703703-1f0d-43bf-a319-57f11fb6dbd9">
+<p local-id=3D"a0d5a6f795df">null =E2=86=92 unknown</p></li>
+<li local-id=3D"1776b702-6b4d-4124-bb22-68aa1ed1c920">
+<p local-id=3D"aa82c0b461c6">true =E2=86=92 yes</p></li>
+<li local-id=3D"c9a7dec9-f1e0-4268-8db0-477d677cb67d">
+<p local-id=3D"ed1ac06151f1">false - no</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"ffef92f7-111e-4623-acf2-f4895ded236d" class=3D"conflue=
+nceTd">
+<p local-id=3D"bcb67e3bf12b"></p></td>
+<td data-local-id=3D"5b028d88-05eb-49c7-a66d-73d2e7599064" class=3D"conflue=
+nceTd">
+<ul local-id=3D"1f540ddf96f9">
+<li local-id=3D"be68d6e54f27">
+<p local-id=3D"fb6345cb66d6"><span data-colorid=3D"du901zj4om">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"5860515e-efa2-453e-8d09-b1f1c477b746">
+<td data-local-id=3D"0d9219a4-c18a-4130-83f8-94c88f44a3fb" class=3D"conflue=
+nceTd">
+<p local-id=3D"60d8d9eb2a18">mainLanguage</p></td>
+<td data-local-id=3D"6bfc2b00-25d5-4f23-9265-08ffe3fa4b93" class=3D"conflue=
+nceTd">
+<p local-id=3D"bc6b044941da">{string}</p>
+<ul local-id=3D"a2deaf0c6ae5">
+<li local-id=3D"411e9f900090">
+<p local-id=3D"92655d232dd6">[ EN, FR, IT, DE, =E2=80=A6 ]</p></li>
+</ul></td>
+<td data-local-id=3D"5bf4354d-8514-4556-b511-0e7043ab19a5" class=3D"conflue=
+nceTd">
+<p local-id=3D"76e088f30b20"></p></td>
+<td data-local-id=3D"9d478392-aab9-4012-b405-579e55587a87" class=3D"conflue=
+nceTd">
+<p local-id=3D"47810ef3ce45"></p></td>
+</tr>
+<tr data-local-id=3D"e97fa4d5-4355-4456-b3fa-0936a24a0c2d">
+<td data-local-id=3D"39bb148a-07a9-49bf-bf8e-21694ad7a75f" class=3D"conflue=
+nceTd">
+<p local-id=3D"793c2c405ff0">additionalLanguages</p></td>
+<td data-local-id=3D"97052efb-d755-4ae6-9076-1a2bc671e7d6" class=3D"conflue=
+nceTd">
+<p local-id=3D"56b0edaf2c70">{array of strings}</p>
+<ul local-id=3D"36ab9b4f6010">
+<li local-id=3D"87aed8080046">
+<p local-id=3D"1e52eaa32c3e">[ EN, FR, IT, DE, =E2=80=A6 ]</p></li>
+</ul></td>
+<td data-local-id=3D"60c9493f-1a8f-4bd8-82f1-dec63d691ad5" class=3D"conflue=
+nceTd">
+<p local-id=3D"a099f21fe0a4"></p></td>
+<td data-local-id=3D"9173f553-4bec-48a3-8691-d3de27c13bf4" class=3D"conflue=
+nceTd">
+<p local-id=3D"ed94bc81c4cd"></p></td>
+</tr>
+<tr data-local-id=3D"59b69ebc-04a8-45d7-b0c4-582598d5f16d">
+<td data-local-id=3D"59efac23-981d-4946-9dfc-79beac538841" class=3D"conflue=
+nceTd">
+<p local-id=3D"7c408b1489d5">comment</p></td>
+<td data-local-id=3D"2ed497ab-959f-46d8-9880-330e0cb2e62c" class=3D"conflue=
+nceTd">
+<p local-id=3D"8c407bd2fc18">{string}</p></td>
+<td data-local-id=3D"063e6df6-1080-4cec-a5e2-269484f48030" class=3D"conflue=
+nceTd">
+<p local-id=3D"673408150c66"></p></td>
+<td data-local-id=3D"f2ad574d-b4e2-462d-87bb-e43f022eb3ca" class=3D"conflue=
+nceTd">
+<p local-id=3D"3356c8aaa0ab"></p></td>
+</tr>
+<tr data-local-id=3D"b9de8f90-613a-4f6c-bcce-0680e0204665">
+<td data-local-id=3D"b4e5e710-af44-4ae0-b9bd-b8b453a2ec9c" class=3D"conflue=
+nceTd">
+<p local-id=3D"8e4f5241a7fe">subscription</p>
+<p local-id=3D"30e973cf3651"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"24574a65-1263-45a9-8154-26aa1eb97afa" class=3D"conflue=
+nceTd">
+<ul local-id=3D"9ba5e33332f9">
+<li local-id=3D"356c217e2fff">
+<p local-id=3D"df97e73c5abf">type</p>
+<ul local-id=3D"f75d63475abd">
+<li local-id=3D"3160aded82e0">
+<p local-id=3D"4fee1cbb3e4b">{string}</p>
+<ul local-id=3D"610bdd47ea71">
+<li local-id=3D"a42f6b66ecba">
+<p local-id=3D"90eefee53969">[ ETA_ADVISE, =E2=80=A6 ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"33a75de564ec">
+<p local-id=3D"67f3556e36be">status</p>
+<ul local-id=3D"f819351fea37">
+<li local-id=3D"c1daa64dcf9f">
+<p local-id=3D"a14370e39a40">{nullable bolean}</p>
+<ul local-id=3D"4a38f9a4d57f">
+<li local-id=3D"f695bcba-4228-4de6-8ad7-9f6be9c6f3db">
+<p local-id=3D"3c7f9a47292e">null =E2=86=92 unknown</p></li>
+<li local-id=3D"06740a3a-a3ed-4216-8f9c-ffd95a650401">
+<p local-id=3D"a778fb2b6852">true =E2=86=92 yes</p></li>
+<li local-id=3D"f1550982-692a-4e5f-82c9-4ade7e4df7fe">
+<p local-id=3D"92fa0d09b191">false - no</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"93b26234-4415-4546-875a-9efb8f20d728" class=3D"conflue=
+nceTd">
+<p local-id=3D"8124462c8476"></p></td>
+<td data-local-id=3D"b7b1d89d-f964-49a3-a302-b7db143f28a0" class=3D"conflue=
+nceTd">
+<ul local-id=3D"c9d557710d19">
+<li local-id=3D"bd07b94c5480">
+<p local-id=3D"557b31b6485b"><span data-colorid=3D"lswqj8yp1x">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"4b29b780-9bd9-443e-a0b9-fb28448f7e6e">
+<td data-local-id=3D"9ab3d8cc-c929-488d-adc0-3923b7dfe1c4" class=3D"conflue=
+nceTd">
+<p local-id=3D"881f49cde7ed">openingHours</p>
+<p local-id=3D"a152d09a8692"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"0603b3f8-f7ef-40a4-a6f4-1d6eb4e7ee49" class=3D"conflue=
+nceTd">
+<ul local-id=3D"4da58e81fe2c">
+<li local-id=3D"ae9c5095bde0">
+<p local-id=3D"d2887de04ae8">day</p>
+<ul local-id=3D"a4441d66ad56">
+<li local-id=3D"3537b3534c38">
+<p local-id=3D"f1ab837d8e4e">{string}</p>
+<ul local-id=3D"39ed880d398d">
+<li local-id=3D"ba41e7fc449d">
+<p local-id=3D"94d0eeac6a5d">[ MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY=
+, SATURDAY, SUNDAY ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"bb9674b157db">
+<p local-id=3D"fb6e44ac253a">dayStart</p>
+<ul local-id=3D"4c40c799a507">
+<li local-id=3D"04a5a7f54d25">
+<p local-id=3D"3dad160485c5">{time}</p></li>
+</ul></li>
+<li local-id=3D"bb6eae3adb4c">
+<p local-id=3D"b5b7329cfb1e">breakStart</p>
+<ul local-id=3D"8a74784e4c68">
+<li local-id=3D"e44be92c9412">
+<p local-id=3D"e0645bfffe1c">{time}</p></li>
+</ul></li>
+<li local-id=3D"685a99592c7a">
+<p local-id=3D"c204333eaaf7">breakEnd</p>
+<ul local-id=3D"1d2ee210d8ee">
+<li local-id=3D"3b35738f4ff3">
+<p local-id=3D"b08868a60385">{time}</p></li>
+</ul></li>
+<li local-id=3D"d2aa8312997b">
+<p local-id=3D"d75eaa0e1b9a">dayEnd</p>
+<ul local-id=3D"e7619581e2f9">
+<li local-id=3D"9aca9e165be3">
+<p local-id=3D"d3f6220d97d2">{time}</p></li>
+</ul></li>
+<li local-id=3D"4ab07806241c">
+<p local-id=3D"f3f4e300c1db">vacationDays</p>
+<ul local-id=3D"2e6cfea47321">
+<li local-id=3D"d5605fcc2b20">
+<p local-id=3D"57ac0edac62c">{array of dates}</p></li>
+</ul></li>
+<li local-id=3D"b38e2df196e9">
+<p local-id=3D"c10166a81ec7">comment</p>
+<ul local-id=3D"f23ebb0753f0">
+<li local-id=3D"27a0ecf6d7f2">
+<p local-id=3D"d0aac8d64bb7">{string}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"62c75a8d-e38c-4ce1-bc19-412c1b52929f" class=3D"conflue=
+nceTd">
+<p local-id=3D"f7d53a8aed48"></p></td>
+<td data-local-id=3D"ead8a2cf-0acc-47a6-a175-5527efea621d" class=3D"conflue=
+nceTd">
+<p local-id=3D"adcdccff6545"></p></td>
+</tr>
+<tr data-local-id=3D"b5f9f182-7884-4a84-b469-e6f92b5e778f">
+<td data-local-id=3D"1d06d465-0b05-462d-b7c4-13ee3f993d5c" class=3D"conflue=
+nceTd">
+<p local-id=3D"92049daf1816">BankAccount</p>
+<p local-id=3D"ec9ed3abcb36"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span>Name</p></td>
+<td data-local-id=3D"7bea3d3f-3dce-4a1c-b01a-092d46e69448" class=3D"conflue=
+nceTd">
+<ul local-id=3D"23962e89ba9b">
+<li local-id=3D"a02bea2592bb">
+<p local-id=3D"0f021ef61faa">name</p>
+<ul local-id=3D"3e3dd1715aec">
+<li local-id=3D"c15cc1125275">
+<p local-id=3D"5ba50b6cc174">{string}</p></li>
+</ul></li>
+<li local-id=3D"6340546c710d">
+<p local-id=3D"f8e7c0e8a18b">bic</p>
+<ul local-id=3D"7e219d3d5843">
+<li local-id=3D"4197c8f0f351">
+<p local-id=3D"e21bfcbcd548">{string}</p></li>
+</ul></li>
+<li local-id=3D"e01ba08ef2bd">
+<p local-id=3D"9ac8b53622a8">iban</p>
+<ul local-id=3D"3f17409534be">
+<li local-id=3D"f02136e8b25b">
+<p local-id=3D"b9082c0dc767">{string}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"2192e0cc-a0e9-4f50-bf21-37514a969a13" class=3D"conflue=
+nceTd">
+<p local-id=3D"016f4958c8bd"></p></td>
+<td data-local-id=3D"a8fec6ff-bf3a-4623-9be9-51880cda2108" class=3D"conflue=
+nceTd">
+<p local-id=3D"9ec97ca122d7"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id=3D"expander-1358861778" class=3D"expand-container">
+<div id=3D"expander-control-1358861778" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">CONTACT</span>
+</div>
+<div id=3D"expander-content-1358861778" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"05=
+d661da3dd7" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"89047bff-3466-4f69-900a-6bb9001a17bb">
+<th data-local-id=3D"6b17e251-4e04-4502-a422-6534c824d0f5" class=3D"conflue=
+nceTh">
+<p local-id=3D"2deeb4dd1c93"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"45a9dfed-d17d-468e-b186-647fc289db02" class=3D"conflue=
+nceTh">
+<p local-id=3D"43b15e7d6da3"><strong>Format</strong></p></th>
+<th data-local-id=3D"a430de3f-c088-4042-bf86-ef9fbf477add" class=3D"conflue=
+nceTh">
+<p local-id=3D"6dc0b29be772"><strong>Description</strong></p></th>
+<th data-local-id=3D"6e801e42-8b9e-47dd-a3fc-12355d9af237" class=3D"conflue=
+nceTh">
+<p local-id=3D"c04c0e0bc550"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"c57dc735-efd8-4f3c-80de-ff54807a5092">
+<td data-local-id=3D"c64da6e8-7e9f-4740-b257-7ed5d406ece4" class=3D"conflue=
+nceTd">
+<p local-id=3D"b1abc3d080a9">role</p></td>
+<td data-local-id=3D"167483d2-d139-4a1b-a787-71e4240c4119" class=3D"conflue=
+nceTd">
+<p local-id=3D"ac678ec47d4d">{array of strings}</p>
+<ul local-id=3D"731629359d51">
+<li local-id=3D"29f72962997a">
+<p local-id=3D"58bafcdf9946">[ STRANDED_PERSON, NOTIFIER, DRIVER, CONTACT_P=
+ERSON, VEHICLE_OWNER, ISNURED_PERSON, PASSSENGER, RSA, NETWORK_PROVIDER, SE=
+RVICE_PROVIDER, SERVICE_PROVIDER_DISPATCHER, SERVICE_PROVIDER_TRUCKDRIVER, =
+CLIENT, INVOICE_RECIPIENT, =E2=80=A6 ]</p></li>
+</ul></td>
+<td data-local-id=3D"9d3e9a4c-35e8-487b-bc73-ac96ac5d562c" class=3D"conflue=
+nceTd">
+<ul local-id=3D"202269a5ecad">
+<li local-id=3D"36091e02-934c-41a8-9e93-b3f8aac65d6e">
+<p local-id=3D"dae2d8783f0c">Examples:</p>
+<ul local-id=3D"e510b8e3-6bc1-44bf-87b8-1c12e7d52477">
+<li local-id=3D"3b07916d-4757-4a5b-b3f8-3131329f7e83">
+<p local-id=3D"20750870e44c">Stranded person</p></li>
+<li local-id=3D"de917142-382b-485a-8891-d6944c73378d">
+<p local-id=3D"75ce68c64499">Driver</p></li>
+<li local-id=3D"3d21b002-319f-4193-836b-d0a6db723e96">
+<p local-id=3D"e4127de8b929">Caller</p></li>
+<li local-id=3D"b244be73-549b-437b-ab9c-05ccdbb429fa">
+<p local-id=3D"091e2cef8a1b">Contact person</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"44b51e26-116c-434c-9e3d-67d8d66eedea" class=3D"conflue=
+nceTd">
+<ul local-id=3D"84021c2f06f8">
+<li local-id=3D"32647e857e86">
+<p local-id=3D"3b76d0af4aa5"><span data-colorid=3D"va4xoi7114">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"314d14030278">
+<td data-local-id=3D"4898e816db42" class=3D"confluenceTd">
+<p local-id=3D"8befcbb35e6d">companyName</p></td>
+<td data-local-id=3D"47e8f00d215b" class=3D"confluenceTd">
+<p local-id=3D"bd0b5ec620ce"></p></td>
+<td data-local-id=3D"ec488368b3e8" class=3D"confluenceTd">
+<p local-id=3D"05ebd0aaef0a"></p></td>
+<td data-local-id=3D"6db236855367" class=3D"confluenceTd">
+<p local-id=3D"078909415fd6"></p></td>
+</tr>
+<tr data-local-id=3D"e1a7e161a2b0">
+<td data-local-id=3D"9e3a0e510cca" class=3D"confluenceTd">
+<p local-id=3D"14c72b5da561">salutation</p></td>
+<td data-local-id=3D"ec70deffcb9a" class=3D"confluenceTd">
+<p local-id=3D"cb094a726de9"></p></td>
+<td data-local-id=3D"0c7d9bae782b" class=3D"confluenceTd">
+<p local-id=3D"8f1ead6c5433"></p></td>
+<td data-local-id=3D"f74b40dd4da7" class=3D"confluenceTd">
+<p local-id=3D"dee8336bb606"></p></td>
+</tr>
+<tr data-local-id=3D"33e7c132a0f4">
+<td data-local-id=3D"c52774daacbe" class=3D"confluenceTd">
+<p local-id=3D"be0cf05a1a81">firstName</p></td>
+<td data-local-id=3D"4f4964f15d8f" class=3D"confluenceTd">
+<p local-id=3D"82fed8e426ee"></p></td>
+<td data-local-id=3D"67758659d9b0" class=3D"confluenceTd">
+<p local-id=3D"898b99ba770f"></p></td>
+<td data-local-id=3D"008d4b2cde1a" class=3D"confluenceTd">
+<p local-id=3D"297138044b67"></p></td>
+</tr>
+<tr data-local-id=3D"10e9ddc11fa0">
+<td data-local-id=3D"5cf864dd1f52" class=3D"confluenceTd">
+<p local-id=3D"987179bae34f">lastName</p></td>
+<td data-local-id=3D"c88a0a56284f" class=3D"confluenceTd">
+<p local-id=3D"3efce8132a1c"></p></td>
+<td data-local-id=3D"90f961f59b3a" class=3D"confluenceTd">
+<p local-id=3D"dc74ec59a564"></p></td>
+<td data-local-id=3D"13951b361cb9" class=3D"confluenceTd">
+<p local-id=3D"daaa97689923"></p></td>
+</tr>
+<tr data-local-id=3D"a49fd94c31eb">
+<td data-local-id=3D"a870241d217f" class=3D"confluenceTd">
+<p local-id=3D"a17feb02644d">membershipNumber</p></td>
+<td data-local-id=3D"45fcffd72124" class=3D"confluenceTd">
+<p local-id=3D"3c239e310a39"></p></td>
+<td data-local-id=3D"5ba3e8110e3b" class=3D"confluenceTd">
+<p local-id=3D"b404bc7a7113"></p></td>
+<td data-local-id=3D"3b75a937bd6d" class=3D"confluenceTd">
+<p local-id=3D"6a179c2c0f7e"></p></td>
+</tr>
+<tr data-local-id=3D"fb526774ffa6">
+<td data-local-id=3D"5ca6e24a9e2f" class=3D"confluenceTd">
+<p local-id=3D"a3ff2a4a0a51">adresslineOne</p></td>
+<td data-local-id=3D"0d3f27b9249f" class=3D"confluenceTd">
+<p local-id=3D"1c0fb20c9c2b"></p></td>
+<td data-local-id=3D"1049a8a2e5e0" class=3D"confluenceTd">
+<p local-id=3D"d885aeed630a">Street, House no.</p></td>
+<td data-local-id=3D"1eb9ab630bbf" class=3D"confluenceTd">
+<p local-id=3D"a8030f9e97e4"></p></td>
+</tr>
+<tr data-local-id=3D"24fdcf0950f1">
+<td data-local-id=3D"7f95b01766f1" class=3D"confluenceTd">
+<p local-id=3D"35bfa6110f5d">adresslineTwo</p></td>
+<td data-local-id=3D"7056b0b19a9f" class=3D"confluenceTd">
+<p local-id=3D"54490be2f73a"></p></td>
+<td data-local-id=3D"608e9955df54" class=3D"confluenceTd">
+<p local-id=3D"d6e73d8ed6da">Level, Flat, Office, =E2=80=A6</p></td>
+<td data-local-id=3D"c8552356176e" class=3D"confluenceTd">
+<p local-id=3D"7c925e7ebb2d"></p></td>
+</tr>
+<tr data-local-id=3D"912fb705f1a5">
+<td data-local-id=3D"e3a1e723f9fe" class=3D"confluenceTd">
+<p local-id=3D"ab959695c039">zipcode</p></td>
+<td data-local-id=3D"8e151625b84f" class=3D"confluenceTd">
+<p local-id=3D"362f2e820615"></p></td>
+<td data-local-id=3D"ea4f9a83603e" class=3D"confluenceTd">
+<p local-id=3D"7d4eb722d558"></p></td>
+<td data-local-id=3D"66d5aec408ed" class=3D"confluenceTd">
+<p local-id=3D"cceefc81dd78"></p></td>
+</tr>
+<tr data-local-id=3D"d35103189a12">
+<td data-local-id=3D"66ecb22b39b7" class=3D"confluenceTd">
+<p local-id=3D"6e430c133bc6">city</p></td>
+<td data-local-id=3D"6d145442c620" class=3D"confluenceTd">
+<p local-id=3D"443d3395dad0"></p></td>
+<td data-local-id=3D"1c027b402912" class=3D"confluenceTd">
+<p local-id=3D"d5a07773dbcb"></p></td>
+<td data-local-id=3D"90e9b404c6a4" class=3D"confluenceTd">
+<p local-id=3D"bf97ebccc44a"></p></td>
+</tr>
+<tr data-local-id=3D"a153bce97a8d">
+<td data-local-id=3D"dccc8f63e93b" class=3D"confluenceTd">
+<p local-id=3D"24c1b15409c8">region</p></td>
+<td data-local-id=3D"588f29ccafd7" class=3D"confluenceTd">
+<p local-id=3D"8ed135d692d4"></p></td>
+<td data-local-id=3D"a3a84486ed42" class=3D"confluenceTd">
+<p local-id=3D"72570557161e"></p></td>
+<td data-local-id=3D"dd7aafdf4687" class=3D"confluenceTd">
+<p local-id=3D"8a038fcd6134"></p></td>
+</tr>
+<tr data-local-id=3D"fe693726fbe3">
+<td data-local-id=3D"06ab9c01deda" class=3D"confluenceTd">
+<p local-id=3D"78b55d92a727">country</p></td>
+<td data-local-id=3D"37a936c22c9b" class=3D"confluenceTd">
+<p local-id=3D"24250ae380e8"></p></td>
+<td data-local-id=3D"07e51b2265de" class=3D"confluenceTd">
+<p local-id=3D"44f4e04e0d0e"></p></td>
+<td data-local-id=3D"6667d17283d6" class=3D"confluenceTd">
+<p local-id=3D"c02fd41ba450"></p></td>
+</tr>
+<tr data-local-id=3D"f70d42fd8d9c">
+<td data-local-id=3D"89b9cee5a1ab" class=3D"confluenceTd">
+<p local-id=3D"7bac39e3d8a3">position</p>
+<p local-id=3D"2d10b6eeb9d2"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"89ac241c4ea9" class=3D"confluenceTd">
+<ul local-id=3D"f1f6474545fa">
+<li local-id=3D"3f1f589d033f">
+<p local-id=3D"5148158c61a6">latitude</p>
+<ul local-id=3D"4ad2174a0204">
+<li local-id=3D"c3bd8a4ccf7f">
+<p local-id=3D"6d517a3d57d1">{float}</p></li>
+</ul></li>
+<li local-id=3D"3a8b17f3840a">
+<p local-id=3D"aca9b4952212">longitude</p>
+<ul local-id=3D"dc8873774026">
+<li local-id=3D"479bf10c05eb">
+<p local-id=3D"1b868b34b44b">{float}</p></li>
+</ul></li>
+<li local-id=3D"55b097d08391">
+<p local-id=3D"ba5e61bb3163">status</p>
+<ul local-id=3D"b5bcb5172d17">
+<li local-id=3D"0249b3c90be0">
+<p local-id=3D"256571b363d0">{string}</p>
+<ul local-id=3D"ffd1e3c8d7a6">
+<li local-id=3D"88bb19dc611f">
+<p local-id=3D"10f3931d410c">[ VALIDATED, NOT_VALIDATED ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"1deb997553bc" class=3D"confluenceTd">
+<p local-id=3D"5b7c46bc54a1"></p></td>
+<td data-local-id=3D"ca6834206a72" class=3D"confluenceTd">
+<p local-id=3D"ecd641db7ec0"></p></td>
+</tr>
+<tr data-local-id=3D"9fda1d9b6de1">
+<td data-local-id=3D"59d509927149" class=3D"confluenceTd">
+<p local-id=3D"a47675e4bff1">contactVia</p>
+<p local-id=3D"b31609e85118"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"f08a9258395e" class=3D"confluenceTd">
+<ul local-id=3D"3723580f11ac">
+<li local-id=3D"e89165f398ed">
+<p local-id=3D"f0b1da87bcea">type</p>
+<ul local-id=3D"b45ecb579d7c">
+<li local-id=3D"9002189b9da4">
+<p local-id=3D"a133fda42ea8">{string}</p>
+<ul local-id=3D"a5b40e22fe5c">
+<li local-id=3D"55dfe3fce2ee">
+<p local-id=3D"c08fc6f73acf">[ PHONE_PRIVAT, EMAIL_PRIVAT, FAX_PRIVAT, PHON=
+E_BUSINESS, EMAIL_BUSINESS, FAX_BUSINESS ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"acd85892cf31">
+<p local-id=3D"c463c1163590">usage</p>
+<ul local-id=3D"c1a2bb08734d">
+<li local-id=3D"5d97ef07-c4e7-48d4-ac9e-d4dbed955824">
+<p local-id=3D"62a730a006f0">{nullable bolean}</p>
+<ul local-id=3D"f8b7b411-daf9-4ed8-badc-d985308ea6d6">
+<li local-id=3D"bde3c26f-b0b2-49aa-8b21-18832f5ce448">
+<p local-id=3D"27ab31ac290d">null =E2=86=92 unknown</p></li>
+<li local-id=3D"b5b41930-0d49-4aaf-a44b-8c87c9d52099">
+<p local-id=3D"0f75e7865659">true =E2=86=92 yes</p></li>
+<li local-id=3D"35be0a81-50d2-49d1-8efb-953d488125d0">
+<p local-id=3D"a2cf3c88bed1">false - no</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"86c884d68d54" class=3D"confluenceTd">
+<p local-id=3D"e1cc5d4940f8"></p></td>
+<td data-local-id=3D"0bc7da871220" class=3D"confluenceTd">
+<ul local-id=3D"68222e67-c729-471f-b8f0-244f89355950">
+<li local-id=3D"ea6faaa3-d859-4d3a-820f-e8696b4f3517">
+<p local-id=3D"dce0b1e93c5e"><span data-colorid=3D"c9hg653v8d">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"dc46142beb67">
+<td data-local-id=3D"afe12a695b14" class=3D"confluenceTd">
+<p local-id=3D"e1480f081059">mainLanguage</p></td>
+<td data-local-id=3D"c0fa82ab39dd" class=3D"confluenceTd">
+<p local-id=3D"b8123ea0c389">{string}</p>
+<ul local-id=3D"f2ac8dd857b7">
+<li local-id=3D"3fc3a57c2579">
+<p local-id=3D"b9e4e346af64">[ DE, EN, FR, IT, =E2=80=A6 ]</p></li>
+</ul></td>
+<td data-local-id=3D"18c39ea8f652" class=3D"confluenceTd">
+<p local-id=3D"f60db9f7d626"></p></td>
+<td data-local-id=3D"b81d0ef72977" class=3D"confluenceTd">
+<p local-id=3D"9f2ab8691673"></p></td>
+</tr>
+<tr data-local-id=3D"a0757745d0d9">
+<td data-local-id=3D"af144911d01a" class=3D"confluenceTd">
+<p local-id=3D"bf1f4b60b841">additionalLanguages</p></td>
+<td data-local-id=3D"6b025d80e281" class=3D"confluenceTd">
+<p local-id=3D"aea4423eab39">{array of strings}</p>
+<ul local-id=3D"c78ddfbfb94d">
+<li local-id=3D"112ce11ee8a3">
+<p local-id=3D"98b7f61677be">[ DE, EN, FR, IT, =E2=80=A6 ]</p></li>
+</ul></td>
+<td data-local-id=3D"59133e24e8a0" class=3D"confluenceTd">
+<p local-id=3D"27ad23a68aab"></p></td>
+<td data-local-id=3D"685eb8049771" class=3D"confluenceTd">
+<p local-id=3D"b2b27f2f9200"></p></td>
+</tr>
+<tr data-local-id=3D"7a2b87d7-8870-46f0-b922-69b10aa0549c">
+<td data-local-id=3D"a22692b4-f22d-43f9-9cd1-e4662bae6322" class=3D"conflue=
+nceTd">
+<p local-id=3D"795fb2542dbe">comment</p></td>
+<td data-local-id=3D"a296b4cf-32de-4eca-b388-17bc1c75d6cf" class=3D"conflue=
+nceTd">
+<p local-id=3D"b93fcd1643f4">{string}</p></td>
+<td data-local-id=3D"603ea0a4-d5e1-450b-a195-2cb5ee8070e0" class=3D"conflue=
+nceTd">
+<p local-id=3D"cf6dd73d76b1"></p></td>
+<td data-local-id=3D"b5a3ee8e-3cce-4a4a-9884-188eb11d5d69" class=3D"conflue=
+nceTd">
+<p local-id=3D"bde5d6450117"></p></td>
+</tr>
+<tr data-local-id=3D"b74b548cf524">
+<td data-local-id=3D"c14aa5719d56" class=3D"confluenceTd">
+<p local-id=3D"faed7019caf0">subscription</p>
+<p local-id=3D"b443bc027d85"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"a2987c0d2e12" class=3D"confluenceTd">
+<ul local-id=3D"01f74e6e1ea1">
+<li local-id=3D"7b6c61cc3e84">
+<p local-id=3D"3f4b5a427ffb">type</p>
+<ul local-id=3D"388b6a580e96">
+<li local-id=3D"1083b50c9934">
+<p local-id=3D"eb5ec72f1a35">{enum}</p>
+<ul local-id=3D"0914a9bc0fee">
+<li local-id=3D"19c479071175">
+<p local-id=3D"26ac906d93c4">[ CASE_UPDATE_SMS, CUSTOMER_SURVEY, CASE_SUMMA=
+RY, =E2=80=A6 ]</p></li>
+</ul></li>
+</ul></li>
+<li local-id=3D"794e86b8c55c">
+<p local-id=3D"13a1c6563e97">status</p>
+<ul local-id=3D"5d643db87eac">
+<li local-id=3D"55c3ebab27a0">
+<p local-id=3D"7ff475011407">{nullable bolean}</p>
+<ul local-id=3D"80acbcc7d8be">
+<li local-id=3D"7de41c35e18f">
+<p local-id=3D"8718b8dd83d3">null =E2=86=92 unknown</p></li>
+<li local-id=3D"a01c24aaa261">
+<p local-id=3D"f09f27547eb6">true =E2=86=92 yes</p></li>
+<li local-id=3D"16e3e3d8e39a">
+<p local-id=3D"a32a8d85a23e">false - no</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"882f575b155e" class=3D"confluenceTd">
+<p local-id=3D"720d5e019c7a"></p></td>
+<td data-local-id=3D"282c04b6f61e" class=3D"confluenceTd">
+<ul local-id=3D"7891b17fced5">
+<li local-id=3D"b21de77afe4a">
+<p local-id=3D"30de49c6e753"><span data-colorid=3D"dmt33oxoy0">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"12b41ab429d1">
+<td data-local-id=3D"165bed6598eb" class=3D"confluenceTd">
+<p local-id=3D"517ad228930b">birthday</p></td>
+<td data-local-id=3D"99fba9655727" class=3D"confluenceTd">
+<p local-id=3D"e2095144036a">{date}</p></td>
+<td data-local-id=3D"9e49227aeeda" class=3D"confluenceTd">
+<p local-id=3D"afbe97ec8888"></p></td>
+<td data-local-id=3D"45a90e4d8ca7" class=3D"confluenceTd">
+<p local-id=3D"8a37005a230a"></p></td>
+</tr>
+<tr data-local-id=3D"9eebca1a8824">
+<td data-local-id=3D"a3b4ce88132b" class=3D"confluenceTd">
+<p local-id=3D"b64481c3f6ef">nationality</p></td>
+<td data-local-id=3D"1f5a03fb7bf6" class=3D"confluenceTd">
+<p local-id=3D"3a772f23995b">{enum}</p></td>
+<td data-local-id=3D"f653d21ddce4" class=3D"confluenceTd">
+<p local-id=3D"161b5ad05438"></p></td>
+<td data-local-id=3D"e6c51f53cb0c" class=3D"confluenceTd">
+<p local-id=3D"e13b8441cef2"></p></td>
+</tr>
+<tr data-local-id=3D"3194392734d6">
+<td data-local-id=3D"21ef31a9982e" class=3D"confluenceTd">
+<p local-id=3D"c610814a0e98">bankAccount</p></td>
+<td data-local-id=3D"b02ca7b5c78d" class=3D"confluenceTd">
+<ul local-id=3D"33fde2c9-4c47-4326-8b96-f5009b9e920b">
+<li local-id=3D"e69b9760-fa53-4418-b80f-885705685a0a">
+<p local-id=3D"9b32215257f3">name</p>
+<ul local-id=3D"6f8fc535-7516-4d94-9e8b-8e1d1bc11b89">
+<li local-id=3D"a4900d52-18c0-46ca-a249-82f19f5a4aad">
+<p local-id=3D"46e58eabd563">{string}</p></li>
+</ul></li>
+<li local-id=3D"37cbffa9-e675-40d8-a5b5-16fa00faef17">
+<p local-id=3D"4bb6a97f460a">bic</p>
+<ul local-id=3D"8b2ae8f2-04ed-43fe-9d6b-96e29559825c">
+<li local-id=3D"4c2f56b5-512d-4f3d-9b38-e12bc3a29e4b">
+<p local-id=3D"e9ed9fa3ebe6">{string}</p></li>
+</ul></li>
+<li local-id=3D"a5a6fc34-e290-4499-b383-4dd4948fe48b">
+<p local-id=3D"dc6e522d9b16">iban</p>
+<ul local-id=3D"fc3b4e5a-aff8-4e33-aaea-7525033d80ba">
+<li local-id=3D"60b2752f-8615-40ba-8ac6-4beae087fbe0">
+<p local-id=3D"d7230508ce1a">{string}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"45eaf367072d" class=3D"confluenceTd">
+<p local-id=3D"2fa18c743c80"></p></td>
+<td data-local-id=3D"7fdda1987f35" class=3D"confluenceTd">
+<p local-id=3D"458422dee8b4"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id=3D"expander-605450324" class=3D"expand-container">
+<div id=3D"expander-control-605450324" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">TRAVEL MEANS</span>
+</div>
+<div id=3D"expander-content-605450324" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"b6=
+9b5005b913" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"707cabcf-bd59-4385-a012-e66d8bfa5f10">
+<th data-local-id=3D"2aaf6774-ad18-4496-8574-5a75c6f33686" class=3D"conflue=
+nceTh">
+<p local-id=3D"d8f03ad8894b"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"26ceca24-ca18-4b07-a7fa-885e1fe02bf6" class=3D"conflue=
+nceTh">
+<p local-id=3D"f12de5a3a04d"><strong>Format</strong></p></th>
+<th data-local-id=3D"2593cfea-9077-421a-a1a3-e00e46465fcf" class=3D"conflue=
+nceTh">
+<p local-id=3D"5a77eb7cb2ae"><strong>Description</strong></p></th>
+<th data-local-id=3D"379845fc-a8d9-4b6a-ba1a-9f08596c4da5" class=3D"conflue=
+nceTh">
+<p local-id=3D"a21bfa6dbfd9"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"a36b1087-567e-40cd-ad2b-04f53e5b508f">
+<td data-local-id=3D"fda15037-1ba6-411b-b768-9d985c6dd10a" class=3D"conflue=
+nceTd">
+<p local-id=3D"b2230a3ca228">passengers</p>
+<p local-id=3D"44dc73500680"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"12064e17-0c31-4603-a9e7-e4f3c41206ee" class=3D"conflue=
+nceTd">
+<ul local-id=3D"cb94ebb7224c">
+<li local-id=3D"f5e85ec05f79">
+<p local-id=3D"531dc255de83">total</p>
+<ul local-id=3D"af33e348892d">
+<li local-id=3D"f2edf5966d0e">
+<p local-id=3D"6b7c75686dce">{integer}</p></li>
+</ul></li>
+<li local-id=3D"35adf56f5596">
+<p local-id=3D"7b6ae1c6ace1">children</p>
+<ul local-id=3D"8dc82054fa9a">
+<li local-id=3D"936a05f0e516">
+<p local-id=3D"7878a384173a">{integer}</p></li>
+</ul></li>
+<li local-id=3D"97e418691677">
+<p local-id=3D"74c624e9bb87">insuredTotal</p>
+<ul local-id=3D"e993970615bf">
+<li local-id=3D"7865cc27c24d">
+<p local-id=3D"04923154de7a">{integer}</p></li>
+</ul></li>
+<li local-id=3D"2e5da20ccf8d">
+<p local-id=3D"2a5e35c9c4b2">insuredChildren</p>
+<ul local-id=3D"b25d1c84f807">
+<li local-id=3D"30ac01622877">
+<p local-id=3D"b255c2670e66">{integer}</p></li>
+</ul></li>
+<li local-id=3D"80238e94ff1b">
+<p local-id=3D"cc32e545d926">creditcardAvailable</p>
+<ul local-id=3D"fb7546847930">
+<li local-id=3D"681391b5-ecf0-4656-a7f4-9cc2a9545f6d">
+<p local-id=3D"0002d25da64f">{nullable bolean}</p>
+<ul local-id=3D"7e2c3831-8fb7-468b-9811-7c523e27e685">
+<li local-id=3D"15ab30c9-a13c-4659-a6e1-7fe6644fd5f9">
+<p local-id=3D"ca4f4abb7220">null =E2=86=92 unknown</p></li>
+<li local-id=3D"e9aa7794-965c-41d2-a11c-841e55571c8f">
+<p local-id=3D"a8757fb83078">true =E2=86=92 yes</p></li>
+<li local-id=3D"2fc18820-9337-4779-a792-777b86381496">
+<p local-id=3D"0ac83b198467">false - no</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"def148c0-16c9-476a-a33d-e672579286db" class=3D"conflue=
+nceTd">
+<p local-id=3D"0cd10b9c4e6f"></p>
+<p local-id=3D"29e4d6705772"></p></td>
+<td data-local-id=3D"f9e60930-f548-4d1c-a15c-4bd3f6812254" class=3D"conflue=
+nceTd">
+<p local-id=3D"d10d45717c89"></p></td>
+</tr>
+<tr data-local-id=3D"8c5c036f0af4">
+<td data-local-id=3D"b776badccd9b" class=3D"confluenceTd">
+<p local-id=3D"1526c2cfffc7">travelPlan</p></td>
+<td data-local-id=3D"9e271b189188" class=3D"confluenceTd">
+<p local-id=3D"ace1b905541e">{string}</p>
+<ul local-id=3D"ab03c52061ad">
+<li local-id=3D"a022e31f14a7">
+<p local-id=3D"cc6a9988a627">[ CONTINUE, TO_HOME, NOT_REQUIRED ]</p></li>
+</ul></td>
+<td data-local-id=3D"ae81f6f5e081" class=3D"confluenceTd">
+<p local-id=3D"72a587af3e8b"></p></td>
+<td data-local-id=3D"fd3be4d27e37" class=3D"confluenceTd">
+<ul local-id=3D"8682e58a3d83">
+<li local-id=3D"cc296b2f1a6d">
+<p local-id=3D"a075f42e193e"><span data-colorid=3D"kpbmh1ftuo">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"d99978fae9a4">
+<td data-local-id=3D"9b699c241708" class=3D"confluenceTd">
+<p local-id=3D"bc59e21c28ce">duration</p>
+<p local-id=3D"646d009b7a2d"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"90efe38fab64" class=3D"confluenceTd">
+<ul local-id=3D"fe9fb2f3dd58">
+<li local-id=3D"734c3265616d">
+<p local-id=3D"cb3fcfb81ac5">desiredArrivalDate</p>
+<ul local-id=3D"287979807e5d">
+<li local-id=3D"e5bdcebbd162">
+<p local-id=3D"1d751097b66d">{dateTime}</p></li>
+</ul></li>
+<li local-id=3D"6064b8472c58">
+<p local-id=3D"f65b3f3914a5">desiredReturnDate</p>
+<ul local-id=3D"6b2fc9acc6a3">
+<li local-id=3D"d7f4ead7db9d">
+<p local-id=3D"47433000faef">{dateTime}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"55494f0a439c" class=3D"confluenceTd">
+<p local-id=3D"08d498df1df0"></p></td>
+<td data-local-id=3D"1cd29d95d6bb" class=3D"confluenceTd">
+<p local-id=3D"075e35d3c946"></p></td>
+</tr>
+<tr data-local-id=3D"59e9c369c7d6">
+<td data-local-id=3D"433d307d6e69" class=3D"confluenceTd">
+<p local-id=3D"6ec60afd8e57">pets</p>
+<p local-id=3D"dfe9aa433142"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"0510f29e619c" class=3D"confluenceTd">
+<ul local-id=3D"64a3a43bdcb2">
+<li local-id=3D"4f0d2f56022c">
+<p local-id=3D"3fa7fab83add">total</p>
+<ul local-id=3D"aee4b9fe382e">
+<li local-id=3D"201a87d097b4">
+<p local-id=3D"11004f51acdb">{integer}</p></li>
+</ul></li>
+<li local-id=3D"efb4d6499ae0">
+<p local-id=3D"75f1b91a3593">comment</p>
+<ul local-id=3D"4953a20915b7">
+<li local-id=3D"1b8f15ac9123">
+<p local-id=3D"dbaeafdfed88">{string}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"d987f9d3b87c" class=3D"confluenceTd">
+<p local-id=3D"e81bf019f8bf"></p></td>
+<td data-local-id=3D"9619e1548b06" class=3D"confluenceTd">
+<p local-id=3D"746456b83d2c"></p></td>
+</tr>
+<tr data-local-id=3D"698b2945fc22">
+<td data-local-id=3D"2de51c498612" class=3D"confluenceTd">
+<p local-id=3D"e33e8004c94d">luggage</p>
+<p local-id=3D"265a8334ef96"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"1809bcd4c54a" class=3D"confluenceTd">
+<ul local-id=3D"227525a8-d6f9-43ca-936e-79145d4bb309">
+<li local-id=3D"38690402-2c9b-4aed-9e77-a3e9e7efdb28">
+<p local-id=3D"cfe96eec7767">total</p>
+<ul local-id=3D"6ff7691d-3486-45d4-8f6a-a960b1eabda2">
+<li local-id=3D"47f6ee30-073f-44c4-a034-04f61f3e62a1">
+<p local-id=3D"7b5b158dd5fd">{integer}</p></li>
+</ul></li>
+<li local-id=3D"5a70fd13-cb83-4d39-a78f-b435e0165feb">
+<p local-id=3D"0b75508ae4a6">comment</p>
+<ul local-id=3D"b89d3075-8b5c-413c-9b90-c5916ff6cc4c">
+<li local-id=3D"6cf7737b-ab65-4484-913f-ebaf570fac77">
+<p local-id=3D"037a9c5eb3fc">{string}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"662c5bf146be" class=3D"confluenceTd">
+<p local-id=3D"ad92f21bdc56"></p></td>
+<td data-local-id=3D"97758547a5bb" class=3D"confluenceTd">
+<p local-id=3D"106957dba620"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id=3D"expander-1758638852" class=3D"expand-container">
+<div id=3D"expander-control-1758638852" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">CIRCUMSTANCES</span>
+</div>
+<div id=3D"expander-content-1758638852" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"4b=
+2d357e21b2" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"a5791ad4-acc2-4fa7-bc99-14b6c5ac740b">
+<th data-local-id=3D"dcc9e27a-7965-42fd-b19f-1347d05e2259" class=3D"conflue=
+nceTh">
+<p local-id=3D"32477768b28b"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"6a9ce098-ad77-4d9b-8b20-30b938286d3a" class=3D"conflue=
+nceTh">
+<p local-id=3D"7750ae47c7f0"><strong>Format</strong></p></th>
+<th data-local-id=3D"4f1676a4-35c1-41aa-96be-ce51196fb69b" class=3D"conflue=
+nceTh">
+<p local-id=3D"9d76d679fe81"><strong>Description</strong></p></th>
+<th data-local-id=3D"979ae03f-7de9-463d-93de-dac30af2ad70" class=3D"conflue=
+nceTh">
+<p local-id=3D"158eea4d47df"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"80b382e0d17f">
+<td data-local-id=3D"6a23a3d68833" class=3D"confluenceTd">
+<p local-id=3D"915253330da6">incidentDate</p></td>
+<td data-local-id=3D"681a1cac7bc3" class=3D"confluenceTd">
+<p local-id=3D"5580d6566d88"></p></td>
+<td data-local-id=3D"0a84d075db20" class=3D"confluenceTd">
+<p local-id=3D"1f3d464d6f1e"></p></td>
+<td data-local-id=3D"78837d38e1f8" class=3D"confluenceTd">
+<p local-id=3D"16088389b4ad"></p></td>
+</tr>
+<tr data-local-id=3D"e4f1353eb7d8">
+<td data-local-id=3D"e45529ca4ca0" class=3D"confluenceTd">
+<p local-id=3D"6884768ca49c">specialEvent</p></td>
+<td data-local-id=3D"2ffdeb275ad7" class=3D"confluenceTd">
+<p local-id=3D"8036202d0186"></p></td>
+<td data-local-id=3D"bc12ef5946d6" class=3D"confluenceTd">
+<p local-id=3D"aef028212534"></p></td>
+<td data-local-id=3D"bb47b39c83a5" class=3D"confluenceTd">
+<p local-id=3D"f69a155ecc06"></p></td>
+</tr>
+<tr data-local-id=3D"d9836794b03c">
+<td data-local-id=3D"4779b943acdc" class=3D"confluenceTd">
+<p local-id=3D"d1b690d68955">event</p></td>
+<td data-local-id=3D"dd04853a3563" class=3D"confluenceTd">
+<p local-id=3D"c4d8b682eaed"></p></td>
+<td data-local-id=3D"d99dcb9b3bcc" class=3D"confluenceTd">
+<p local-id=3D"04c4a8dc46c4"></p></td>
+<td data-local-id=3D"73233ca454e6" class=3D"confluenceTd">
+<p local-id=3D"713b5f1c1ce5"></p></td>
+</tr>
+<tr data-local-id=3D"52c1e0a5e35e">
+<td data-local-id=3D"e0d89e4dc1ac" class=3D"confluenceTd">
+<p local-id=3D"a80509a5e498">problemDescription</p></td>
+<td data-local-id=3D"71f545eae582" class=3D"confluenceTd">
+<p local-id=3D"c576665a9e57"></p></td>
+<td data-local-id=3D"8d2ef43ac14d" class=3D"confluenceTd">
+<p local-id=3D"7c979ea83afe"></p></td>
+<td data-local-id=3D"3a533f784ae3" class=3D"confluenceTd">
+<p local-id=3D"ac510112b4aa"></p></td>
+</tr>
+<tr data-local-id=3D"a457ce974105">
+<td data-local-id=3D"8e8e9a68d5ab" class=3D"confluenceTd">
+<p local-id=3D"8a7b12cff3c4">problemAddendum</p></td>
+<td data-local-id=3D"973fed6d6f32" class=3D"confluenceTd">
+<p local-id=3D"896c7c975d1d"></p></td>
+<td data-local-id=3D"0f35f2213be1" class=3D"confluenceTd">
+<p local-id=3D"c4587b1627ba"></p></td>
+<td data-local-id=3D"2357e69cfe49" class=3D"confluenceTd">
+<p local-id=3D"9fc848187f47"></p></td>
+</tr>
+<tr data-local-id=3D"394997fd61b5">
+<td data-local-id=3D"67b73231b6f4" class=3D"confluenceTd">
+<p local-id=3D"408fcd3e9b4f">comment</p></td>
+<td data-local-id=3D"abd18d5d23c9" class=3D"confluenceTd">
+<p local-id=3D"d77944705e0a"></p></td>
+<td data-local-id=3D"33e4e400c187" class=3D"confluenceTd">
+<p local-id=3D"e9a7a6566699"></p></td>
+<td data-local-id=3D"2eec0d52499c" class=3D"confluenceTd">
+<p local-id=3D"691c382d3b0f"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id=3D"expander-512102488" class=3D"expand-container">
+<div id=3D"expander-control-512102488" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">COVERAGE</span>
+</div>
+<div id=3D"expander-content-512102488" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"27=
+6c7c6a3dff" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"f8e5e371-2225-47d3-9e92-d61614a6d6c8">
+<th data-local-id=3D"2e2a66a1-b09d-4358-aa96-60bebe663007" class=3D"conflue=
+nceTh">
+<p local-id=3D"96e0c1407e1e"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"b2cfae1b-df64-4693-8703-36d0e57df233" class=3D"conflue=
+nceTh">
+<p local-id=3D"3d6142564ad9"><strong>Format</strong></p></th>
+<th data-local-id=3D"2939ff38-d625-4772-98d3-d26b0612a82d" class=3D"conflue=
+nceTh">
+<p local-id=3D"e95809e3c28e"><strong>Description</strong></p></th>
+<th data-local-id=3D"19b031ea-c82d-4e92-b7c5-8b38dbc27abe" class=3D"conflue=
+nceTh">
+<p local-id=3D"fd831e114e79"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"ba3e7b1e6bf1">
+<td data-local-id=3D"79c84701d809" class=3D"confluenceTd">
+<p local-id=3D"5276f7fc4c97">title</p></td>
+<td data-local-id=3D"b639b096a29f" class=3D"confluenceTd">
+<p local-id=3D"cd53c9e410ec">{string}</p></td>
+<td data-local-id=3D"0bc88ae20953" class=3D"confluenceTd">
+<p local-id=3D"8a3f0e55d4d5"></p></td>
+<td data-local-id=3D"9ca0eca10f42" class=3D"confluenceTd">
+<p local-id=3D"7dc967036814"></p></td>
+</tr>
+<tr data-local-id=3D"d882d84a8fc6">
+<td data-local-id=3D"faec2a6bdc46" class=3D"confluenceTd">
+<p local-id=3D"f7d72a1afefa">type</p></td>
+<td data-local-id=3D"6d14945d17cd" class=3D"confluenceTd">
+<p local-id=3D"06fa9df2c10f">{array of strings}</p>
+<ul local-id=3D"9fb82c71744e">
+<li local-id=3D"b767a67f3295">
+<p local-id=3D"ba30aa8f5b2d">[ HELP_ON_SPOT, RECOVERY, TOWING, TRANSPORT, R=
+ENTAL_CAR, OVERNIGHT_STAY, MEDICAL_CARE, =E2=80=A6 ]</p></li>
+</ul></td>
+<td data-local-id=3D"65ccbead3e88" class=3D"confluenceTd">
+<p local-id=3D"0a184a9c91b8">Service subscription, Contract, Policy, Eligib=
+ility, Membership, =E2=80=A6</p></td>
+<td data-local-id=3D"45fb55b2935b" class=3D"confluenceTd">
+<ul local-id=3D"aa7ec42afe89">
+<li local-id=3D"7cca50e67bfa">
+<p local-id=3D"aeff731b7ab0"><span data-colorid=3D"f0mw9emuv1">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"a780d705cb04">
+<td data-local-id=3D"45bf6a45c4e8" class=3D"confluenceTd">
+<p local-id=3D"abf4e01c9e5a">usage</p></td>
+<td data-local-id=3D"c4518127a5c8" class=3D"confluenceTd">
+<p local-id=3D"6d239b37016b">{array of string}</p>
+<ul local-id=3D"a12a88174486">
+<li local-id=3D"b1d110d64897">
+<p local-id=3D"4a395d436531">See options under Object =E2=80=9CORDER=E2=80=
+=9D and its attribute =E2=80=9Ctype=E2=80=9D</p>
+<ul local-id=3D"09e10c2aac79">
+<li local-id=3D"a0c6d76dfe7b">
+<p local-id=3D"a1fefd2ed1dd">{string}</p>
+<ul local-id=3D"d55d9ae6-b8da-4847-8476-faccee65fab6">
+<li local-id=3D"491454b0-1d3d-4ae4-b3d7-20cd27b5c389">
+<p local-id=3D"8ba7dc0f805b">[ HELP_ON_SPOT, RECOVERY, TOWING, TRANSPORT, R=
+ENTAL_CAR, OVERNIGHT_STAY, MEDICAL_CARE, =E2=80=A6 ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"31dac0ae22cb" class=3D"confluenceTd">
+<p local-id=3D"da7def726439"></p></td>
+<td data-local-id=3D"a25a229480ba" class=3D"confluenceTd">
+<p local-id=3D"38ac2765f689"></p></td>
+</tr>
+<tr data-local-id=3D"5687cc6bb676">
+<td data-local-id=3D"627fd12564f3" class=3D"confluenceTd">
+<p local-id=3D"8f1525d4d96a">description</p></td>
+<td data-local-id=3D"758479e3ba31" class=3D"confluenceTd">
+<p local-id=3D"206a89a604b1">{string}</p></td>
+<td data-local-id=3D"1ad1c684fda9" class=3D"confluenceTd">
+<p local-id=3D"c86a9beb6c22"></p></td>
+<td data-local-id=3D"8447a3ebf1b8" class=3D"confluenceTd">
+<p local-id=3D"68d6e0043ba2"></p></td>
+</tr>
+<tr data-local-id=3D"027938109143">
+<td data-local-id=3D"5a72bb3d39f0" class=3D"confluenceTd">
+<p local-id=3D"d3bada803d36">availability</p></td>
+<td data-local-id=3D"7efd176a9faa" class=3D"confluenceTd">
+<ul local-id=3D"daa42c5e33cd">
+<li local-id=3D"dd8f3ae93564">
+<p local-id=3D"8e9c4989b5e7">from</p>
+<ul local-id=3D"88e5ff56a274">
+<li local-id=3D"24c6f5a067be">
+<p local-id=3D"bc11971e748b">{dateTime}</p></li>
+</ul></li>
+<li local-id=3D"d29db5106686">
+<p local-id=3D"ae8c44ec3b8f">until</p>
+<ul local-id=3D"64ca358f8bcd">
+<li local-id=3D"8be55c3e48b7">
+<p local-id=3D"de42a2139d9c">{dateTime}</p></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"db231d5027e2" class=3D"confluenceTd">
+<p local-id=3D"65c0b59398cd"></p></td>
+<td data-local-id=3D"f630f3af6da1" class=3D"confluenceTd">
+<p local-id=3D"bf1a9d86bef0"></p></td>
+</tr>
+<tr data-local-id=3D"24a641dd3eb5">
+<td data-local-id=3D"5058120bb8ab" class=3D"confluenceTd">
+<p local-id=3D"5984e7b87572">status</p></td>
+<td data-local-id=3D"02708e4de704" class=3D"confluenceTd">
+<p local-id=3D"702671e293f6">{string}</p>
+<ul local-id=3D"2d446cddb766">
+<li local-id=3D"f2218d9a2f1d">
+<p local-id=3D"4bfcfd86d160">[ COVERED, NOT_COVERED, PROVISIONAL, REJECTED,=
+ SELFPAYER ]</p></li>
+</ul></td>
+<td data-local-id=3D"3828bcde8983" class=3D"confluenceTd">
+<p local-id=3D"eb7c67ac950a"></p></td>
+<td data-local-id=3D"95480ebfbaa9" class=3D"confluenceTd">
+<ul local-id=3D"09f6f9c152dd">
+<li local-id=3D"41394fa89480">
+<p local-id=3D"07f0d2d0690d"><span data-colorid=3D"pav1arrq6b">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"a7310e796ed2">
+<td data-local-id=3D"777d30d4f33d" class=3D"confluenceTd">
+<p local-id=3D"06b433abc355">budget</p>
+<p local-id=3D"e218a79cf87f"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"1f4ab0221af0" class=3D"confluenceTd">
+<ul local-id=3D"23b9c103510c">
+<li local-id=3D"b5e0a08228d0">
+<p local-id=3D"b34f8b580c18">grossAmount</p>
+<ul local-id=3D"27972c7fbe06">
+<li local-id=3D"7f3896bd870b">
+<p local-id=3D"55e12e9ae4d0">{integer}</p></li>
+</ul></li>
+<li local-id=3D"2a38062a510c">
+<p local-id=3D"e87f4243e6f5">vatRatePercentage</p>
+<ul local-id=3D"f09eec592689">
+<li local-id=3D"44890447d079">
+<p local-id=3D"e519e1d42c74">{integer}</p></li>
+</ul></li>
+<li local-id=3D"6c36cfebe1c2">
+<p local-id=3D"e5809de8eea2">currency</p>
+<ul local-id=3D"8f22d37911e5">
+<li local-id=3D"3e824a5556f8">
+<p local-id=3D"7db8a84b5322">{string}</p>
+<ul local-id=3D"f1bdda63-d23a-4f82-96ce-46453834a4c1">
+<li local-id=3D"639ac881-a2c4-4a2d-91a5-55ed51dea70e">
+<p local-id=3D"bf10e5130225">[ EUR, CHF, USD, =E2=80=A6 ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"56ba8ec69626" class=3D"confluenceTd">
+<p local-id=3D"e200f7c8fa36"></p></td>
+<td data-local-id=3D"54b51187d859" class=3D"confluenceTd">
+<p local-id=3D"dffc1396cb12"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id=3D"expander-1346827424" class=3D"expand-container">
+<div id=3D"expander-control-1346827424" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">COST APPROVAL</span>
+</div>
+<div id=3D"expander-content-1346827424" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"64=
+7346898724" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"7cf9ace5-f3e2-4473-9479-91fbb0b32f7a">
+<th data-local-id=3D"bca21ca2-8f0b-4d8b-8568-6cc1e63b5121" class=3D"conflue=
+nceTh">
+<p local-id=3D"bb8340561609"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"66adf3da-de5c-426a-b306-08f75cda99cd" class=3D"conflue=
+nceTh">
+<p local-id=3D"92a961182f36"><strong>Format</strong></p></th>
+<th data-local-id=3D"490f595b-2879-4b4e-b493-7e8966078110" class=3D"conflue=
+nceTh">
+<p local-id=3D"8d0f60826612"><strong>Description</strong></p></th>
+<th data-local-id=3D"1968a0f4-6645-41b1-8291-2fd5a22a6d75" class=3D"conflue=
+nceTh">
+<p local-id=3D"f09bdc41c869"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"9d192513-66bb-42a7-9a99-6c1228bf26df">
+<td data-local-id=3D"ae63489b-7718-4533-ba2e-a555d4c5f893" class=3D"conflue=
+nceTd">
+<p local-id=3D"4394a459cddf">title</p></td>
+<td data-local-id=3D"bb7464fe-c07f-40d9-be4c-831b9b375c30" class=3D"conflue=
+nceTd">
+<p local-id=3D"0f1347b20d2d">{string}</p></td>
+<td data-local-id=3D"d36f2dc5-1140-4851-9667-d6648ace331a" class=3D"conflue=
+nceTd">
+<p local-id=3D"686d3ef20591"></p></td>
+<td data-local-id=3D"36c91fe4-12eb-4df7-9f22-bfe8a9102b85" class=3D"conflue=
+nceTd">
+<p local-id=3D"d7008c109406"></p></td>
+</tr>
+<tr data-local-id=3D"54bfebc518bd">
+<td data-local-id=3D"7ec316fbe48b" class=3D"confluenceTd">
+<p local-id=3D"53a628b4c35e">description</p></td>
+<td data-local-id=3D"c6f368896243" class=3D"confluenceTd">
+<p local-id=3D"f0026c939530">{string}</p></td>
+<td data-local-id=3D"c75e809f6205" class=3D"confluenceTd">
+<p local-id=3D"77afd1bb4a15"></p></td>
+<td data-local-id=3D"1c41c88cd389" class=3D"confluenceTd">
+<p local-id=3D"7090b0492bbe"></p></td>
+</tr>
+<tr data-local-id=3D"09e241535ab4">
+<td data-local-id=3D"f615ee5e-c7cd-476d-8efa-fc61ee60ed07" class=3D"conflue=
+nceTd">
+<p local-id=3D"ac10817a92a3">chargeType</p></td>
+<td data-local-id=3D"78af5c29-6002-45ad-9e22-fa092372f3cd" class=3D"conflue=
+nceTd">
+<p local-id=3D"bcdd0e6cf3d3">{string}</p>
+<ul local-id=3D"1e1afd0e-3610-4dbb-92fa-f20c2a4e9d97">
+<li local-id=3D"8ae59b02-df32-48ac-84bf-1f2e029f003d">
+<p local-id=3D"aee1a92ec2cb">[ LABOR, PART, OTHER ]</p></li>
+</ul></td>
+<td data-local-id=3D"a28687f3e559" class=3D"confluenceTd">
+<p local-id=3D"89d8be3267f8"></p></td>
+<td data-local-id=3D"44aa550348e4" class=3D"confluenceTd">
+<p local-id=3D"792ef2965263"></p></td>
+</tr>
+<tr data-local-id=3D"717656f50971">
+<td data-local-id=3D"39194560-84ee-4884-871f-55390ec02de6" class=3D"conflue=
+nceTd">
+<p local-id=3D"96042eed54c2">rateType</p></td>
+<td data-local-id=3D"dc7cfc64-4a25-42fd-bdd3-c15af765e360" class=3D"conflue=
+nceTd">
+<p local-id=3D"45392937552c">{string}</p>
+<ul local-id=3D"b66e9747-0526-4851-865d-d79f0186e2cb">
+<li local-id=3D"745b1963-6af8-4572-b166-f0589da0871e">
+<p local-id=3D"e6d3c0cc5ef1">[ FIXED, LIMIT, PER_DAY ]</p></li>
+</ul></td>
+<td data-local-id=3D"18e5be471299" class=3D"confluenceTd">
+<p local-id=3D"002f890adf1f"></p></td>
+<td data-local-id=3D"b14b7a5668a1" class=3D"confluenceTd">
+<p local-id=3D"487fd7237931"></p></td>
+</tr>
+<tr data-local-id=3D"eaa59a58d0ba">
+<td data-local-id=3D"6781d161-efc5-4be7-b996-3a679febf913" class=3D"conflue=
+nceTd">
+<p local-id=3D"064d730f3125">quantity</p></td>
+<td data-local-id=3D"d2c53cb7-6917-4a37-9b32-5ddf1d83645b" class=3D"conflue=
+nceTd">
+<p local-id=3D"c2fb011efc53">{integer}</p></td>
+<td data-local-id=3D"4e388a057152" class=3D"confluenceTd">
+<p local-id=3D"f3b27615abbf"></p></td>
+<td data-local-id=3D"90d65a81f9a9" class=3D"confluenceTd">
+<p local-id=3D"69664216c4c9"></p></td>
+</tr>
+<tr data-local-id=3D"a36866bfc880">
+<td data-local-id=3D"dbf9c349-6316-42bf-a6a5-80b56283493c" class=3D"conflue=
+nceTd">
+<p local-id=3D"e0bd63779120">grossAmount</p></td>
+<td data-local-id=3D"b060db75-8a62-4e3f-b411-a9cade190869" class=3D"conflue=
+nceTd">
+<p local-id=3D"1aa12afeaff2">{integer}</p></td>
+<td data-local-id=3D"0f52934f1dab" class=3D"confluenceTd">
+<p local-id=3D"19f035b7183c"></p></td>
+<td data-local-id=3D"971d1c940e51" class=3D"confluenceTd">
+<p local-id=3D"0e115a257ba7"></p></td>
+</tr>
+<tr data-local-id=3D"f5f687912900">
+<td data-local-id=3D"92511c13-47bf-4ead-ba2f-80c75e4d8bea" class=3D"conflue=
+nceTd">
+<p local-id=3D"16b57d2e4389">vatRatePercentage</p></td>
+<td data-local-id=3D"bc6fc2da-33fe-4b72-b941-31f2c7cf5f6c" class=3D"conflue=
+nceTd">
+<p local-id=3D"1956e5312b26">{integer}</p></td>
+<td data-local-id=3D"236a83416fa7" class=3D"confluenceTd">
+<p local-id=3D"665cf787a0f4"></p></td>
+<td data-local-id=3D"6820f18b63ce" class=3D"confluenceTd">
+<p local-id=3D"516119d1ac54"></p></td>
+</tr>
+<tr data-local-id=3D"f3147692361d">
+<td data-local-id=3D"b72cb210-3b13-43de-8170-c7e46dc53b0f" class=3D"conflue=
+nceTd">
+<p local-id=3D"46bdc56ddb39">currency</p></td>
+<td data-local-id=3D"41d8aa1d-3eb9-4a26-9eb6-9d4b3f3655bb" class=3D"conflue=
+nceTd">
+<p local-id=3D"fd5dc266c8ef">{string}</p>
+<ul local-id=3D"8c3becb3-62e0-4d69-be3a-f1443cf8a908">
+<li local-id=3D"da96836f-4213-4523-b0b6-403edb1da20e">
+<p local-id=3D"82b3d7c8a321">[ EUR, CHF, USD, =E2=80=A6 ]</p></li>
+</ul></td>
+<td data-local-id=3D"ae40efaee54c" class=3D"confluenceTd">
+<p local-id=3D"518efb022302"></p></td>
+<td data-local-id=3D"288e2af445cd" class=3D"confluenceTd">
+<p local-id=3D"1762a50ebc98"></p></td>
+</tr>
+<tr data-local-id=3D"64f385e7e35d">
+<td data-local-id=3D"d05027a9-3b1a-4d5f-9697-7bdffe914b68" class=3D"conflue=
+nceTd">
+<p local-id=3D"c388989459b3">status</p></td>
+<td data-local-id=3D"6ed8fe44-3e5b-481c-8d45-ad1f2f37f584" class=3D"conflue=
+nceTd">
+<p local-id=3D"b3a3ac053c35">{string}</p>
+<ul local-id=3D"570769c5-8928-4470-8ce9-3038b15629bf">
+<li local-id=3D"93861b98-bdd6-4c80-8f3e-e57e356f675c">
+<p local-id=3D"e4d4a62e1cc4">[ WITH_RESERVATION, APPROVED, REJECTED, ADJUST=
+ED ]</p></li>
+</ul></td>
+<td data-local-id=3D"5ad5569c7a0e" class=3D"confluenceTd">
+<p local-id=3D"dd4fc529e2dc"></p></td>
+<td data-local-id=3D"5e38ded28fea" class=3D"confluenceTd">
+<p local-id=3D"ce0a5e606627"></p></td>
+</tr>
+<tr data-local-id=3D"82b99baef5ce">
+<td data-local-id=3D"d49c326d6fdd" class=3D"confluenceTd">
+<p local-id=3D"368544a0a592">areaInformationRadius</p>
+<p local-id=3D"e7ac2b0d7b51"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"249172cd68b1" class=3D"confluenceTd">
+<ul local-id=3D"093e3828d79d">
+<li local-id=3D"a68e15044a69">
+<p local-id=3D"3228ea746c2e">latitude</p>
+<ul local-id=3D"b1e0df83d53f">
+<li local-id=3D"55f44f6804d0">
+<p local-id=3D"d73728f42f85">{float}</p></li>
+</ul></li>
+<li local-id=3D"6ee7e439887e">
+<p local-id=3D"7573d9d2c8d2">longitude</p>
+<ul local-id=3D"1aba421c43d8">
+<li local-id=3D"c124559b3949">
+<p local-id=3D"fc91ac600d61">{float}</p></li>
+</ul></li>
+<li local-id=3D"f07648f43dc4">
+<p local-id=3D"b824834295a5">radius</p>
+<ul local-id=3D"64ebb894f169">
+<li local-id=3D"36876f8d3aa2">
+<p local-id=3D"836bafbdf209">{integer}</p></li>
+</ul></li>
+<li local-id=3D"516fea18fcf4">
+<p local-id=3D"b6ce1f02f489">radiusUnit</p>
+<ul local-id=3D"8b1dee49e1fd">
+<li local-id=3D"b094a58a27de">
+<p local-id=3D"0f5463e580ac">{string}</p>
+<ul local-id=3D"c84e8d24fedc">
+<li local-id=3D"5e2ffb121ebd">
+<p local-id=3D"786046ec62bf">[ MM, M, KM, MILES ]</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+<td data-local-id=3D"588c825bd037" class=3D"confluenceTd">
+<p local-id=3D"ffa8f1a53826"></p></td>
+<td data-local-id=3D"15c6cb9bcd67" class=3D"confluenceTd">
+<p local-id=3D"2584f2a891db"></p></td>
+</tr>
+<tr data-local-id=3D"d46e14220ea5">
+<td data-local-id=3D"8ff1fa470e0d" class=3D"confluenceTd">
+<p local-id=3D"55253467f4f3">areaInformationArea</p>
+<p local-id=3D"0b828ba7a6ae"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"e492cd56a548" class=3D"confluenceTd">
+<p local-id=3D"bd7cf65a0081">{array of positions: lat, lon}</p></td>
+<td data-local-id=3D"c1bb24508d19" class=3D"confluenceTd">
+<p local-id=3D"c7dd32498655"></p></td>
+<td data-local-id=3D"5612c6885afe" class=3D"confluenceTd">
+<p local-id=3D"94ada6bb80a3"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id=3D"expander-2126826832" class=3D"expand-container">
+<div id=3D"expander-control-2126826832" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"7e22436de87ca629314e3e171ab08876e933fe=
+24f34a25a89a81633e352dde1f" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">INVOICE ITEM</span>
+</div>
+<div id=3D"expander-content-2126826832" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"6e=
+5444748baf" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"f8ad493e-d1f4-4a75-8107-f040dd3ef3c5">
+<th data-local-id=3D"1f55cc86-5d97-4bca-aaa5-10431d9a025d" class=3D"conflue=
+nceTh">
+<p local-id=3D"ae0b0efe25b7"><strong>Attribute</strong></p></th>
+<th data-local-id=3D"0dbe88fa-dcbf-4a9c-b925-a62215722eb7" class=3D"conflue=
+nceTh">
+<p local-id=3D"88fecbdcb80b"><strong>Format</strong></p></th>
+<th data-local-id=3D"4c209403-b943-4c36-8700-d7bfcba83656" class=3D"conflue=
+nceTh">
+<p local-id=3D"50c5a902d76b"><strong>Description</strong></p></th>
+<th data-local-id=3D"0760d7c1-245c-4168-bc79-02ec54d5521f" class=3D"conflue=
+nceTh">
+<p local-id=3D"b665a5fa46cf"><strong>Discussion</strong></p></th>
+</tr>
+<tr data-local-id=3D"87494ff69696">
+<td data-local-id=3D"3bcf637dd588" class=3D"confluenceTd">
+<p local-id=3D"dcebad21cec6">title</p></td>
+<td data-local-id=3D"7f60699c935a" class=3D"confluenceTd">
+<p local-id=3D"01fb1243b020">{string}</p></td>
+<td data-local-id=3D"c36a9de60440" class=3D"confluenceTd">
+<p local-id=3D"fffa2df4454a"></p></td>
+<td data-local-id=3D"158528f2c287" class=3D"confluenceTd">
+<p local-id=3D"534947f6bb56"></p></td>
+</tr>
+<tr data-local-id=3D"cb91ce78adf2">
+<td data-local-id=3D"189264328212" class=3D"confluenceTd">
+<p local-id=3D"944c25d1b1e8">description</p></td>
+<td data-local-id=3D"572679e1999a" class=3D"confluenceTd">
+<p local-id=3D"df0f87c270cd">{string}</p></td>
+<td data-local-id=3D"a87a2c98391a" class=3D"confluenceTd">
+<p local-id=3D"ba1f8f83aa7a"></p></td>
+<td data-local-id=3D"90d9b53dd994" class=3D"confluenceTd">
+<p local-id=3D"3cff367f341a"></p></td>
+</tr>
+<tr data-local-id=3D"2139a70a-f587-4fda-9b8a-9efacf741603">
+<td data-local-id=3D"dbc5f7d3-e6d3-43bb-9e15-332e70a1aca2" class=3D"conflue=
+nceTd">
+<p local-id=3D"09d049663edf">chargeType</p></td>
+<td data-local-id=3D"0167af38-dbc9-45b3-8582-916800545a3a" class=3D"conflue=
+nceTd">
+<p local-id=3D"1afec8224685">{string}</p>
+<ul local-id=3D"e4a376e0befb">
+<li local-id=3D"9644551f1ad0">
+<p local-id=3D"76897fe3b7c2">[ LABOR, PART, OTHER ]</p></li>
+</ul></td>
+<td data-local-id=3D"57ef8fc2-dbc0-4dee-abb8-215c346634fa" class=3D"conflue=
+nceTd">
+<p local-id=3D"35f074d8b237"></p></td>
+<td data-local-id=3D"b2abaa66-f727-4eb7-8b68-98a2a1c093fe" class=3D"conflue=
+nceTd">
+<ul local-id=3D"d0d0cfd4636e">
+<li local-id=3D"0ea835216693">
+<p local-id=3D"fa86aa546e7b"><span data-colorid=3D"aytwiwjdfs">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"3178991ace5a">
+<td data-local-id=3D"6738f01d3158" class=3D"confluenceTd">
+<p local-id=3D"a9b077b02426">rateType</p></td>
+<td data-local-id=3D"b29a90647720" class=3D"confluenceTd">
+<p local-id=3D"52eaa8ba32ea">{string}</p>
+<ul local-id=3D"aabb4aec1e05">
+<li local-id=3D"f2f20a91cf3f">
+<p local-id=3D"87bacd0c177d">[ FIXED, LIMIT, PER_DAY ]</p></li>
+</ul></td>
+<td data-local-id=3D"3b1854a64efb" class=3D"confluenceTd">
+<p local-id=3D"a54d918ee6ed"></p></td>
+<td data-local-id=3D"6166f1fe3656" class=3D"confluenceTd">
+<p local-id=3D"83970a3f5214"></p></td>
+</tr>
+<tr data-local-id=3D"1fe973f6a3da">
+<td data-local-id=3D"9ec9a7837989" class=3D"confluenceTd">
+<p local-id=3D"7ea62872abd5">quantity</p></td>
+<td data-local-id=3D"1b1b995df1d1" class=3D"confluenceTd">
+<p local-id=3D"69a6df837352">{integer}</p></td>
+<td data-local-id=3D"cf28751674e8" class=3D"confluenceTd">
+<p local-id=3D"8ff6ae23fdd2"></p></td>
+<td data-local-id=3D"7b0d7bca5799" class=3D"confluenceTd">
+<p local-id=3D"cc48b3e8603e"></p></td>
+</tr>
+<tr data-local-id=3D"557aaaf5ca07">
+<td data-local-id=3D"82257ecc2186" class=3D"confluenceTd">
+<p local-id=3D"f2985f39de42">grossAmount</p></td>
+<td data-local-id=3D"d1e823ab08a6" class=3D"confluenceTd">
+<p local-id=3D"9bcce53d2c8a">{integer}</p></td>
+<td data-local-id=3D"7ffe2ae49ec8" class=3D"confluenceTd">
+<p local-id=3D"a17b147051d4"></p></td>
+<td data-local-id=3D"74425d21b6a1" class=3D"confluenceTd">
+<p local-id=3D"437eaafc97b6"></p></td>
+</tr>
+<tr data-local-id=3D"be8ac0d352e4">
+<td data-local-id=3D"7564de1136b9" class=3D"confluenceTd">
+<p local-id=3D"aaba75e776ac">vatRatePercentage</p></td>
+<td data-local-id=3D"56090e9567f9" class=3D"confluenceTd">
+<p local-id=3D"18367f63b326">{integer}</p></td>
+<td data-local-id=3D"652f1c7802bd" class=3D"confluenceTd">
+<p local-id=3D"ea1c81713895"></p></td>
+<td data-local-id=3D"769e805fdbb5" class=3D"confluenceTd">
+<p local-id=3D"474da8fd4556"></p></td>
+</tr>
+<tr data-local-id=3D"14e5c06a8f17">
+<td data-local-id=3D"fd2bc10cced5" class=3D"confluenceTd">
+<p local-id=3D"aafdc1a2374a">currency</p></td>
+<td data-local-id=3D"dcc3f9b51155" class=3D"confluenceTd">
+<p local-id=3D"02e5c9570d6a">{string}</p>
+<ul local-id=3D"9cb06c3b-92d0-472e-844a-4883bb761bb8">
+<li local-id=3D"8f7e8cd8-8e1d-4fe9-b0e1-77e02e34e2ed">
+<p local-id=3D"282d8c19a7e8">[ EUR, CHF, USD, =E2=80=A6 ]</p></li>
+</ul></td>
+<td data-local-id=3D"d7935e642ab9" class=3D"confluenceTd">
+<p local-id=3D"19564b076b37"></p></td>
+<td data-local-id=3D"9019e8219564" class=3D"confluenceTd">
+<p local-id=3D"a85772a51102"></p></td>
+</tr>
+<tr data-local-id=3D"2b9001099a9f">
+<td data-local-id=3D"cb65c3e1a5c9" class=3D"confluenceTd">
+<p local-id=3D"833c8bf096b6">comment</p></td>
+<td data-local-id=3D"6ee9ab235358" class=3D"confluenceTd">
+<p local-id=3D"f2e1b33380a6">{string}</p></td>
+<td data-local-id=3D"9da4b4f82c17" class=3D"confluenceTd">
+<p local-id=3D"4f96dac08a84"></p></td>
+<td data-local-id=3D"1a0d1eef475d" class=3D"confluenceTd">
+<p local-id=3D"0a6cd794cd1b"></p></td>
+</tr>
+<tr data-local-id=3D"854dbeec26ca">
+<td data-local-id=3D"ea4eab053b12" class=3D"confluenceTd">
+<p local-id=3D"e4cd3cb3bcaf">adjustedGrossAmount</p></td>
+<td data-local-id=3D"751e4b47ce72" class=3D"confluenceTd">
+<p local-id=3D"bd7ef3c0b573">{integer}</p></td>
+<td data-local-id=3D"0e1d73230a71" class=3D"confluenceTd">
+<p local-id=3D"a503f560232e"></p></td>
+<td data-local-id=3D"82e1cac65a62" class=3D"confluenceTd">
+<p local-id=3D"4aa2f684f243"></p></td>
+</tr>
+<tr data-local-id=3D"7df8a973c03f">
+<td data-local-id=3D"a60e95973f9e" class=3D"confluenceTd">
+<p local-id=3D"454137c6aa0e">adjustedComment</p></td>
+<td data-local-id=3D"8e6aafe247da" class=3D"confluenceTd">
+<p local-id=3D"d10da699bee3">{string}</p></td>
+<td data-local-id=3D"4c1709362a48" class=3D"confluenceTd">
+<p local-id=3D"b063b7225426"></p></td>
+<td data-local-id=3D"cb464ef669ad" class=3D"confluenceTd">
+<p local-id=3D"ca451d81edf1"></p></td>
+</tr>
+<tr data-local-id=3D"98814c34431d">
+<td data-local-id=3D"29b44b7253d8" class=3D"confluenceTd">
+<p local-id=3D"4a8f2b6305bb">status</p></td>
+<td data-local-id=3D"cadb2b119731" class=3D"confluenceTd">
+<p local-id=3D"dd062ba105f9">{string}</p>
+<ul local-id=3D"f427c7db-689f-4e83-bd8a-6d0d574b6fda">
+<li local-id=3D"20eb8cb6-f287-4e64-b7e9-8878245ecade">
+<p local-id=3D"facc13c446e5">[ SUBMITTED, CHECK, APPROVED, REJECTED, ADJUST=
+ED ]</p></li>
+</ul></td>
+<td data-local-id=3D"7eb252759215" class=3D"confluenceTd">
+<p local-id=3D"738e97f9d2c7"></p></td>
+<td data-local-id=3D"bb1e6c7ddfe0" class=3D"confluenceTd">
+<ul local-id=3D"ecd48e9fbdf2">
+<li local-id=3D"3cd2988db6a0">
+<p local-id=3D"139b14878cf6"><span data-colorid=3D"bjtug9vgxw">Closed list =
+of enums possible?</span></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"37b4d27b103a">
+<td data-local-id=3D"74c728b3c95a" class=3D"confluenceTd">
+<p local-id=3D"144fe448686a">attachments</p>
+<p local-id=3D"304779ba0e5c"><span style=3D"background-color: rgb(198,237,2=
+51);">object</span></p></td>
+<td data-local-id=3D"c9f936f84d4f" class=3D"confluenceTd">
+<p local-id=3D"84f8fbc77947"></p></td>
+<td data-local-id=3D"9833f05de71d" class=3D"confluenceTd">
+<p local-id=3D"2b5055e0ce8d"></p></td>
+<td data-local-id=3D"e87a369cc942" class=3D"confluenceTd">
+<p local-id=3D"d73f593aa3d4"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_112_114373351.1773320488153
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/7e22436de87ca629314e3e171ab08876e933fe24f34a25a89a81633e352dde1f
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_112_114373351.1773320488153--

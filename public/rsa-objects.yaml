@@ -1,0 +1,1206 @@
+openapi: 3.0.3
+info:
+  title: RSA - Objects schemata
+  version: 1.0.0
+  description: |
+    Schemata definitions for RSA objects
+
+    ## Object hierarchy overview
+    ```
+    Case
+    ├── caseStatus .................. CaseStatus (1:1)
+    ├── attachments ................. Attachments (1:N)
+    ├── vehicles .................... Vehicle (1:N)
+    │   ├── vehicleType ............. VehicleType (1:1)
+    │   ├── mileageCurrent .......... Mileage (1:1)
+    │   ├── mileageLastService ...... Mileage (1:1)
+    │   ├── maximumGrossWeight ...... Weight (1:1)
+    │   ├── emptyWeight ............. Weight (1:1)
+    │   ├── length .................. Dimension (1:1)
+    │   ├── width ................... Dimension (1:1)
+    │   ├── height .................. Dimension (1:1)
+    │   ├── addOns .................. AddOns (1:N)
+    │   ├── damageDescription ....... DamageDescription (1:1)
+    │   │   └── damageEvent ......... DamageEvent (1:1)
+    │   └── diagnosis ............... Diagnosis (1:1)
+    ├── locations ................... Location (1:N)
+    │   ├── accessibility ........... Accessibility (1:1)
+    │   │   └── restriction ......... Restriction (1:1)
+    │   ├── position ................ Position (1:1)
+    │   ├── contactVia .............. ContactVia (1:1)
+    │   ├── subscription ............ Subscription (1:1)
+    │   ├── openingHours ............ OpeningHours (1:1)
+    │   └── bankAccount ............. BankAccount (1:1)
+    ├── contacts .................... Contact (1:N)
+    │   ├── position ................ Position (1:1)
+    │   ├── contactVia .............. ContactVia (1:1)
+    │   ├── subscription ............ Subscription (1:1)
+    │   └── bankAccount ............. BankAccount (1:1)
+    ├── travelMeans ................. TravelMeans (1:1)
+    │   ├── passengers .............. Passengers (1:1)
+    │   ├── duration ................ TravelDuration (1:1)
+    │   ├── pets .................... Pets (1:1)
+    │   └── luggage ................. Luggage (1:1)
+    ├── circumstances ............... Circumstances (1:1)
+    ├── coverages ................... Coverage (1:N)
+    │   ├── availability ............ Availability (1:1)
+    │   └── budget .................. Budget (1:1)
+    └── orders ...................... Order (1:N)
+        ├── serviceDuration ......... ServiceDuration (1:1)
+        ├── orderStatus ............. OrderStatus (1:1)
+        ├── attachments ............. Attachments (1:N)
+        ├── vehicle ................. Vehicle (1:1)
+        │   ├── vehicleType ......... VehicleType (1:1)
+        │   ├── mileageCurrent ...... Mileage (1:1)
+        │   ├── mileageLastService .. Mileage (1:1)
+        │   ├── maximumGrossWeight .. Weight (1:1)
+        │   ├── emptyWeight ......... Weight (1:1)
+        │   ├── length .............. Dimension (1:1)
+        │   ├── width ............... Dimension (1:1)
+        │   ├── height .............. Dimension (1:1)
+        │   ├── addOns .............. AddOns (1:N)
+        │   ├── damageDescription ... DamageDescription (1:1)
+        │   │   └── damageEvent ..... DamageEvent (1:1)
+        │   └── diagnosis ........... Diagnosis (1:1)
+        ├── locations ............... Location (1:N)
+        │   ├── accessibility ....... Accessibility (1:1)
+        │   │   └── restriction ..... Restriction (1:1)
+        │   ├── position ............ Position (1:1)
+        │   ├── contactVia .......... ContactVia (1:1)
+        │   ├── subscription ........ Subscription (1:1)
+        │   ├── openingHours ........ OpeningHours (1:1)
+        │   └── bankAccount ......... BankAccount (1:1)
+        ├── contacts ................ Contact (1:N)
+        │   ├── position ............ Position (1:1)
+        │   ├── contactVia .......... ContactVia (1:1)
+        │   ├── subscription ........ Subscription (1:1)
+        │   └── bankAccount ......... BankAccount (1:1)
+        ├── travelMeans ............. TravelMeans (1:1)
+        │   ├── passengers .......... Passengers (1:1)
+        │   ├── duration ............ TravelDuration (1:1)
+        │   ├── pets ................ Pets (1:1)
+        │   └── luggage ............. Luggage (1:1)
+        ├── circumstances ........... Circumstances (1:1)
+        ├── coverages ............... Coverage (1:N)
+        │   ├── availability ........ Availability (1:1)
+        │   └── budget .............. Budget (1:1)
+        ├── costApprovals ........... CostApproval (1:N)
+        │   ├── areaInformationRadius  AreaInformationRadius (1:1)
+        │   └── areaInformationArea .  AreaInformationArea (1:1)
+        └── invoiceItems ............ InvoiceItem (1:N)
+            └── attachments ......... Attachments (1:N)
+    ```
+
+paths: {}
+
+components:
+  schemas:
+
+    # =========================================================================
+    # MAIN SCHEMAS (10 objects)
+    # =========================================================================
+
+    # 1. CASE
+    Case:
+      type: object
+      description: "A roadside assistance case, representing the entire incident from the initial breakdown call to final resolution"
+      properties:
+        client:
+          type: string
+          description: "Contracting client, e.g. 'BMW', 'AUDI', 'HONDA DE', 'German Autobahn'"
+        clientComment:
+          type: string
+          description: "Special instructions from the client to observe during service, e.g. 'VIP customer — priority handling'"
+        origin:
+          type: string
+          description: "Source system, e.g. 'Mosaic', 'Navigator', 'OnStreet Network', 'OnStreet Roadside'"
+        number:
+          type: string
+          description: "Case number, e.g. 'RSA-2025-0047123'"
+        creationDate:
+          type: string
+          format: date-time
+          description: "Case creation timestamp"
+        priority:
+          type: string
+          enum: [HIGH, MEDIUM, LOW]
+          description: "Case priority, e.g. HIGH for a family stranded on the highway at night"
+        caseStatus:
+          $ref: '#/components/schemas/CaseStatus'
+        comment:
+          type: string
+          description: "General comment, e.g. 'Driver reports smoke from engine bay'"
+        relatedServiceOrders:
+          type: array
+          items:
+            type: string
+          description: "IDs of related service orders, e.g. towing + rental car for the same breakdown"
+        clientReference:
+          type: string
+          description: "Client-side reference number"
+        rsaReference:
+          type: string
+          description: "RSA internal reference"
+        networkProviderReference:
+          type: string
+          description: "Network provider reference"
+        serviceProviderReference:
+          type: string
+          description: "Service provider reference"
+        vehicles:
+          type: array
+          description: "Vehicles involved in this case (1:N), e.g. the broken-down car and its trailer"
+          items:
+            $ref: '#/components/schemas/Vehicle'
+        locations:
+          type: array
+          description: "Locations related to this case (1:N), e.g. breakdown site, home address, travel destination"
+          items:
+            $ref: '#/components/schemas/Location'
+        contacts:
+          type: array
+          description: "Contact persons for this case (1:N), e.g. stranded driver, vehicle owner, insured person"
+          items:
+            $ref: '#/components/schemas/Contact'
+        travelMeans:
+          $ref: '#/components/schemas/TravelMeans'
+        circumstances:
+          $ref: '#/components/schemas/Circumstances'
+        coverages:
+          type: array
+          description: "Applicable coverages for this case (1:N), e.g. ADAC membership, manufacturer warranty"
+          items:
+            $ref: '#/components/schemas/Coverage'
+        attachments:
+          type: array
+          items:
+            $ref: '#/components/schemas/Attachments'
+        orders:
+          type: array
+          description: "Service orders belonging to this case (1:N)"
+          items:
+            $ref: '#/components/schemas/Order'
+
+    # 2. ORDER
+    Order:
+      type: object
+      description: "A service order within a case, e.g. a towing job, a rental car booking, or an on-spot repair"
+      properties:
+        id:
+          type: string
+          description: "Unique identifier of the order, e.g. 'ORD-2025-0098765'"
+        type:
+          type: string
+          enum: [HELP_ON_SPOT, RECOVERY, TOWING, TRANSPORT, RENTAL_CAR, OVERNIGHT_STAY, MEDICAL_CARE]
+          description: "Service type, e.g. TOWING for transporting a broken-down vehicle to the nearest garage"
+        number:
+          type: string
+          description: "Order number, e.g. 'SO-2025-00123'"
+        client:
+          type: string
+          description: "Contracting client, e.g. 'BMW'"
+        clientReference:
+          type: string
+          description: "Client-side reference number"
+        clientComment:
+          type: string
+          description: "Special client instructions, e.g. 'Only use authorized BMW dealers for towing destination'"
+        origin:
+          type: string
+          description: "Source system, e.g. 'Mosaic', 'Navigator', 'OnStreet Network', 'OnStreet Roadside'"
+        creationDate:
+          type: string
+          format: date-time
+          description: "Order creation timestamp"
+        priority:
+          type: string
+          enum: [HIGH, MEDIUM, LOW]
+          description: "Order priority, e.g. HIGH for a vehicle blocking a highway lane"
+        serviceDuration:
+          $ref: '#/components/schemas/ServiceDuration'
+        orderStatus:
+          $ref: '#/components/schemas/OrderStatus'
+        comment:
+          type: string
+          description: "General comment, e.g. 'Vehicle is on the hard shoulder, hazard lights on'"
+        caseReference:
+          type: string
+          description: "Reference to the parent case"
+        rsaProviderReference:
+          type: string
+          description: "RSA provider reference"
+        networkProviderReference:
+          type: string
+          description: "Network provider reference"
+        serviceProviderReference:
+          type: string
+          description: "Service provider reference"
+        vehicle:
+          $ref: '#/components/schemas/Vehicle'
+        locations:
+          type: array
+          description: "Locations related to this order (1:N), e.g. breakdown site, towing destination, rental pickup"
+          items:
+            $ref: '#/components/schemas/Location'
+        contacts:
+          type: array
+          description: "Contact persons for this order (1:N), e.g. stranded driver, vehicle owner, garage contact"
+          items:
+            $ref: '#/components/schemas/Contact'
+        travelMeans:
+          $ref: '#/components/schemas/TravelMeans'
+        circumstances:
+          $ref: '#/components/schemas/Circumstances'
+        coverages:
+          type: array
+          description: "Applicable coverages (1:N), e.g. breakdown membership, manufacturer warranty"
+          items:
+            $ref: '#/components/schemas/Coverage'
+        costApprovals:
+          type: array
+          description: "Cost approvals for the service (1:N), e.g. approved towing cost, approved rental car budget"
+          items:
+            $ref: '#/components/schemas/CostApproval'
+        invoiceItems:
+          type: array
+          description: "Invoice line items (1:N), e.g. towing fee, mileage surcharge, labor costs"
+          items:
+            $ref: '#/components/schemas/InvoiceItem'
+        attachments:
+          type: array
+          items:
+            $ref: '#/components/schemas/Attachments'
+
+    # 3. VEHICLE
+    Vehicle:
+      type: object
+      description: "The vehicle involved in the breakdown, including identification, dimensions, damage, and post-service diagnosis"
+      properties:
+        make:
+          type: string
+          description: "Manufacturer, e.g. 'BMW', 'Volkswagen', 'Mercedes-Benz'"
+        modell:
+          type: string
+          description: "Model, e.g. '3 Series', 'Golf', 'E-Class'"
+        vehicleType:
+          $ref: '#/components/schemas/VehicleType'
+        licensePlate:
+          type: string
+          description: "License plate, e.g. 'M-AB 1234'"
+        licensePlateRegion:
+          type: string
+          description: "License plate region, e.g. 'M' for Munich"
+        usage:
+          type: string
+          description: "Vehicle usage, e.g. 'PRIVATE', 'COMMERCIAL', 'RENTAL'"
+        vin:
+          type: string
+          description: "Vehicle Identification Number, e.g. 'WBAPH5C55BA123456'"
+        registrationDate:
+          type: string
+          format: date-time
+          description: "First registration date"
+        mileageCurrent:
+          description: "Current odometer reading at the time of breakdown"
+          $ref: '#/components/schemas/Mileage'
+        mileageLastService:
+          description: "Odometer reading at the last scheduled service"
+          $ref: '#/components/schemas/Mileage'
+        drivetrainType:
+          type: string
+          enum: [RWD, FWD, 4WD, AWD]
+          description: "Drivetrain type — important for towing method (e.g. AWD vehicles need a flatbed)"
+        transmissionType:
+          type: string
+          enum: [MANUAL, AUTOMATIC, HALF_AUTOMATIC]
+          description: "Transmission type — affects towing procedure"
+        fuelType:
+          type: string
+          enum: [GASOLINE, DIESEL, HYBRID, BATTERY, CNG]
+          description: "Fuel type, e.g. BATTERY for an EV requiring specialized towing"
+        maximumGrossWeight:
+          description: "Maximum gross vehicle weight — determines required tow truck class"
+          $ref: '#/components/schemas/Weight'
+        emptyWeight:
+          description: "Vehicle curb weight"
+          $ref: '#/components/schemas/Weight'
+        color:
+          type: string
+          description: "Vehicle color, e.g. 'Alpine White' — helps the tow truck driver identify the vehicle"
+        length:
+          description: "Vehicle length — relevant for flatbed truck capacity"
+          $ref: '#/components/schemas/Dimension'
+        width:
+          description: "Vehicle width — relevant for narrow road recovery"
+          $ref: '#/components/schemas/Dimension'
+        height:
+          description: "Vehicle height (incl. roof load) — relevant for parking garage recovery"
+          $ref: '#/components/schemas/Dimension'
+        addOns:
+          type: array
+          description: "Vehicle accessories and add-ons (1:N)"
+          items:
+            $ref: '#/components/schemas/AddOns'
+        comment:
+          type: string
+          description: "General vehicle comment, e.g. 'Aftermarket lowered suspension, use caution when loading'"
+        hasTrailer:
+          type: boolean
+          nullable: true
+          description: "Is a trailer attached? (null = unknown, true = yes, false = no)"
+        damageDescription:
+          $ref: '#/components/schemas/DamageDescription'
+        diagnosis:
+          $ref: '#/components/schemas/Diagnosis'
+
+    # 4. LOCATION
+    Location:
+      type: object
+      description: "A location relevant to the service order, e.g. breakdown site on A9 highway, destination garage, hotel for overnight stay, or rental car pickup office"
+      properties:
+        role:
+          type: array
+          items:
+            type: string
+          description: "Role(s) of this location, e.g. 'Incident location', 'Vehicle destination', 'Rental pickup', 'Overnight stay'"
+        locationName:
+          type: string
+          description: "Location name, e.g. 'Autohaus Mueller GmbH', 'Holiday Inn Munich City Centre'"
+        salutation:
+          type: string
+          description: "Salutation, e.g. 'Mr', 'Ms', 'Dr'"
+        firstName:
+          type: string
+          description: "First name of the contact at this location"
+        lastName:
+          type: string
+          description: "Last name of the contact at this location"
+        adresslineOne:
+          type: string
+          description: "Address line 1, e.g. 'Frankfurter Ring 25'"
+        adresslineTwo:
+          type: string
+          description: "Address line 2, e.g. 'Building B, Gate 3'"
+        zipcode:
+          type: string
+          description: "Postal code, e.g. '80807'"
+        city:
+          type: string
+          description: "City, e.g. 'Munich'"
+        region:
+          type: string
+          description: "Region / state, e.g. 'Bavaria'"
+        country:
+          type: string
+          description: "Country, e.g. 'DE'"
+        accessibility:
+          $ref: '#/components/schemas/Accessibility'
+        position:
+          $ref: '#/components/schemas/Position'
+        contactVia:
+          $ref: '#/components/schemas/ContactVia'
+        mainLanguage:
+          type: string
+          enum: [EN, FR, IT, DE]
+          description: "Main language spoken at this location"
+        additionalLanguages:
+          type: array
+          items:
+            type: string
+            enum: [EN, FR, IT, DE]
+          description: "Additional languages"
+        comment:
+          type: string
+          description: "Comment, e.g. 'Vehicle is parked in slot 42 on level -1'"
+        subscription:
+          $ref: '#/components/schemas/Subscription'
+        openingHours:
+          $ref: '#/components/schemas/OpeningHours'
+        bankAccount:
+          $ref: '#/components/schemas/BankAccount'
+
+    # 5. CONTACT
+    Contact:
+      type: object
+      description: "A person involved in the roadside assistance case, e.g. stranded driver, vehicle owner, dispatcher, tow truck driver, or garage contact"
+      properties:
+        role:
+          type: array
+          items:
+            type: string
+            enum:
+              - STRANDED_PERSON
+              - NOTIFIER
+              - DRIVER
+              - CONTACT_PERSON
+              - VEHICLE_OWNER
+              - INSURED_PERSON
+              - PASSENGER
+              - RSA
+              - NETWORK_PROVIDER
+              - SERVICE_PROVIDER
+              - SERVICE_PROVIDER_DISPATCHER
+              - SERVICE_PROVIDER_TRUCKDRIVER
+              - CLIENT
+              - INVOICE_RECIPIENT
+          description: "Role(s) of this contact, e.g. STRANDED_PERSON + DRIVER for the person driving at the time of breakdown"
+        companyName:
+          type: string
+          description: "Company name, e.g. 'Mueller Towing Services GmbH'"
+        salutation:
+          type: string
+          description: "Salutation, e.g. 'Mr', 'Ms'"
+        firstName:
+          type: string
+          description: "First name, e.g. 'Hans'"
+        lastName:
+          type: string
+          description: "Last name, e.g. 'Mueller'"
+        membershipNumber:
+          type: string
+          description: "Membership or policy number, e.g. 'ADAC-2025-123456'"
+        adresslineOne:
+          type: string
+          description: "Address line 1 (street, house number)"
+        adresslineTwo:
+          type: string
+          description: "Address line 2 (floor, apartment, office)"
+        zipcode:
+          type: string
+          description: "Postal code"
+        city:
+          type: string
+          description: "City"
+        region:
+          type: string
+          description: "Region / state"
+        country:
+          type: string
+          description: "Country"
+        position:
+          $ref: '#/components/schemas/Position'
+        contactVia:
+          $ref: '#/components/schemas/ContactVia'
+        mainLanguage:
+          type: string
+          enum: [DE, EN, FR, IT]
+          description: "Main language spoken by this contact"
+        additionalLanguages:
+          type: array
+          items:
+            type: string
+            enum: [DE, EN, FR, IT]
+          description: "Additional languages"
+        comment:
+          type: string
+          description: "Comment, e.g. 'Driver is elderly, needs assistance exiting the vehicle'"
+        subscription:
+          $ref: '#/components/schemas/Subscription'
+        birthday:
+          type: string
+          format: date
+          description: "Date of birth"
+        nationality:
+          type: string
+          description: "Nationality, e.g. 'DE', 'AT', 'CH'"
+        bankAccount:
+          $ref: '#/components/schemas/BankAccount'
+
+    # 6. TRAVEL MEANS
+    TravelMeans:
+      type: object
+      description: "Travel information for organizing onward journey, e.g. rental car size, train tickets, or hotel rooms needed"
+      properties:
+        passengers:
+          $ref: '#/components/schemas/Passengers'
+        travelPlan:
+          type: string
+          enum: [CONTINUE, TO_HOME, NOT_REQUIRED]
+          description: "Travel plan, e.g. CONTINUE to proceed to vacation destination, TO_HOME to return home"
+        duration:
+          $ref: '#/components/schemas/TravelDuration'
+        pets:
+          $ref: '#/components/schemas/Pets'
+        luggage:
+          $ref: '#/components/schemas/Luggage'
+
+    # 7. CIRCUMSTANCES
+    Circumstances:
+      type: object
+      description: "Circumstances of the breakdown incident, including time, special conditions, and problem description"
+      properties:
+        incidentDate:
+          type: string
+          format: date-time
+          description: "Date and time of the incident, e.g. '2025-03-12T22:45:00Z' (late evening breakdown)"
+        specialEvent:
+          type: string
+          description: "Special event or condition, e.g. 'Heavy snowfall', 'Construction zone', 'Holiday traffic'"
+        event:
+          type: string
+          description: "General event category, e.g. 'Mechanical failure', 'Accident', 'Flat tire'"
+        problemDescription:
+          type: string
+          description: "Problem description, e.g. 'Engine overheated while driving uphill on A7, coolant warning light on'"
+        problemAddendum:
+          type: string
+          description: "Additional problem details, e.g. 'Steam visible from hood, strong burning smell'"
+        comment:
+          type: string
+          description: "General comment, e.g. 'Driver pulled over safely on the emergency lane'"
+
+    # 8. COVERAGE
+    Coverage:
+      type: object
+      description: "Coverage or contract information that entitles the customer to roadside assistance services, e.g. ADAC membership, BMW warranty, or insurance policy"
+      properties:
+        title:
+          type: string
+          description: "Coverage title, e.g. 'ADAC Plus Membership', 'BMW Roadside Assistance Package'"
+        type:
+          type: array
+          items:
+            type: string
+            enum: [HELP_ON_SPOT, RECOVERY, TOWING, TRANSPORT, RENTAL_CAR, OVERNIGHT_STAY, MEDICAL_CARE]
+          description: "Coverage type, e.g. SERVICE_SUBSCRIPTION, CONTRACT, POLICY"
+        usage:
+          type: array
+          items:
+            type: string
+            enum: [HELP_ON_SPOT, RECOVERY, TOWING, TRANSPORT, RENTAL_CAR, OVERNIGHT_STAY, MEDICAL_CARE]
+          description: "Applicable service types, e.g. [TOWING, RENTAL_CAR] — this coverage pays for towing and a rental car"
+        description:
+          type: string
+          description: "Coverage description, e.g. 'Covers towing up to 300 km and 5 days rental car within Germany'"
+        availability:
+          $ref: '#/components/schemas/Availability'
+        status:
+          type: string
+          enum: [COVERED, NOT_COVERED, PROVISIONAL, REJECTED, SELFPAYER]
+          description: "Coverage status, e.g. COVERED if the service is fully covered by the policy"
+        budget:
+          $ref: '#/components/schemas/Budget'
+
+    # 9. COST APPROVAL
+    CostApproval:
+      type: object
+      description: "A cost approval or pre-authorization for a specific service charge, e.g. approved EUR 350 for towing from breakdown site to authorized dealer"
+      properties:
+        title:
+          type: string
+          description: "Title, e.g. 'Towing Munich to Ingolstadt'"
+        description:
+          type: string
+          description: "Description, e.g. 'Flatbed tow of BMW 3 Series, 85 km distance'"
+        chargeType:
+          type: string
+          enum: [LABOR, PART, OTHER]
+          description: "Charge type, e.g. LABOR for tow truck driver time"
+        rateType:
+          type: string
+          enum: [FIXED, LIMIT, PER_DAY]
+          description: "Rate type, e.g. FIXED for a flat-rate towing fee"
+        quantity:
+          type: integer
+          description: "Quantity, e.g. 1 for a single towing job or 3 for 3 rental days"
+        grossAmount:
+          type: integer
+          description: "Approved gross amount, e.g. 35000 (= EUR 350.00)"
+        vatRatePercentage:
+          type: integer
+          description: "VAT rate in percent, e.g. 19"
+        currency:
+          type: string
+          enum: [EUR, CHF, USD]
+          description: "Currency"
+        status:
+          type: string
+          enum: [WITH_RESERVATION, APPROVED, REJECTED, ADJUSTED]
+          description: "Approval status, e.g. APPROVED after the client confirmed the cost"
+        areaInformationRadius:
+          $ref: '#/components/schemas/AreaInformationRadius'
+        areaInformationArea:
+          $ref: '#/components/schemas/AreaInformationArea'
+
+    # 10. INVOICE ITEM
+    InvoiceItem:
+      type: object
+      description: "A single invoice line item submitted by the service provider, e.g. towing fee, mileage surcharge, or replacement battery cost"
+      properties:
+        title:
+          type: string
+          description: "Line item title, e.g. 'Towing service — flatbed 85 km'"
+        description:
+          type: string
+          description: "Description, e.g. 'Flatbed transport from A9 km 127 to Autohaus Mueller, Munich'"
+        chargeType:
+          type: string
+          enum: [LABOR, PART, OTHER]
+          description: "Charge type, e.g. PART for a replacement battery"
+        rateType:
+          type: string
+          enum: [FIXED, LIMIT, PER_DAY]
+          description: "Rate type, e.g. PER_DAY for rental car charges"
+        quantity:
+          type: integer
+          description: "Quantity, e.g. 1 for a single tow or 5 for 5 rental car days"
+        grossAmount:
+          type: integer
+          description: "Gross amount, e.g. 35000 (= EUR 350.00)"
+        vatRatePercentage:
+          type: integer
+          description: "VAT rate in percent, e.g. 19"
+        currency:
+          type: string
+          enum: [EUR, CHF, USD]
+          description: "Currency"
+        comment:
+          type: string
+          description: "Comment, e.g. 'Night surcharge applied (service after 22:00)'"
+        adjustedGrossAmount:
+          type: integer
+          description: "Adjusted gross amount after review, e.g. 30000 (= EUR 300.00) after reducing the claimed amount"
+        adjustedComment:
+          type: string
+          description: "Adjustment reason, e.g. 'Night surcharge not covered under this contract'"
+        status:
+          type: string
+          enum: [SUBMITTED, CHECK, APPROVED, REJECTED, ADJUSTED]
+          description: "Invoice item status, e.g. ADJUSTED after the amount was corrected"
+        attachments:
+          type: array
+          items:
+            $ref: '#/components/schemas/Attachments'
+
+    # =========================================================================
+    # CASE SUB-SCHEMAS
+    # =========================================================================
+
+    CaseStatus:
+      type: object
+      description: "Status of a roadside assistance case, tracking its lifecycle from creation to closure"
+      properties:
+        name:
+          type: string
+          description: "Status label, e.g. 'OPEN', 'IN_PROGRESS', 'CLOSED'"
+        timestamp:
+          type: string
+          format: date-time
+          description: "Timestamp of the status change, e.g. '2025-03-12T14:30:00Z'"
+        source:
+          type: string
+          description: "Source of the status change, e.g. 'Dispatcher', 'System', 'Tow truck driver'"
+        comment:
+          type: string
+          description: "Comment on the status change, e.g. 'Driver confirmed vehicle is at the garage'"
+
+    # =========================================================================
+    # ORDER SUB-SCHEMAS
+    # =========================================================================
+
+    ServiceDuration:
+      type: object
+      description: "Time window for the roadside service execution, e.g. from dispatch to completion of a towing job"
+      properties:
+        start:
+          type: string
+          format: date-time
+          description: "Service start time, e.g. '2025-03-12T15:00:00Z' when the tow truck departs"
+        end:
+          type: string
+          format: date-time
+          description: "Service end time, e.g. '2025-03-12T16:30:00Z' when the vehicle is delivered to the garage"
+
+    OrderStatus:
+      type: object
+      description: "Status of a service order, including estimated arrival and completion times for the dispatched service"
+      properties:
+        name:
+          type: string
+          description: "Status label, e.g. 'DISPATCHED', 'EN_ROUTE', 'ON_SITE', 'COMPLETED'"
+        timestamp:
+          type: string
+          format: date-time
+          description: "Timestamp of the status change"
+        source:
+          type: string
+          description: "Source of the status change, e.g. 'Tow truck driver app', 'Dispatch system'"
+        comment:
+          type: string
+          description: "Comment, e.g. 'Traffic delay on A9 highway, revised ETA'"
+        eta:
+          type: string
+          format: date-time
+          description: "Estimated Time of Arrival at the breakdown location"
+        etc:
+          type: string
+          format: date-time
+          description: "Estimated Time of Completion of the service"
+        etr:
+          type: string
+          format: date-time
+          description: "Estimated Time of Repair (for on-spot repair jobs)"
+
+    # =========================================================================
+    # VEHICLE SUB-SCHEMAS
+    # =========================================================================
+
+    VehicleType:
+      type: object
+      description: "Vehicle type classification, e.g. a passenger car with standard registration or an oldtimer with seasonal plates"
+      properties:
+        bodyType:
+          type: string
+          enum: [LIMOUSINE, VAN, PASSENGER_CAR, HORSE_TRAILER, BIKE_TRAILER]
+          description: "Body type, e.g. VAN for a broken-down camper van"
+        registrationType:
+          type: string
+          enum: [TRANSPORT]
+          description: "Registration type"
+        licenseType:
+          type: string
+          enum: [PUBLIC, OLDTIMER, EV, SEASONAL]
+          description: "License plate type, e.g. EV for an electric vehicle with special plates"
+
+    AddOns:
+      type: object
+      description: "Vehicle add-ons and accessories that affect towing or recovery, e.g. a roof box that increases vehicle height"
+      properties:
+        itemType:
+          type: string
+          enum: [ROOF_BOX, ROOF_RACK, BIKE_RACK, HITCH_BOX]
+          description: "Add-on type, e.g. BIKE_RACK mounted on the rear"
+        itemKeysOnSite:
+          type: boolean
+          nullable: true
+          description: "Are the keys for this add-on on site? (null = unknown, true = yes, false = no)"
+        itemComment:
+          type: string
+          description: "Comment, e.g. 'Roof box is locked, key is in the glove compartment'"
+
+    DamageEvent:
+      type: object
+      description: "The damage event that caused the breakdown, structured as a decision tree from high-level event to specific detail"
+      properties:
+        event:
+          type: string
+          enum: [BREAKDOWN, COLLISION, BURGLARY]
+          description: "Top-level event category, e.g. BREAKDOWN for a mechanical failure on the highway"
+        description:
+          type: string
+          enum: [OFF_ROAD, ON_ROOF, FLAT_TIRE, BURNED_OUT, DOES_NOT_START]
+          description: "Event description, e.g. FLAT_TIRE after hitting a pothole"
+        detail:
+          type: string
+          enum: [LEFT_REAR_TIRE, LEFT_FRONT_TIRE]
+          description: "Specific detail, e.g. LEFT_REAR_TIRE"
+        comment:
+          type: string
+          description: "Free-text comment, e.g. 'Tire shredded on A8 near km 127, debris on shoulder'"
+
+    DamageDescription:
+      type: object
+      description: "Full damage description of the vehicle, including the damage event, error codes, and vehicle condition assessment"
+      properties:
+        damageEvent:
+          $ref: '#/components/schemas/DamageEvent'
+        displayedErrorCode:
+          type: string
+          description: "On-board error code, e.g. 'P0300' (random misfire detected)"
+        displayedErrorMessage:
+          type: string
+          description: "On-board error message, e.g. 'Engine malfunction — reduced power'"
+        serviceRecommendation:
+          type: string
+          description: "Recommended service action, e.g. 'Tow to nearest authorized dealer'"
+        fuelLevelPercentage:
+          type: integer
+          enum: [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
+          description: "Fuel level in percent (5% steps), e.g. 10 for a nearly empty tank"
+        leakage:
+          type: boolean
+          nullable: true
+          description: "Is there a fluid leak? (null = unknown, true = yes, false = no)"
+        leakageType:
+          type: string
+          enum: [OIL, WATER, SEVERAL]
+          description: "Type of leak, e.g. OIL for an engine oil leak under the vehicle"
+        driveable:
+          type: boolean
+          nullable: true
+          description: "Can the vehicle still be driven? (null = unknown, true = yes, false = no)"
+        steerable:
+          type: boolean
+          nullable: true
+          description: "Can the vehicle be steered? (null = unknown, true = yes, false = no)"
+        rollable:
+          type: boolean
+          nullable: true
+          description: "Can the vehicle roll freely? (null = unknown, true = yes, false = no)"
+        licensePlateOnSite:
+          type: boolean
+          nullable: true
+          description: "Is the license plate on the vehicle? (null = unknown, true = yes, false = no)"
+        keyOnSite:
+          type: boolean
+          nullable: true
+          description: "Are the vehicle keys on site? (null = unknown, true = yes, false = no)"
+        documentsOnSite:
+          type: boolean
+          nullable: true
+          description: "Are vehicle documents on site? (null = unknown, true = yes, false = no)"
+        ownerDocumentsOnSite:
+          type: boolean
+          nullable: true
+          description: "Are owner/registration documents on site? (null = unknown, true = yes, false = no)"
+        policeDocumentsOnSite:
+          type: boolean
+          nullable: true
+          description: "Are police report documents on site? (null = unknown, true = yes, false = no)"
+
+    Diagnosis:
+      type: object
+      description: "Post-service diagnosis by the technician or tow truck driver after inspecting the vehicle"
+      properties:
+        serviceOutcomeType:
+          type: string
+          description: "Service outcome, e.g. 'REPAIRED_ON_SPOT', 'TOWED_TO_GARAGE', 'NOT_REPAIRABLE'"
+        assemblyType:
+          type: string
+          description: "Affected assembly group, e.g. 'ENGINE', 'TRANSMISSION', 'ELECTRICAL'"
+        partType:
+          type: string
+          description: "Affected part, e.g. 'STARTER_MOTOR', 'ALTERNATOR', 'BATTERY'"
+        defectType:
+          type: string
+          description: "Type of defect, e.g. 'WORN_OUT', 'BROKEN', 'CORRODED'"
+        repairType:
+          type: string
+          description: "Repair performed, e.g. 'REPLACED', 'JUMP_STARTED', 'TEMPORARY_FIX'"
+        comment:
+          type: string
+          description: "Technician comment, e.g. 'Battery dead, jump-started successfully, recommend replacement'"
+
+    # =========================================================================
+    # LOCATION SUB-SCHEMAS
+    # =========================================================================
+
+    Restriction:
+      type: object
+      description: "Access restriction at a location, e.g. a parking garage with 2m height limit preventing flatbed truck access"
+      properties:
+        type:
+          type: string
+          enum: [HEIGHT, WIDTH, SPACE, TERRAIN, WEIGHT]
+          description: "Restriction type, e.g. HEIGHT for a low bridge near the breakdown site"
+        detail:
+          type: string
+          description: "Details, e.g. 'Narrow alley, no turning space for flatbed'"
+        maxValue:
+          type: integer
+          description: "Maximum allowed value, e.g. 200 (for 200 cm height clearance)"
+        unit:
+          type: string
+          enum: [m, cm, mm, g, kg, t]
+          description: "Unit of the restriction value"
+        comment:
+          type: string
+          description: "Comment, e.g. 'Alternative access via service road on the east side'"
+
+    Accessibility:
+      type: object
+      description: "Accessibility information for a location, e.g. whether a tow truck can reach the breakdown site"
+      properties:
+        accessibilityByTruck:
+          type: boolean
+          nullable: true
+          description: "Can the location be reached by a tow truck? (null = unknown, true = yes, false = no)"
+        accessibilityComment:
+          type: string
+          description: "Comment, e.g. 'Vehicle is in an underground parking garage, level -2'"
+        restriction:
+          $ref: '#/components/schemas/Restriction'
+
+    OpeningHours:
+      type: object
+      description: "Opening hours of a location such as a garage, car rental office, or hotel for overnight stay"
+      properties:
+        day:
+          type: string
+          enum: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY]
+          description: "Day of the week"
+        dayStart:
+          type: string
+          format: time
+          description: "Opening time, e.g. '08:00'"
+        breakStart:
+          type: string
+          format: time
+          description: "Break start, e.g. '12:00'"
+        breakEnd:
+          type: string
+          format: time
+          description: "Break end, e.g. '13:00'"
+        dayEnd:
+          type: string
+          format: time
+          description: "Closing time, e.g. '18:00'"
+        vacationDays:
+          type: array
+          items:
+            type: string
+            format: date
+          description: "Vacation/closure days, e.g. ['2025-12-24', '2025-12-25']"
+        comment:
+          type: string
+          description: "Comment, e.g. 'Key drop-off box available outside opening hours'"
+
+    # =========================================================================
+    # TRAVELMEANS SUB-SCHEMAS
+    # =========================================================================
+
+    Passengers:
+      type: object
+      description: "Information about passengers in the stranded vehicle, relevant for arranging alternative transport or hotel accommodation"
+      properties:
+        total:
+          type: integer
+          description: "Total number of passengers including driver, e.g. 4 (family of four)"
+        children:
+          type: integer
+          description: "Number of children, e.g. 2 (requiring child seats in rental car)"
+        insuredTotal:
+          type: integer
+          description: "Number of insured passengers, e.g. 3 (covered by the assistance policy)"
+        insuredChildren:
+          type: integer
+          description: "Number of insured children, e.g. 1"
+        creditcardAvailable:
+          type: boolean
+          nullable: true
+          description: "Does the driver have a credit card available? (null = unknown, true = yes, false = no)"
+
+    TravelDuration:
+      type: object
+      description: "Travel period for organizing continuation of journey, e.g. rental car or train booking"
+      properties:
+        desiredArrivalDate:
+          type: string
+          format: date-time
+          description: "Desired arrival at destination, e.g. '2025-03-13T18:00:00Z' for a family vacation deadline"
+        desiredReturnDate:
+          type: string
+          format: date-time
+          description: "Desired return date, e.g. '2025-03-20T10:00:00Z' for rental car drop-off"
+
+    Pets:
+      type: object
+      description: "Pets travelling with the stranded passengers, relevant for hotel or rental car arrangements"
+      properties:
+        total:
+          type: integer
+          description: "Number of pets, e.g. 1"
+        comment:
+          type: string
+          description: "Details, e.g. 'Large dog (Labrador), needs pet-friendly hotel and rental car'"
+
+    Luggage:
+      type: object
+      description: "Luggage of the stranded passengers, relevant for transport capacity planning"
+      properties:
+        total:
+          type: integer
+          description: "Number of luggage pieces, e.g. 4 (two large suitcases, two carry-ons)"
+        comment:
+          type: string
+          description: "Details, e.g. 'Includes ski equipment and a stroller'"
+
+    # =========================================================================
+    # COVERAGE SUB-SCHEMAS
+    # =========================================================================
+
+    Availability:
+      type: object
+      description: "Validity period of a coverage or contract, e.g. the membership is valid from Jan to Dec 2025"
+      properties:
+        from:
+          type: string
+          format: date-time
+          description: "Valid from, e.g. '2025-01-01T00:00:00Z'"
+        until:
+          type: string
+          format: date-time
+          description: "Valid until, e.g. '2025-12-31T23:59:59Z'"
+
+    Budget:
+      type: object
+      description: "Budget or cost ceiling for a coverage, e.g. max EUR 500 for towing under the premium membership"
+      properties:
+        grossAmount:
+          type: integer
+          description: "Gross amount in smallest currency unit, e.g. 50000 (= EUR 500.00)"
+        vatRatePercentage:
+          type: integer
+          description: "VAT rate in percent, e.g. 19"
+        currency:
+          type: string
+          enum: [EUR, CHF, USD]
+          description: "Currency, e.g. EUR"
+
+    # =========================================================================
+    # COSTAPPROVAL SUB-SCHEMAS
+    # =========================================================================
+
+    AreaInformationRadius:
+      type: object
+      description: "Geographical constraint as a radius, e.g. coverage valid within 50 km of the member's home address"
+      properties:
+        latitude:
+          type: number
+          format: float
+          description: "Center latitude, e.g. 48.1351"
+        longitude:
+          type: number
+          format: float
+          description: "Center longitude, e.g. 11.5820"
+        radius:
+          type: integer
+          description: "Radius value, e.g. 50"
+        radiusUnit:
+          type: string
+          enum: [MM, M, KM, MILES]
+          description: "Radius unit, e.g. KM"
+
+    AreaInformationArea:
+      type: object
+      description: "Geographical constraint as a polygon area, e.g. coverage valid only within Germany's borders"
+      properties:
+        positions:
+          type: array
+          description: "Array of GPS positions forming the polygon boundary"
+          items:
+            type: object
+            properties:
+              latitude:
+                type: number
+                format: float
+              longitude:
+                type: number
+                format: float
+
+    # =========================================================================
+    # SHARED SUB-SCHEMAS
+    # =========================================================================
+
+    Attachments:
+      type: object
+      description: "File attachments such as photos of the breakdown scene, towing receipts, or scanned vehicle documents — used in: Case, Order, InvoiceItem"
+
+    ContactVia:
+      type: object
+      description: "Contact channel for reaching a person or location, e.g. the stranded driver's mobile phone or a garage's business email — used in: Location, Contact"
+      properties:
+        type:
+          type: string
+          enum:
+            - PHONE_PRIVAT
+            - EMAIL_PRIVAT
+            - FAX_PRIVAT
+            - PHONE_BUSINESS
+            - EMAIL_BUSINESS
+            - FAX_BUSINESS
+          description: "Channel type, e.g. PHONE_PRIVAT for the driver's personal mobile"
+        usage:
+          type: boolean
+          nullable: true
+          description: "Is this channel actively usable? (null = unknown, true = yes, false = no)"
+
+    Subscription:
+      type: object
+      description: "Notification subscription, e.g. SMS updates on tow truck ETA or a post-service customer survey — used in: Location, Contact"
+      properties:
+        type:
+          type: string
+          enum:
+            - ETA_ADVISE
+            - CASE_UPDATE_SMS
+            - CUSTOMER_SURVEY
+            - CASE_SUMMARY
+          description: "Subscription type, e.g. ETA_ADVISE to notify the driver when the tow truck is approaching"
+        status:
+          type: boolean
+          nullable: true
+          description: "Active? (null = unknown, true = yes, false = no)"
+
+    BankAccount:
+      type: object
+      description: "Bank account details for payment processing, e.g. the service provider's account for invoice settlement — used in: Location, Contact"
+      properties:
+        name:
+          type: string
+          description: "Account holder name, e.g. 'ADAC Pannenhilfe GmbH'"
+        bic:
+          type: string
+          description: "BIC / SWIFT code, e.g. 'COBADEFFXXX'"
+        iban:
+          type: string
+          description: "IBAN, e.g. 'DE89370400440532013000'"
+
+    Position:
+      type: object
+      description: "GPS coordinates, e.g. the exact breakdown location on the highway or the destination garage — used in: Location, Contact"
+      properties:
+        latitude:
+          type: number
+          format: float
+          description: "Latitude, e.g. 48.1351 (Munich)"
+        longitude:
+          type: number
+          format: float
+          description: "Longitude, e.g. 11.5820 (Munich)"
+        status:
+          type: string
+          enum:
+            - VALIDATED
+            - NOT_VALIDATED
+          description: "Whether the position has been validated, e.g. via reverse geocoding"
+
+    # =========================================================================
+    # MEASUREMENT SCHEMAS (reusable)
+    # =========================================================================
+
+    Mileage:
+      type: object
+      description: "Odometer reading, used as mileageCurrent (e.g. 87,500 km at breakdown) or mileageLastService (e.g. 75,000 km)"
+      properties:
+        count:
+          type: integer
+          description: "Odometer value, e.g. 87500"
+        unit:
+          type: string
+          enum: [KM, MILES]
+          description: "Unit of measurement"
+
+    Weight:
+      type: object
+      description: "Weight measurement, used as maximumGrossWeight (e.g. 2,100 kg for a SUV) or emptyWeight (e.g. 1,650 kg)"
+      properties:
+        count:
+          type: integer
+          description: "Weight value, e.g. 2100"
+        unit:
+          type: string
+          enum: [G, KG, T, LB]
+          description: "Unit of measurement"
+
+    Dimension:
+      type: object
+      description: "Length measurement, used as vehicle length (e.g. 4,750 mm), width (e.g. 1,850 mm), or height (e.g. 1,620 mm)"
+      properties:
+        count:
+          type: integer
+          description: "Dimension value, e.g. 4750"
+        unit:
+          type: string
+          enum: [MM, CM, M, F]
+          description: "Unit of measurement"
