@@ -303,6 +303,10 @@ components:
           type: string
           format: date-time
           description: "First registration date"
+        productionDate:
+          type: string
+          format: date-time
+          description: "Vehicle production date"
         mileageCurrent:
           description: "Current odometer reading at the time of breakdown"
           $ref: '#/components/schemas/Mileage'
@@ -321,9 +325,6 @@ components:
           type: string
           enum: [GASOLINE, DIESEL, HYBRID, BATTERY, CNG]
           description: "Fuel type, e.g. BATTERY for an EV requiring specialized towing"
-        axlesCount:
-          type: integer
-          description: "Number of axles on the vehicle, e.g. 2 for a standard car, 3 for a truck"
         maximumGrossWeight:
           description: "Maximum gross vehicle weight — determines required tow truck class"
           $ref: '#/components/schemas/Weight'
@@ -342,6 +343,9 @@ components:
         height:
           description: "Vehicle height (incl. roof load) — relevant for parking garage recovery"
           $ref: '#/components/schemas/Dimension'
+        groundClearance:
+          description: "Vehicle ground clearance — relevant for recovery on uneven terrain"
+          $ref: '#/components/schemas/Dimension'
         addOns:
           type: array
           description: "Vehicle accessories and add-ons (1:N)"
@@ -351,6 +355,19 @@ components:
           type: boolean
           nullable: true
           description: "Is the vehicle braked? (null = unknown, true = yes, false = no)"
+        trailerCoupling:
+          type: boolean
+          nullable: true
+          description: "Does the vehicle have a trailer coupling? (null = unknown, true = yes, false = no)"
+        trailerCouplingType:
+          type: array
+          items:
+            type: string
+            enum: [BALLCOUPLING, RINGCOUPLING, OTHER]
+          description: "Type(s) of trailer coupling, e.g. BALLCOUPLING for a standard ball hitch"
+        axlesCount:
+          type: integer
+          description: "Number of axles on the vehicle, e.g. 2 for a standard car, 3 for a truck"
         comment:
           type: string
           description: "General vehicle comment, e.g. 'Aftermarket lowered suspension, use caution when loading'"
@@ -471,6 +488,9 @@ components:
         lastName:
           type: string
           description: "Last name, e.g. 'Mueller'"
+        membershipClub:
+          type: string
+          description: "Membership club or organization, e.g. 'ADAC', 'AXA CH', 'AAA'"
         membershipNumber:
           type: string
           description: "Membership or policy number, e.g. 'ADAC-2025-123456'"
@@ -875,6 +895,9 @@ components:
           type: boolean
           nullable: true
           description: "Are the vehicle keys on site? (null = unknown, true = yes, false = no)"
+        keyCount:
+          type: integer
+          description: "Number of vehicle keys on site, e.g. 1"
         documentsOnSite:
           type: boolean
           nullable: true
