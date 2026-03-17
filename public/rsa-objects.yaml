@@ -347,10 +347,6 @@ components:
         comment:
           type: string
           description: "General vehicle comment, e.g. 'Aftermarket lowered suspension, use caution when loading'"
-        hasTrailer:
-          type: boolean
-          nullable: true
-          description: "Is a trailer attached? (null = unknown, true = yes, false = no)"
         damageDescription:
           $ref: '#/components/schemas/DamageDescription'
         diagnosis:
