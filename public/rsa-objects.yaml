@@ -557,15 +557,21 @@ components:
         specialEvent:
           type: string
           description: "Special event or condition, e.g. 'Heavy snowfall', 'Construction zone', 'Holiday traffic'"
-        event:
+        levelOne:
           type: string
-          description: "General event category, e.g. 'Mechanical failure', 'Accident', 'Flat tire'"
-        problemDescription:
+          description: "Decision tree level 1, e.g. 'Mechanical failure', 'Accident'"
+        levelTwo:
           type: string
-          description: "Problem description, e.g. 'Engine overheated while driving uphill on A7, coolant warning light on'"
-        problemAddendum:
+          description: "Decision tree level 2, e.g. 'Engine overheated'"
+        levelThree:
           type: string
-          description: "Additional problem details, e.g. 'Steam visible from hood, strong burning smell'"
+          description: "Decision tree level 3, e.g. 'Coolant system'"
+        levelFour:
+          type: string
+          description: "Decision tree level 4"
+        levelFive:
+          type: string
+          description: "Decision tree level 5"
         comment:
           type: string
           description: "General comment, e.g. 'Driver pulled over safely on the emergency lane'"
@@ -787,15 +793,15 @@ components:
       type: object
       description: "Vehicle add-ons and accessories that affect towing or recovery, e.g. a roof box that increases vehicle height"
       properties:
-        itemType:
+        type:
           type: string
           enum: [ROOF_BOX, ROOF_RACK, BIKE_RACK, HITCH_BOX]
           description: "Add-on type, e.g. BIKE_RACK mounted on the rear"
-        itemKeysOnSite:
+        keysOnSite:
           type: boolean
           nullable: true
           description: "Are the keys for this add-on on site? (null = unknown, true = yes, false = no)"
-        itemComment:
+        comment:
           type: string
           description: "Comment, e.g. 'Roof box is locked, key is in the glove compartment'"
 
@@ -803,18 +809,21 @@ components:
       type: object
       description: "The damage event that caused the breakdown, structured as a decision tree from high-level event to specific detail"
       properties:
-        event:
+        levelOne:
           type: string
-          enum: [BREAKDOWN, COLLISION, BURGLARY]
-          description: "Top-level event category, e.g. BREAKDOWN for a mechanical failure on the highway"
-        description:
+          description: "Decision tree level 1, e.g. 'BREAKDOWN', 'COLLISION', 'BURGLARY'"
+        levelTwo:
           type: string
-          enum: [OFF_ROAD, ON_ROOF, FLAT_TIRE, BURNED_OUT, DOES_NOT_START]
-          description: "Event description, e.g. FLAT_TIRE after hitting a pothole"
-        detail:
+          description: "Decision tree level 2, e.g. 'FLAT_TIRE', 'DOES_NOT_START'"
+        levelThree:
           type: string
-          enum: [LEFT_REAR_TIRE, LEFT_FRONT_TIRE]
-          description: "Specific detail, e.g. LEFT_REAR_TIRE"
+          description: "Decision tree level 3, e.g. 'LEFT_REAR_TIRE'"
+        levelFour:
+          type: string
+          description: "Decision tree level 4"
+        levelFive:
+          type: string
+          description: "Decision tree level 5"
         comment:
           type: string
           description: "Free-text comment, e.g. 'Tire shredded on A8 near km 127, debris on shoulder'"
@@ -1021,7 +1030,7 @@ components:
       type: object
       description: "Pets travelling with the stranded passengers, relevant for hotel or rental car arrangements"
       properties:
-        total:
+        count:
           type: integer
           description: "Number of pets, e.g. 1"
         comment:
@@ -1032,7 +1041,7 @@ components:
       type: object
       description: "Luggage of the stranded passengers, relevant for transport capacity planning"
       properties:
-        total:
+        count:
           type: integer
           description: "Number of luggage pieces, e.g. 4 (two large suitcases, two carry-ons)"
         comment:
