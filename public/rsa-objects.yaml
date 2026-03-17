@@ -321,6 +321,9 @@ components:
           type: string
           enum: [GASOLINE, DIESEL, HYBRID, BATTERY, CNG]
           description: "Fuel type, e.g. BATTERY for an EV requiring specialized towing"
+        axlesCount:
+          type: integer
+          description: "Number of axles on the vehicle, e.g. 2 for a standard car, 3 for a truck"
         maximumGrossWeight:
           description: "Maximum gross vehicle weight — determines required tow truck class"
           $ref: '#/components/schemas/Weight'
