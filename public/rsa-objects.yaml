@@ -226,9 +226,9 @@ components:
         caseReference:
           type: string
           description: "Reference to the parent case"
-        rsaProviderReference:
+        rsaReference:
           type: string
-          description: "RSA provider reference"
+          description: "RSA reference"
         networkProviderReference:
           type: string
           description: "Network provider reference"
