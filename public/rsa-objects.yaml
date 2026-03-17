@@ -25,16 +25,16 @@ info:
     │   └── diagnosis ............... Diagnosis (1:1)
     ├── locations ................... Location (1:N)
     │   ├── accessibility ........... Accessibility (1:1)
-    │   │   └── restriction ......... Restriction (1:1)
+    │   │   └── restrictions ........ Restriction (1:N)
     │   ├── position ................ Position (1:1)
-    │   ├── contactVia .............. ContactVia (1:1)
-    │   ├── subscription ............ Subscription (1:1)
+    │   ├── contactVia .............. ContactVia (1:N)
+    │   ├── subscriptions ........... Subscription (1:N)
     │   ├── openingHours ............ OpeningHours (1:N)
     │   └── bankAccount ............. BankAccount (1:1)
     ├── contacts .................... Contact (1:N)
     │   ├── position ................ Position (1:1)
-    │   ├── contactVia .............. ContactVia (1:1)
-    │   ├── subscription ............ Subscription (1:1)
+    │   ├── contactVia .............. ContactVia (1:N)
+    │   ├── subscriptions ........... Subscription (1:N)
     │   └── bankAccount ............. BankAccount (1:1)
     ├── travelMeans ................. TravelMeans (1:1)
     │   ├── passengers .............. Passengers (1:1)
@@ -64,16 +64,16 @@ info:
         │   └── diagnosis ........... Diagnosis (1:1)
         ├── locations ............... Location (1:N)
         │   ├── accessibility ....... Accessibility (1:1)
-        │   │   └── restriction ..... Restriction (1:1)
+        │   │   └── restrictions .... Restriction (1:N)
         │   ├── position ............ Position (1:1)
-        │   ├── contactVia .......... ContactVia (1:1)
-        │   ├── subscription ........ Subscription (1:1)
+        │   ├── contactVia .......... ContactVia (1:N)
+        │   ├── subscriptions ....... Subscription (1:N)
         │   ├── openingHours ........ OpeningHours (1:N)
         │   └── bankAccount ......... BankAccount (1:1)
         ├── contacts ................ Contact (1:N)
         │   ├── position ............ Position (1:1)
-        │   ├── contactVia .......... ContactVia (1:1)
-        │   ├── subscription ........ Subscription (1:1)
+        │   ├── contactVia .......... ContactVia (1:N)
+        │   ├── subscriptions ....... Subscription (1:N)
         │   └── bankAccount ......... BankAccount (1:1)
         ├── travelMeans ............. TravelMeans (1:1)
         │   ├── passengers .......... Passengers (1:1)
@@ -404,7 +404,10 @@ components:
         position:
           $ref: '#/components/schemas/Position'
         contactVia:
-          $ref: '#/components/schemas/ContactVia'
+          type: array
+          description: "Contact channels for this location (1:N)"
+          items:
+            $ref: '#/components/schemas/ContactVia'
         mainLanguage:
           type: string
           enum: [EN, FR, IT, DE]
@@ -418,8 +421,11 @@ components:
         comment:
           type: string
           description: "Comment, e.g. 'Vehicle is parked in slot 42 on level -1'"
-        subscription:
-          $ref: '#/components/schemas/Subscription'
+        subscriptions:
+          type: array
+          description: "Notification subscriptions for this location (1:N)"
+          items:
+            $ref: '#/components/schemas/Subscription'
         openingHours:
           type: array
           description: "Opening hours of this location (1:N)"
@@ -489,7 +495,10 @@ components:
         position:
           $ref: '#/components/schemas/Position'
         contactVia:
-          $ref: '#/components/schemas/ContactVia'
+          type: array
+          description: "Contact channels for this contact (1:N)"
+          items:
+            $ref: '#/components/schemas/ContactVia'
         mainLanguage:
           type: string
           enum: [DE, EN, FR, IT]
@@ -503,8 +512,11 @@ components:
         comment:
           type: string
           description: "Comment, e.g. 'Driver is elderly, needs assistance exiting the vehicle'"
-        subscription:
-          $ref: '#/components/schemas/Subscription'
+        subscriptions:
+          type: array
+          description: "Notification subscriptions for this contact (1:N)"
+          items:
+            $ref: '#/components/schemas/Subscription'
         birthday:
           type: string
           format: date
@@ -927,8 +939,11 @@ components:
         accessibilityComment:
           type: string
           description: "Comment, e.g. 'Vehicle is in an underground parking garage, level -2'"
-        restriction:
-          $ref: '#/components/schemas/Restriction'
+        restrictions:
+          type: array
+          description: "Access restrictions at this location (1:N)"
+          items:
+            $ref: '#/components/schemas/Restriction'
 
     OpeningHours:
       type: object
