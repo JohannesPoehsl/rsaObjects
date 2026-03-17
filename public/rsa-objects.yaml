@@ -347,6 +347,10 @@ components:
           description: "Vehicle accessories and add-ons (1:N)"
           items:
             $ref: '#/components/schemas/AddOns'
+        breaked:
+          type: boolean
+          nullable: true
+          description: "Is the vehicle braked? (null = unknown, true = yes, false = no)"
         comment:
           type: string
           description: "General vehicle comment, e.g. 'Aftermarket lowered suspension, use caution when loading'"
