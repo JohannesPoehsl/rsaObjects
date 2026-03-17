@@ -29,7 +29,7 @@ info:
     │   ├── position ................ Position (1:1)
     │   ├── contactVia .............. ContactVia (1:1)
     │   ├── subscription ............ Subscription (1:1)
-    │   ├── openingHours ............ OpeningHours (1:1)
+    │   ├── openingHours ............ OpeningHours (1:N)
     │   └── bankAccount ............. BankAccount (1:1)
     ├── contacts .................... Contact (1:N)
     │   ├── position ................ Position (1:1)
@@ -68,7 +68,7 @@ info:
         │   ├── position ............ Position (1:1)
         │   ├── contactVia .......... ContactVia (1:1)
         │   ├── subscription ........ Subscription (1:1)
-        │   ├── openingHours ........ OpeningHours (1:1)
+        │   ├── openingHours ........ OpeningHours (1:N)
         │   └── bankAccount ......... BankAccount (1:1)
         ├── contacts ................ Contact (1:N)
         │   ├── position ............ Position (1:1)
@@ -421,7 +421,10 @@ components:
         subscription:
           $ref: '#/components/schemas/Subscription'
         openingHours:
-          $ref: '#/components/schemas/OpeningHours'
+          type: array
+          description: "Opening hours of this location (1:N)"
+          items:
+            $ref: '#/components/schemas/OpeningHours'
         bankAccount:
           $ref: '#/components/schemas/BankAccount'
 
