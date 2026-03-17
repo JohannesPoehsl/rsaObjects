@@ -853,7 +853,7 @@ components:
           description: "Is there a fluid leak? (null = unknown, true = yes, false = no)"
         leakageType:
           type: string
-          enum: [OIL, WATER, SEVERAL]
+          enum: [OIL, WATER, FUEL, SEVERAL]
           description: "Type of leak, e.g. OIL for an engine oil leak under the vehicle"
         driveable:
           type: boolean
