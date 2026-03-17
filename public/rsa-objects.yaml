@@ -49,7 +49,7 @@ info:
         ├── serviceDuration ......... ServiceDuration (1:1)
         ├── orderStatus ............. OrderStatus (1:1)
         ├── attachments ............. Attachments (1:N)
-        ├── vehicle ................. Vehicle (1:1)
+        ├── vehicles ................ Vehicle (1:N)
         │   ├── vehicleType ......... VehicleType (1:1)
         │   ├── mileageCurrent ...... Mileage (1:1)
         │   ├── mileageLastService .. Mileage (1:1)
@@ -235,8 +235,11 @@ components:
         serviceProviderReference:
           type: string
           description: "Service provider reference"
-        vehicle:
-          $ref: '#/components/schemas/Vehicle'
+        vehicles:
+          type: array
+          description: "Vehicles related to this order (1:N)"
+          items:
+            $ref: '#/components/schemas/Vehicle'
         locations:
           type: array
           description: "Locations related to this order (1:N), e.g. breakdown site, towing destination, rental pickup"
