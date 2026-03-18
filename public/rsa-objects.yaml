@@ -1220,6 +1220,13 @@ components:
           type: number
           format: float
           description: "Longitude, e.g. 11.5820 (Munich)"
+        heading:
+          type: number
+          description: "The heading in degrees (0-360), where 0 is North"
+        timestamp:
+          type: string
+          format: date-time
+          description: "UTC datetime when position was recorded"
         status:
           type: string
           enum:
