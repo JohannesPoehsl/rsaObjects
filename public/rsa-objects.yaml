@@ -1,11 +1,11 @@
 openapi: 3.0.3
 info:
-  title: RSA - Objects schemata
+  title: BOSCH RSA - Objetc schemes
   version: 1.0.0
   description: |
-    Schemata definitions for RSA objects
+    Draft definition of common and recurring objects
 
-    ## Object hierarchy overview
+    ## Cardinality
     ```
     Case
     ├── caseStatus .................. CaseStatus (1:1)
