@@ -190,6 +190,8 @@ components:
       type: object
       description: "A service order within a case, e.g. a towing job, a rental car booking, or an on-spot repair"
       properties:
+        orderAlert:
+          $ref: '#/components/schemas/OrderAlert'
         id:
           type: string
           description: "Unique identifier of the order, e.g. 'ORD-2025-0098765'"
@@ -224,8 +226,6 @@ components:
           $ref: '#/components/schemas/ServiceDuration'
         orderStatusCurrent:
           $ref: '#/components/schemas/OrderStatus'
-        orderAlert:
-          $ref: '#/components/schemas/OrderAlert'
         comment:
           type: string
           description: "General comment, e.g. 'Vehicle is on the hard shoulder, hazard lights on'"
