@@ -108,9 +108,12 @@ components:
         client:
           type: string
           description: "Contracting client, e.g. 'BMW', 'AUDI', 'HONDA DE', 'German Autobahn'"
-        clientComment:
+        clientTextForAgent:
           type: string
-          description: "Special instructions from the client to observe during service, e.g. 'VIP customer — priority handling'"
+          description: "Client-specific instructions for the agent"
+        clientTextForServiceProvider:
+          type: string
+          description: "Client-specific instructions for the service provider"
         origin:
           type: string
           description: "Source system, e.g. 'Mosaic', 'Navigator', 'OnStreet Network', 'OnStreet Roadside'"
@@ -199,12 +202,12 @@ components:
         client:
           type: string
           description: "Contracting client, e.g. 'BMW'"
-        clientReference:
+        clientTextForAgent:
           type: string
-          description: "Client-side reference number"
-        clientComment:
+          description: "Client-specific instructions for the agent"
+        clientTextForServiceProvider:
           type: string
-          description: "Special client instructions, e.g. 'Only use authorized BMW dealers for towing destination'"
+          description: "Client-specific instructions for the service provider"
         origin:
           type: string
           description: "Source system, e.g. 'Mosaic', 'Navigator', 'OnStreet Network', 'OnStreet Roadside'"
@@ -226,6 +229,9 @@ components:
         caseReference:
           type: string
           description: "Reference to the parent case"
+        clientReference:
+          type: string
+          description: "Client-side reference number"
         rsaReference:
           type: string
           description: "RSA reference"
