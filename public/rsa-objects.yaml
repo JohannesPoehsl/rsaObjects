@@ -48,6 +48,7 @@ info:
     └── orders ...................... Order (1:N)
         ├── serviceDuration ......... ServiceDuration (1:1)
         ├── orderStatusCurrent ...... OrderStatus (1:1)
+        ├── orderAlert ............... OrderAlert (1:1)
         ├── attachments ............. Attachments (1:N)
         ├── vehicles ................ Vehicle (1:N)
         │   ├── vehicleType ......... VehicleType (1:1)
@@ -223,6 +224,8 @@ components:
           $ref: '#/components/schemas/ServiceDuration'
         orderStatusCurrent:
           $ref: '#/components/schemas/OrderStatus'
+        orderAlert:
+          $ref: '#/components/schemas/OrderAlert'
         comment:
           type: string
           description: "General comment, e.g. 'Vehicle is on the hard shoulder, hazard lights on'"
@@ -813,6 +816,36 @@ components:
           type: string
           format: date-time
           description: "Estimated Time of Repair (for on-spot repair jobs)"
+
+    OrderAlert:
+      type: object
+      description: "Alert configuration for a service order"
+      properties:
+        alertType:
+          type: array
+          items:
+            type: string
+            enum: [DIRECT_ASSIGNMENT, DIRECT_OFFER, ALL_OFFER, DISTRIBUTE]
+          description: "Alert type"
+        serviceProviderId:
+          type: string
+          description: "Service provider id"
+        serviceProviderBranchId:
+          type: string
+          description: "Service provider branch id"
+        alertDuration:
+          type: integer
+          description: "Alert duration in seconds"
+        acceptionEtas:
+          type: array
+          items:
+            type: integer
+          description: "List of possible acceptance ETAs in minutes"
+        rejectionReasons:
+          type: array
+          items:
+            type: string
+          description: "List of possible rejection reasons"
 
     # =========================================================================
     # VEHICLE SUB-SCHEMAS
