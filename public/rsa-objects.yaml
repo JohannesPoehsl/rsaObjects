@@ -106,6 +106,9 @@ components:
       type: object
       description: "A roadside assistance case, representing the entire incident from the initial breakdown call to final resolution"
       properties:
+        id:
+          type: string
+          description: "Unique identifier of the case"
         client:
           type: string
           description: "Contracting client, e.g. 'BMW', 'AUDI', 'HONDA DE', 'German Autobahn'"
@@ -118,9 +121,6 @@ components:
         origin:
           type: string
           description: "Source system, e.g. 'Mosaic', 'Navigator', 'OnStreet Network', 'OnStreet Roadside'"
-        number:
-          type: string
-          description: "Case number, e.g. 'RSA-2025-0047123'"
         creationDate:
           type: string
           format: date-time
@@ -185,18 +185,15 @@ components:
       type: object
       description: "A service order within a case, e.g. a towing job, a rental car booking, or an on-spot repair"
       properties:
-        orderAlert:
-          $ref: '#/components/schemas/OrderAlert'
         id:
           type: string
           description: "Unique identifier of the order, e.g. 'ORD-2025-0098765'"
+        orderAlert:
+          $ref: '#/components/schemas/OrderAlert'
         type:
           type: string
           enum: [HELP_ON_SPOT, RECOVERY, TOWING, TRANSPORT, RENTAL_CAR, OVERNIGHT_STAY, MEDICAL_CARE]
           description: "Service type, e.g. TOWING for transporting a broken-down vehicle to the nearest garage"
-        number:
-          type: string
-          description: "Order number, e.g. 'SO-2025-00123'"
         client:
           type: string
           description: "Contracting client, e.g. 'BMW'"
@@ -283,6 +280,9 @@ components:
       type: object
       description: "The vehicle involved in the breakdown, including identification, dimensions, damage, and post-service diagnosis"
       properties:
+        id:
+          type: string
+          description: "Unique identifier of the vehicle"
         affectedVehicle:
           type: boolean
           nullable: true
@@ -389,6 +389,9 @@ components:
       type: object
       description: "A location relevant to the service order, e.g. breakdown site on A9 highway, destination garage, hotel for overnight stay, or rental car pickup office"
       properties:
+        id:
+          type: string
+          description: "Unique identifier of the location"
         affectedLoction:
           type: boolean
           nullable: true
@@ -468,6 +471,9 @@ components:
       type: object
       description: "A person involved in the roadside assistance case, e.g. stranded driver, vehicle owner, dispatcher, tow truck driver, or garage contact"
       properties:
+        id:
+          type: string
+          description: "Unique identifier of the contact"
         affectedContact:
           type: boolean
           nullable: true
