@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: BOSCH RSA - Objetc schemes
+  title: BOSCH RSA - Object schemes
   version: 1.0.0
   description: |
     Draft definition of common and recurring objects
