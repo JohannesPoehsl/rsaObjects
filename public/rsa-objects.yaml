@@ -775,6 +775,14 @@ components:
           type: string
           format: date-time
           description: "Service end time, e.g. '2025-03-12T16:30:00Z' when the vehicle is delivered to the garage"
+        appointmentStartLocation:
+          type: string
+          format: date-time
+          description: "Appointment start datetime at location"
+        appointmentEndLocation:
+          type: string
+          format: date-time
+          description: "Appointment end datetime at location"
 
     OrderStatus:
       type: object
