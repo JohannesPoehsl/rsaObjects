@@ -8,7 +8,7 @@ info:
     ## Cardinality
     ```
     Case
-    ├── caseStatus .................. CaseStatus (1:1)
+    ├── caseStatusCurrent ........... CaseStatus (1:1)
     ├── attachments ................. Attachments (1:N)
     ├── vehicles .................... Vehicle (1:N)
     │   ├── vehicleType ............. VehicleType (1:1)
@@ -47,7 +47,7 @@ info:
     │   └── budget .................. Budget (1:1)
     └── orders ...................... Order (1:N)
         ├── serviceDuration ......... ServiceDuration (1:1)
-        ├── orderStatus ............. OrderStatus (1:1)
+        ├── orderStatusCurrent ...... OrderStatus (1:1)
         ├── attachments ............. Attachments (1:N)
         ├── vehicles ................ Vehicle (1:N)
         │   ├── vehicleType ......... VehicleType (1:1)
@@ -128,7 +128,7 @@ components:
           type: string
           enum: [HIGH, MEDIUM, LOW]
           description: "Case priority, e.g. HIGH for a family stranded on the highway at night"
-        caseStatus:
+        caseStatusCurrent:
           $ref: '#/components/schemas/CaseStatus'
         comment:
           type: string
@@ -221,7 +221,7 @@ components:
           description: "Order priority, e.g. HIGH for a vehicle blocking a highway lane"
         serviceDuration:
           $ref: '#/components/schemas/ServiceDuration'
-        orderStatus:
+        orderStatusCurrent:
           $ref: '#/components/schemas/OrderStatus'
         comment:
           type: string
@@ -285,6 +285,10 @@ components:
       type: object
       description: "The vehicle involved in the breakdown, including identification, dimensions, damage, and post-service diagnosis"
       properties:
+        affectedVehicle:
+          type: boolean
+          nullable: true
+          description: "Is this the affected vehicle? (null = unknown, true = yes, false = no)"
         make:
           type: string
           description: "Manufacturer, e.g. 'BMW', 'Volkswagen', 'Mercedes-Benz'"
@@ -387,6 +391,10 @@ components:
       type: object
       description: "A location relevant to the service order, e.g. breakdown site on A9 highway, destination garage, hotel for overnight stay, or rental car pickup office"
       properties:
+        affectedLoction:
+          type: boolean
+          nullable: true
+          description: "Is this the affected location? (null = unknown, true = yes, false = no)"
         role:
           type: array
           items:
@@ -462,6 +470,10 @@ components:
       type: object
       description: "A person involved in the roadside assistance case, e.g. stranded driver, vehicle owner, dispatcher, tow truck driver, or garage contact"
       properties:
+        affectedContact:
+          type: boolean
+          nullable: true
+          description: "Is this the affected contact? (null = unknown, true = yes, false = no)"
         role:
           type: array
           items:
@@ -1223,6 +1235,12 @@ components:
         heading:
           type: number
           description: "The heading in degrees (0-360), where 0 is North"
+        velocity:
+          type: number
+          description: "Velocity when position was recorded"
+        accuracy:
+          type: number
+          description: "Accuracy of the position"
         timestamp:
           type: string
           format: date-time
