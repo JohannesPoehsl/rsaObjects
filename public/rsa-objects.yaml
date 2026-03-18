@@ -134,11 +134,6 @@ components:
         comment:
           type: string
           description: "General comment, e.g. 'Driver reports smoke from engine bay'"
-        relatedServiceOrders:
-          type: array
-          items:
-            type: string
-          description: "IDs of related service orders, e.g. towing + rental car for the same breakdown"
         clientReference:
           type: string
           description: "Client-side reference number"
