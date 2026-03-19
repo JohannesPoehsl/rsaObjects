@@ -290,7 +290,7 @@ components:
         make:
           type: string
           description: "Manufacturer, e.g. 'BMW', 'Volkswagen', 'Mercedes-Benz'"
-        modell:
+        model:
           type: string
           description: "Model, e.g. '3 Series', 'Golf', 'E-Class'"
         vehicleType:
