@@ -1248,10 +1248,15 @@ components:
         type:
           type: string
           enum:
+            - STATUS_UPDATE
+            - FORM_UPDATE
+            - POSITION_UPDATE
             - ETA_ADVISE
-            - CASE_UPDATE_SMS
-            - CUSTOMER_SURVEY
-            - CASE_SUMMARY
+            - STATUS_UPDATE_SMS
+            - STATUS_UPDATE_EMAIL
+            - CUSTOMER_SURVEY_SMS
+            - CUSTOMER_SURVEY_EMAIL
+            - ENDCUSTOMER_PORTAL
           description: "Subscription type, e.g. ETA_ADVISE to notify the driver when the tow truck is approaching"
         status:
           type: boolean
