@@ -980,6 +980,7 @@ components:
           description: "Service outcome, e.g. 'REPAIRED_ON_SPOT', 'TOWED_TO_GARAGE', 'NOT_REPAIRABLE'"
         assemblyType:
           type: string
+          enum: [TRANSMISSION, ELECTRIC, CHASSIS, BRAKE, WHEELS, EQUIPMENT, SECURITY, LOCKING_SYSTEM, BODY, GLASS_WINDOWS, EXHAUST, INTAKE_TURBO, COOLING, BELTS_CHAINS, ENGINE, IGNITION, LUBRICATION, INJECTION, HV_SYSTEM, LIGHTS, FUEL, MOTORCYCLE, NOT_DEFINED]
           description: "Affected assembly group, e.g. 'ENGINE', 'TRANSMISSION', 'ELECTRICAL'"
         partType:
           type: string
