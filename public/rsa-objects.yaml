@@ -252,6 +252,10 @@ components:
           description: "Locations related to this order (1:N), e.g. breakdown site, towing destination, rental pickup"
           items:
             $ref: '#/components/schemas/Location'
+        desiredVehicleDestinationType:
+          type: string
+          enum: [ENDCUSTOMER_DECISION, NEXT_POSSIBLE_WORKSHOP, MANUFACTURER_WORKSHOP, CLIENT_BASE, SERVICEPROVIDER_DEPOT]
+          description: "Desired vehicle destination type, e.g. MANUFACTURER_WORKSHOP to tow the vehicle to an authorized dealer"
         contacts:
           type: array
           description: "Contact persons for this order (1:N), e.g. stranded driver, vehicle owner, garage contact"
