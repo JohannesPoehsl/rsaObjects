@@ -354,6 +354,10 @@ components:
         groundClearance:
           description: "Vehicle ground clearance — relevant for recovery on uneven terrain"
           $ref: '#/components/schemas/Dimension'
+        oversized:
+          type: boolean
+          nullable: true
+          description: "Is the vehicle oversized? (null = unknown, true = yes, false = no)"
         addOns:
           type: array
           description: "Vehicle accessories and add-ons (1:N)"
