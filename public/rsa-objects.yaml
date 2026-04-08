@@ -3,7 +3,13 @@ info:
   title: BOSCH RSA - Object schemes
   version: 1.0.0
   description: |
-    Draft definition of common and recurring objects
+    Definition of common and recurring RSA objects
+
+    Status: draft
+
+    Considered APIs:
+    1. GOAPI (OnStreet Roadside)
+    2. 3rd Party API (OnStreet Network)
 
     ## Cardinality
     ```
