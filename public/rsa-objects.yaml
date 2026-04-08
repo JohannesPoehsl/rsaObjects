@@ -688,7 +688,7 @@ components:
           description: "Currency"
         status:
           type: string
-          enum: [WITH_RESERVATION, APPROVED, REJECTED, ADJUSTED]
+          enum: [WITH_RESERVATION, APPROVED, REJECTED, ADJUSTED, SELFPAYER]
           description: "Approval status, e.g. APPROVED after the client confirmed the cost"
         areaInformationRadius:
           $ref: '#/components/schemas/AreaInformationRadius'
