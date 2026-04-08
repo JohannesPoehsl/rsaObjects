@@ -1315,8 +1315,9 @@ components:
         status:
           type: string
           enum:
-            - VALIDATED
             - NOT_VALIDATED
+            - VALID
+            - INVALID
           description: "Whether the position has been validated, e.g. via reverse geocoding"
 
     # =========================================================================
