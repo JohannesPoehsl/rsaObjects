@@ -169,6 +169,11 @@ components:
             $ref: '#/components/schemas/Contact'
         travelMeans:
           $ref: '#/components/schemas/TravelMeans'
+        onwardMobility:
+          type: array
+          description: "Onward mobility arrangements for this case (1:N), e.g. rental car, taxi, or train for the stranded person"
+          items:
+            $ref: '#/components/schemas/OnwardMobility'
         circumstances:
           $ref: '#/components/schemas/Circumstances'
         coverages:
@@ -263,6 +268,8 @@ components:
             $ref: '#/components/schemas/Contact'
         travelMeans:
           $ref: '#/components/schemas/TravelMeans'
+        onwardMobility:
+          $ref: '#/components/schemas/OnwardMobility'
         circumstances:
           $ref: '#/components/schemas/Circumstances'
         coverages:
@@ -866,6 +873,25 @@ components:
           items:
             type: string
           description: "List of IDs corresponding to each rejection reason"
+
+    OnwardMobility:
+      type: object
+      description: "Onward mobility arrangement for the stranded person, e.g. a rental car or taxi to continue the journey"
+      properties:
+        onwardMobilityType:
+          type: string
+          enum: [TAXI, RENTAL_CAR, FLIGHT, PUBLIC_TRANSPORT, TRAIN, OTHER]
+          description: "Type of onward mobility, e.g. RENTAL_CAR for a replacement vehicle"
+        rentalCarType:
+          type: string
+          enum: [PASSENGER_CAR, STATION_WAGON, SUV, LUXURY, SEVEN_SEATER]
+          description: "Desired rental car type, e.g. SUV for a family with luggage"
+        rentalCarAcrissCode:
+          type: string
+          description: "ACRISS code describing the desired rental car, e.g. 'CDMR' for a compact automatic"
+        comment:
+          type: string
+          description: "Additional information, e.g. 'Driver needs child seat for 2-year-old'"
 
     # =========================================================================
     # VEHICLE SUB-SCHEMAS
