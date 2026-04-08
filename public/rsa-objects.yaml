@@ -331,7 +331,7 @@ components:
           description: "Transmission type — affects towing procedure"
         fuelType:
           type: string
-          enum: [GASOLINE, DIESEL, HYBRID, BATTERY, CNG]
+          enum: [GASOLINE, DIESEL, HYBRID, ELECTRIC, CNG, UNLEADED, HYBRID_UNLEADED, HYBRID_DIESEL, HYDROGEN, UNKNOWN]
           description: "Fuel type, e.g. BATTERY for an EV requiring specialized towing"
         maximumGrossWeight:
           description: "Maximum gross vehicle weight — determines required tow truck class"
